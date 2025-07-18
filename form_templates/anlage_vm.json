@@ -1,0 +1,312 @@
+{
+    "txtfPersonVorname": {
+        "/TU": "1 - Vorname der antragstellenden Person",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonNachname": {
+        "/TU": "2 - Nachname der antragstellenden Person",
+        "type": "/Tx",
+        "page": 0
+    },
+    "datePersonGebDatum": {
+        "/TU": "3 - Geburtsdatum der antragstellenden Person - (TT.MM.JJJJ)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfBGNr": {
+        "/TU": "4 - Nummer der Bedarfsgemeinschaft (falls vorhanden)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "rbtnBGImmobilie": {
+        "/TU": "5 - Hat eine Person in der Bedarfsgemeinschaft Grundstücke und/oder Immobilien, die sie nicht selbst nutzt?",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxBGHausgrundstueck": {
+        "/TU": "6 - Option1 von 3 - Bitte machen Sie zu den nicht selbstgenutzten Grundstücken und/oder Immobilien die nachfolgenden Angaben. - Hausgrundstück",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxBGEigentumswohnung": {
+        "/TU": "6 - Option2 von 3 - Bitte machen Sie zu den nicht selbstgenutzten Grundstücken und/oder Immobilien die nachfolgenden Angaben. - Eigentumswohnung",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxBGGrundstueck": {
+        "/TU": "6 - Option3 von 3 - Bitte machen Sie zu den nicht selbstgenutzten Grundstücken und/oder Immobilien die nachfolgenden Angaben. - unbebautes Grundstück",
+        "type": "/Btn",
+        "page": 0
+    },
+    "numfBGMiteigentum": {
+        "/TU": "7 - Miteigentumsanteil in Prozent",
+        "type": "/Tx",
+        "page": 0
+    },
+    "numfBGImmobilieWert": {
+        "/TU": "8 - Verkehrswert in Euro",
+        "type": "/Tx",
+        "page": 0
+    },
+    "numfBGMieteinnahme": {
+        "/TU": "9 - Miet-/Pachteinnahmen in Euro (bitte füllen Sie auch die Anlage EK aus)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtareaTabKFZ_Z1_S2": {
+        "/TU": "10 - Kraftfahrzeuge - Person 1 - Vor- und Nachname",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtareaTabKFZ_Z1_S3": {
+        "/TU": "10 - Kraftfahrzeuge - Person 2 - Vor- und Nachname",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtareaTabKFZ_Z1_S4": {
+        "/TU": "10 - Kraftfahrzeuge - Person 3 - Vor- und Nachname",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabKFZ_Z2_S2": {
+        "/TU": "10 - Kraftfahrzeuge - Person 1 - Wert des Kraftfahrzeuges in Euro",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabKFZ_Z2_S3": {
+        "/TU": "10 - Kraftfahrzeuge - Person 2 - Wert des Kraftfahrzeuges in Euro",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabKFZ_Z2_S4": {
+        "/TU": "10 - Kraftfahrzeuge - Person 3 - Wert des Kraftfahrzeuges in Euro",
+        "type": "/Tx",
+        "page": 1
+    },
+    "rbtnSchenkung": {
+        "/TU": "11 - Hat eine Person in der Bedarfsgemeinschaft innerhalb der letzten 10 Jahre Beträge aus dem Vermögen verschenkt, gespendet oder übertragen?",
+        "type": "/Btn",
+        "page": 1
+    },
+    "txtfBGSchenkungVorname": {
+        "/TU": "12 - Vorname der Person, die Beträge aus dem Vermögen verschenkt, gespendet oder übertragen hat",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfBGSchenkungNachname": {
+        "/TU": "13 - Nachname der Person, die Beträge aus dem Vermögen verschenkt, gespendet oder übertragen hat",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfSchenkungBetrag": {
+        "/TU": "14 - Betrag in Euro",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtareaTabVermoegen_Z1_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - Vor- und Nachname",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtareaTabVermoegen_Z1_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - Vor- und Nachname",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtareaTabVermoegen_Z1_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - Vor- und Nachname",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z2_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - Bargeld",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z2_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - Bargeld",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z2_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - Bargeld",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z3_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - alle Girokonten",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z3_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - alle Girokonten",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z3_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - alle Girokonten",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z4_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - Kreditkartenkonten, PayPal und weitere (Online-)Konten",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z4_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - Kreditkartenkonten, PayPal und weitere (Online-)Konten",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z4_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - Kreditkartenkonten, PayPal und weitere (Online-)Konten",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z5_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - Spareinlagen (zum Beispiel Sparkonten, Sparbücher, Tagesgeldkonto, Prämiensparen)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z5_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - Spareinlagen (zum Beispiel Sparkonten, Sparbücher, Tagesgeldkonto, Prämiensparen)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z5_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - Spareinlagen (zum Beispiel Sparkonten, Sparbücher, Tagesgeldkonto, Prämiensparen)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z6_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - Sparbriefe oder sonstige Wertpapiere (zum Beispiel Aktien, Anleihen, Fonds-Anteile)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z6_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - Sparbriefe oder sonstige Wertpapiere (zum Beispiel Aktien, Anleihen, Fonds-Anteile)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z6_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - Sparbriefe oder sonstige Wertpapiere (zum Beispiel Aktien, Anleihen, Fonds-Anteile)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z7_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - Bausparverträge",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z7_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - Bausparverträge",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z7_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - Bausparverträge",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z8_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - Kapitallebensversicherungen, private Rentenversicherungen (sofern sie nicht der Altersvorsorge dienen)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z8_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - Kapitallebensversicherungen, private Rentenversicherungen (sofern sie nicht der Altersvorsorge dienen)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z8_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - Kapitallebensversicherungen, private Rentenversicherungen (sofern sie nicht der Altersvorsorge dienen)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z9_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - Versicherungen mit Prämienrückgewähr (zum Beispiel Berufsunfähigkeitsversicherungen, Sterbegeldversicherungen, Unfallversicherungen)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z9_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - Versicherungen mit Prämienrückgewähr (zum Beispiel Berufsunfähigkeitsversicherungen, Sterbegeldversicherungen, Unfallversicherungen)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z9_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - Versicherungen mit Prämienrückgewähr (zum Beispiel Berufsunfähigkeitsversicherungen, Sterbegeldversicherungen, Unfallversicherungen)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z10_S2": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 1 - sonstiges Vermögen (zum Beispiel Kryptowährungen, Edelmetalle, Antiquitäten, Gemälde, Schmuck)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z10_S3": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 2 - sonstiges Vermögen (zum Beispiel Kryptowährungen, Edelmetalle, Antiquitäten, Gemälde, Schmuck)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "numfTabVermoegen_Z10_S4": {
+        "/TU": "15 - Konten, Geldanlagen und sonstiges Vermögen - Person 3 - sonstiges Vermögen (zum Beispiel Kryptowährungen, Edelmetalle, Antiquitäten, Gemälde, Schmuck)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "rbtnRentenversicherung": {
+        "/TU": "16 - Ist eine Person in der Bedarfsgemeinschaft von der Rentenversicherungspflicht befreit?",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnAlterssicherung": {
+        "/TU": "17 - Dient mindestens ein Vermögensgegenstand aus der Tabelle zumindest teilweise der Alterssicherung dieser Person?",
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfBGAlterssicherungVorname": {
+        "/TU": "18 - Vorname der Person, für die ein Vermögensgegenstand zur Alterssicherung dient",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfBGAlterssicherungNachname": {
+        "/TU": "19 - Nachname der Person, für die ein Vermögensgegenstand zur Alterssicherung dient",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfVermoegensgegenstand": {
+        "/TU": "20 - Für die Alterssicherung bestimmter Vermögensgegenstand",
+        "type": "/Tx",
+        "page": 2
+    },
+    "rbtnSelbstaendig": {
+        "/TU": "21 - Wird oder wurde von einer Person in der Bedarfsgemeinschaft eine selbständige Tätigkeit ausgeübt?",
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfBGSelbstaendigVorname": {
+        "/TU": "22 - Vorname der Person, die eine selbständige Tätigkeit ausübt",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfBGSelbstaendigNachname": {
+        "/TU": "23 - Nachname der Person, die eine selbständige Tätigkeit ausübt",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfSelbstaendigJahre": {
+        "/TU": "24 - Anzahl der Jahre, in denen eine selbständige Tätigkeit insgesamt ausgeübt wurde",
+        "type": "/Tx",
+        "page": 2
+    },
+    "dateUnterschriftPerson": {
+        "/TU": "25 - Datum (TT.MM.JJJJ) - Unterschrift antragstellende Person",
+        "type": "/Tx",
+        "page": 2
+    },
+    "dateUnterschriftBetreuer": {
+        "/TU": "27 - Datum (TT.MM.JJJJ) - Unterschrift Betreuerin/Betreuer/Vormund",
+        "type": "/Tx",
+        "page": 2
+    }
+}

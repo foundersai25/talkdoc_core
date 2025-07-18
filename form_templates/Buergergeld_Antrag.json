@@ -1,0 +1,1006 @@
+{
+    "txtfPersonVorname": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 1 Vorname; Vorname laut Personalausweis/Reisepass der antragstellenden Person. Validierung: Nur Buchstaben, Doppelnamen mit Bindestrich erlaubt.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonNachname": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 2 Nachname; Nachname/Familienname laut offizieller Ausweisdokumente. Validierung: Nur Buchstaben, Doppelnamen mit Bindestrich erlaubt.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "datePersonGebDatum": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; A. Persönliche Daten > 3 Geburtsdatum (TT.MM.JJJJ); Geburtsdatum der antragstellenden Person. Validierung: Format TT.MM.JJJJ, Plausibilitätscheck (nicht in der Zukunft, plausibles Alter).",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonGebName": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 4 Geburtsname/früherer Name; Der Geburtsname oder ein ggf. früher geführter Name, falls abweichend vom aktuellen Nachnamen. Validierung: Freitext, nur Buchstaben/Binde-/Leerzeichen.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonGebOrt": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 5 Geburtsort; Ort der Geburt laut Ausweis. Validierung: Existenz des Ortes überprüfen. Nur Buchstaben, ggf. Leerzeichen/Binde-/Sonderzeichen typisch für Orte.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonGebLand": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 6 Geburtsland; Land der Geburt laut Ausweis. Validierung: Existenz des Landes überprüfen.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonStaatsangehoerigkeit": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 7 Staatsangehörigkeit; Staatsangehörigkeit laut Ausweis. Validierung: Auswahl aus ISO-Länderkürzeln oder Freitext.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "chbxPersonMaennlich": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 8 Geschlecht > männlich; Auswahlfeld für männliches Geschlecht. Validierung: Nur eine Auswahl darf getroffen werden (Radio-Button-Verhalten).",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonWeiblich": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 8 Geschlecht > weiblich; Auswahlfeld für weibliches Geschlecht. Validierung: Nur eine Auswahl darf getroffen werden (Radio-Button-Verhalten).",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonDivers": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 8 Geschlecht > divers; Auswahlfeld für das Geschlecht divers. Validierung: Nur eine Auswahl darf getroffen werden (Radio-Button-Verhalten).",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonKeine": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 8 Geschlecht > keine Angabe; Feld für keine Angabe des Geschlechts. Validierung: Nur eine Auswahl darf getroffen werden (Radio-Button-Verhalten).",
+        "type": "/Btn",
+        "page": 0
+    },
+    "txtfPersonStr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 9 Straße; Straße des Wohnorts der antragstellenden Person. Validierung: Buchstaben, Sonderzeichen und Leerzeichen erlaubt, keine Ziffern außer Hausnamen (optional).",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonHausnr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 10 Hausnummer; Hausnummer der Wohnadresse. Validierung: Kombination aus Zahlen und ggf. Buchstaben (z.B. 12a).",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonPlz": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 11 Postleitzahl; Postleitzahl der Wohnadresse. Validierung: 5-stellige deutsche Postleitzahl (RegEx: ^\\d{5}$)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonOrt": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 12 Wohnort; Name der Stadt/des Orts. Validierung: Existenz des Ortes überprüfen - passt er zur vorherigen Postleitzahl. Nur Buchstaben, ggf. Plz-Ortsprüfung, keine Ziffern erlaubt.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonPostfach": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 13 Postfachanschrift; Ggf. Postfach und dazugehörige Angaben. Validierung: Freitext, keine spezifische Prüfung.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonTel": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 14 Telefon; Telefonnummer für Rückfragen (freiwillige Angabe). Validierung: 7–15 Zeichen, Ziffern, +, /, -, Leerzeichen erlaubt.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "chbxWohnsitz": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > Kein fester Wohnsitz vorhanden; Kennzeichnung, falls kein fester Wohnsitz besteht.",
+        "type": "/Btn",
+        "page": 0
+    },
+    "txtareaPersonWohnhaft": {
+        "hidden_fields": {
+            "FF": 8392704
+        },
+        "/TU": "15 - Gegebenenfalls wohnhaft bei (Name und Anschrift Person/Einrichtung)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfKontoinhaber": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 16 Kontoinhaberin/Kontoinhaber; Name des Kontoinhabers für die Angabe der Bankverbindung. Validierung: Buchstaben und Leerzeichen, ggf. Bindestrich zulässig.Vergleich mit den vorherigen Angaben zum Vor- und Nachnamen.",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfIBAN": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 17 IBAN; Internationale Kontonummer des Antragstellers. Validierung: RegEx für IBAN DE (z.B. ^DE\\d{20}$), Plausibilitätsprüfung.",
+        "type": "/Tx",
+        "page": 1
+    },
+    "chbxKonto": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > Keine Bankverbindung vorhanden; Wenn keine Bankverbindung existiert, bitte ankreuzen. Validierung: Ersetz die vorherigen Angaben zur Bankverbindung.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "rbtnPersonSVRVNr": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 18 Sozial-/Rentenversicherungsnummer vorhanden > Ja/Nein; Auswahl, ob Renten-/Sozialversicherungsnummer vorhanden ist. Validierung: Nur eine Auswahl möglich.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "txtfPersonSVRVNr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 19 Sozial-/Rentenversicherungsnummer; Angabe der eigenen Renten-/Sozialversicherungsnummer, falls vorhanden. Validierung: 12-stellig, meist Format: Buchstaben, Zahlen, Buchstabe – RegEx: ^\\w{12}$ (noch festzulegen).",
+        "type": "/Tx",
+        "page": 1
+    },
+    "rbtnPersonBetreuer": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 20 Gesetzl. Betreuerin/Betreuer/Vormund > Ja/Nein; Ob Sie eine gesetzlich bestellte Vertreterperson haben. Validierung: Nur eine Auswahl möglich.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "datePersonEinreise": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; A. Persönliche Daten > 21 Einreisedatum nach Deutschland; Falls keine deutsche Staatsangehörigkeit und Zuzug aus dem Ausland, bitte Datum des Zuzugs angeben. Validierung: TT.MM.JJJJ, nicht in der Zukunft.",
+        "type": "/Tx",
+        "page": 1
+    },
+    "rbtnPersonAufenthaltsgenehm": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 22 Aufenthaltsgenehmigung > Ja/Nein; Für Nichtdeutsche: Besteht eine gültige Aufenthaltsgenehmigung? Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "rbtnPersonVerpflichtungserkl": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 23 Verpflichtungserklärung > Ja/Nein; Wurde eine Verpflichtungserklärung für Sie abgegeben? Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxPersonFamStandLedig": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > ledig; Familienstand ledig auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxPersonFamStandVerheiratet": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > verheiratet; Familienstand verheiratet auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxPersonFamStandVerwitwet": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > verwitwet; Familienstand verwitwet auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxPersonFamStandEingetrLeben": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > eingetragene Lebenspartnerschaft; Familienstand „eingetragene Lebenspartnerschaft“ auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxPersonFamStandGetrennt": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > dauernd getrennt lebend; Familienstand „dauernd getrennt lebend“ auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxPersonFamStandGeschieden": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > geschieden; Familienstand „geschieden“ auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxPersonFamStandAufgehobLeben": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > aufgehobene Lebenspartnerschaft; Familienstand „aufgehobene Lebenspartnerschaft“ auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "datePersonGetrennt": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; A. Persönliche Daten > 25 Trennungs-/Scheidungs-/Aufhebungsdatum; Datum seit wann Sie dauernd getrennt leben oder die Lebenspartnerschaft aufgehoben/geschieden ist. Validierung: TT.MM.JJJJ, nicht in der Zukunft.",
+        "type": "/Tx",
+        "page": 1
+    },
+    "chbxPersonAntragBUEGSofort": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; B. Antragstellung > 26 Zeitpunkt Beantragung Bürgergeld > ab sofort; Sie beantragen Bürgergeld ab sofort. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxPersonAntragBUEGSpaeter": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; B. Antragstellung > 26 Zeitpunkt Beantragung Bürgergeld > ab späterem Zeitpunkt; Sie wünschen die Leistungserbringung ab einem späteren Termin. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "datePersonAntragBUEG": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "26 - Datum, ab dem Sie Bürgergeld beantragen möchten (TT.MM.JJJJ)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "rtbnPersonErwerbsfaehig": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 27 Erwerbsfähigkeit > Ja/Nein; Antragsteller ist gesundheitlich in der Lage, min. 3 Stunden pro Tag zu arbeiten. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnPersonSchueler": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "\tCheckbox; C. Angaben zur Lebenssituation > 28 Schüler/Student/Auszubildender > Ja/Nein; Antragsteller nimmt derzeit an Schule, Studium oder Ausbildung teil. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnPersonSchulbuecher": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 29 Kosten Schulbücher/Arbeitshefte > Ja/Nein; Es fallen Kosten für Schulbücher/Arbeitshefte an. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnPersonUnterbringung": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 30 Unterbringung während Ausbildung > Ja/Nein; Sie wohnen während der Ausbildung außerhalb des eigenen Haushalts in einem Heim, Internat oder ähnlichem. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnPersonUnter18": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 31 Unter 18 oder zwischen 18 und 24 Jahre > Ja/Nein; Antragsteller ist unter 18 oder zwischen 18 und 24 Jahre alt. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnPersonElternBG": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 32 Lebt Elternteil außerhalb BG? > Ja/Nein; Mindestens ein Elternteil lebt außerhalb der Bedarfsgemeinschaft. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnPersonAusbildung": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 33 (Schul-/Berufsausbildung) > Ja/Nein; Antragsteller macht eine Schul- oder Berufsausbildung oder beginnt eine. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnPersonBerechtigterAsyl": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 34 AsylbLG-Berechtigte/r > Ja/Nein; Antragsteller ist berechtigt Leistungen nach dem Asylbewerberleistungsgesetz zu beziehen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "datePersonAsylbewerberleistung": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 35 Asylbewerberleistungen bis; Ggf. Zeitraum, in dem Asylbewerberleistungen empfangen werden bis zum Datum. Validierung: TT.MM.JJJJ, DARF in der Zukunft.",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfPersonIdentNr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 36 Personenidentifikationsnummer; Steuernummer zur Personenidentifikation. Validierung: 11 Ziffern, Formatprüfung gemäß BZSt-Standard.",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfPersonAuslaenderNr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 37 Ausländerzentralregisternummer; Nummer aus dem Ausländerzentralregister (AZR). Validierung: 10 Ziffern, Formatprüfung gemäß BAMF-Standard.",
+        "type": "/Tx",
+        "page": 2
+    },
+    "rbtnPersonLetztenDreiJahreBUEG": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 38 Bürgergeld/Sozialhilfe beantragt/erhalten > Ja/Nein; Bürgergeld/Sozialhilfe wurde in den letzten 3 Jahren bezogen/beantragt. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfPersonLeistungsart": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 39 Art der Leistung; Falls ja, bitte Art der erhaltenen/lebeantragten Leistung eintragen. Validierung: Überprüfung, ob diese Leistung existiert, ggf. Hinweis.",
+        "type": "/Tx",
+        "page": 2
+    },
+    "datePersonZeitraumLeistungVon": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 40 Leistungszeitraum von; Startdatum des Leistungszeitraums. Validierung: TT.MM.JJJJ, Plausibilitätscheck.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "datePersonZeitraumLeistungBis": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 40 Leistungszeitraum bis; Enddatum des Leistungszeitraums. Validierung: TT.MM.JJJJ, Plausibilitätscheck (nicht vor „von“-Datum).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfLeistungstraegerName": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 41 Name des Leistungsträgers; Name des Trägers, von dem Leistungen bezogen wurden. Validierung: Überprüfung der Existenz des Leistungsträgers.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfLeistungstraegerStr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 42 Straße; Straße des Leistungsträgers. Validierung: Buchstaben, ggf. Sonderzeichen/Binde-/Leerzeichen.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfLeistungstraegerHausnr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 43 Hausnummer; Hausnummer. Validierung: Zahlen und ggf. Buchstaben.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfLeistungstraegerPlz": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 44 Postleitzahl; PLZ Leistungsträger. Validierung: 5-stellige Zahl.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfLeistungstraegerOrt": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 45 Ort; Ortsname. Validierung: Existenzüberprüfung und Abgleich auf Übereinstimmung mit der vorherigen Postleitzahl.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "rbtnPersonAngestellt": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 46 Beschäftigung > Ja/Nein; Innerhalb der letzten 5 Jahre angestellt/beschäftigt gewesen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "datePersonBeschaeftigung1Von": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 47 Beschäftigungszeiträume (1) von; Beginn der Beschäftigung. Validierung: TT.MM.JJJJ.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "datePersonBeschaeftigung1Bis": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 47 Beschäftigungszeiträume (1) bis; Ende der Beschäftigung. Validierung: TT.MM.JJJJ, nicht vor dem Beginn.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "datePersonBeschaeftigung2Von": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 47 Beschäftigungszeiträume (2) von; Beginn weiterer Beschäftigung. Validierung: TT.MM.JJJJ.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "datePersonBeschaeftigung2Bis": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 47 Beschäftigungszeiträume (2) bis; Ende weiterer Beschäftigung. Validierung: TT.MM.JJJJ, nicht vor dem Beginn.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "rbtnPersonLohnanspruch": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 48 Ausstehende Lohnansprüche > Ja/Nein; Es bestehen offene Lohnforderungen gegen (ehem.) Arbeitgeber. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "txtfAGName": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 49 Name (ehemalige/r AG); Name des (ehemaligen) Arbeitgebers. Validierung: Freitext.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfAGStr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 50 Straße (Arbeitgeber); Straße, Firma des Arbeitgebers. Validierung: Buchstaben, Sonderzeichen wie üblich.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfAGHausnr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 51 Hausnummer (Arbeitgeber); Hausnummer der Firma/Arbeitgeber. Validierung: Ziffern ggfs. Buchstaben.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfAGPlz": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 52 Postleitzahl (Arbeitgeber); PLZ Arbeitgeber. Validierung: 5 Ziffern in Deutschland.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfAGOrt": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 53 Ort (Arbeitgeber); Ort der Firma/Arbeitgeber. Validierung: Übereinstimmung mit der vorherigen Postleitzahl.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "rbtnPersonSelbstaendig": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 54 Selbstständigkeit/Freiberuflichkeit > Ja/Nein; Antragsteller war in den letzten 5 Jahren selbstständig/freiberuflich tätig. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "rbtnPersonEntgeltersatz": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 55 Entgeltersatzleistungen erhalten > Ja/Nein; Antragsteller hat Entgeltersatzleistungen bezogen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "txtfPersonEntgeltersatz": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 56 Art der Entgeltersatzleistung; Name der erhaltenen Leistung (z.B. Krankengeld, ALG, etc.). Validierung: Überprüfen, ob diese existiert.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "datePersonEntgeltersatzVon": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 57 Zeitraum Entgeltersatzleistung von; Beginn des Zeitraums. Validierung: TT.MM.JJJJ.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "datePersonEntgeltersatzBis": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 57 Zeitraum Entgeltersatzleistung bis; Ende des Zeitraums. Validierung: TT.MM.JJJJ, nicht vor dem Beginn liegend.",
+        "type": "/Tx",
+        "page": 3
+    },
+    "rbtnPersonWehrdienst": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 58 Wehrdienst/freiwilliger Dienst > Ja/Nein; Antragsteller hat Wehrdienst/Freiwilligendienst geleistet. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "rbtnPersonPflegeAngehoerige": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 59 Haben Sie Angehörige gepflegt > Ja/Nein; Auswahl, ob in den letzten fünf Jahren pflegebedürftige Angehörige laut SGB XI gepflegt wurden. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "txtareaPersonLebensunterhalt": {
+        "hidden_fields": {
+            "FF": 8392704
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 60 Lebensunterhalt in den letzten 5 Jahren ohne die obigen Angaben; Beschreibung, wie der Lebensunterhalt in den letzten fünf Jahren bestritten wurde, sofern keine der oben genannten Situationen zutrifft (z. B. Unterstützung von Verwandten, Ersparnisse, Erbschaft). Validierung: Keine Angaben zu den vorherigen Feldern.",
+        "type": "/Tx",
+        "page": 4
+    },
+    "rbtnPersonAndereLeistungen": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 61 Haben Sie andere Leistungen beantragt > Ja/Nein; Auswahl, ob bereits andere Sozialleistungen beantragt wurden oder beantragt werden sollen. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonLeistungBafoeg": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > BAföG; Auswahl, ob BAföG (Leistungen nach dem Bundesausbildungsförderungsgesetz) beantragt wurde/wird. Validierung: Mehrfachauswahl möglich.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonLeistungBAB": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > BAB; Auswahl, ob BAB (Berufsausbildungsbeihilfe) beantragt wurde/wird. Validierung: Mehrfachauswahl möglich.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonLeistungWohngeld": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > Wohngeld; Auswahl, ob Wohngeld beantragt wurde/wird. Validierung: Mehrfachauswahl möglich.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonLeistungALG": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > Arbeitslosengeld; Auswahl, ob Arbeitslosengeld beantragt wurde/wird. Validierung: Mehrfachauswahl möglich.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonLeistungRente": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > Rente; Auswahl, ob Rente beantragt wurde/wird. Validierung: Mehrfachauswahl möglich.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonLeistungKRG": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > Krankengeld; Auswahl, ob Krankengeld beantragt wurde/wird. Validierung: Mehrfachauswahl möglich.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonLeistungKG": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > Kindergeld; Auswahl, ob Kindergeld beantragt wurde/wird. Validierung: Mehrfachauswahl möglich.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonLeistungKIZ": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > Kinderzuschlag; Auswahl, ob Kinderzuschlag beantragt wurde/wird. Validierung: Mehrfachauswahl möglich.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonLeistungSonstiges": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > Sonstiges; Auswahl, ob sonstige Leistungen beantragt wurden/werden (bitte genau benennen). Validierung: Mehrfachauswahl möglich.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "txtfPersonLeistungenSonstiges": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 62 Welche Leistungen beantragt > Sonstiges; Welche sonstige Leistungen wurden beantragt (bitte genau benennen). Validierung: Nur, wenn zuvor sonstige Leistungen beantragt wurden und überprüfen, ob diese Leistung existiert.",
+        "type": "/Tx",
+        "page": 4
+    },
+    "rbtnPersonGesundheitlSchaden": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 63 Gesundheitlicher Schaden durch Dritte > Ja/Nein; Auswahl, ob Leistungen wegen eines gesundheitlichen Schadens durch Dritte beim Jobcenter beantragt werden (z. B. Unfall, Behandlungsfehler). Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnPersonAnspruchDritter": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 64 Anspruch gegenüber Dritten > Ja/Nein; Auswahl, ob Ansprüche gegen Dritte bestehen, z. B. auf Schadensersatz oder Erbschaft. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnPersonAlleinerziehend": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; D. Besondere Lebenssituation > 65 Sind Sie alleinerziehend? > Ja/Nein; Auswahl, ob die antragstellende Person alleinerziehend ist. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnPersonSchwanger": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; D. Besondere Lebenssituation > 66 Sind Sie schwanger? > Ja/Nein; Auswahl, ob die Antragstellerin schwanger ist. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "datePersonEntbindung": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; D. Besondere Lebenssituation > 67 Voraussichtlicher Entbindungstermin; Angabe des voraus. Geburtstermins bei Schwangeren. Validierung: Format TT.MM.JJJJ, liegt in der Zukunft.",
+        "type": "/Tx",
+        "page": 4
+    },
+    "rbtnPersonKostenErnaehrung": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; D. Besondere Lebenssituation > 68 Kostenaufwändige Ernährung > Ja/Nein; Auswahl, ob wegen medizinischer Gründe ein Mehrbedarf besteht. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonBehinderung": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; D. Besondere Lebenssituation > 69 Behinderung > Ja/Nein; Kennzeichnung, ob eine Behinderung vorliegt. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonLeistungenTeilhabe": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; D. Besondere Lebenssituation > 70 Leistungen zur Teilhabe am Arbeitsleben/sonstige Hilfen > Ja/Nein; Kennzeichnung, ob Leistungen im Rahmen SGB IX §49/§112 bezogen werden. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonUnabweisbarerBedarf": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; D. Besondere Lebenssituation > 71 Unabweisbarer besonderer Bedarf > Ja/Nein; Auswahl, ob ein unabweisbarer besonderer Bedarf vorliegt (z.B. Kosten Umgangsrecht). Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonStationaereEinricht": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; D. Besondere Lebenssituation > 72 Aufenthalt in stationärer Einrichtung > Ja/Nein; Derzeitiger oder bevorstehender stationärer Aufenthalt (Krankenhaus, Heim, JVA etc.). Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "txtfPersonStationaereEinricht": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; D. Besondere Lebenssituation > 73 Art der stationären Einrichtung; Art der stationären Einrichtung (z.B. Krankenhaus, Altenheim). Validierung: Überprüfen, ob es diese EInrichtung gibt.",
+        "type": "/Tx",
+        "page": 5
+    },
+    "datePersonStationaereEinrichtVon": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; D. Besondere Lebenssituation > 74 Dauer des Aufenthalts von; Beginn des Aufenthalts in der Einrichtung. Validierung: Format TT.MM.JJJJ.",
+        "type": "/Tx",
+        "page": 5
+    },
+    "datePersonStationaereEinrichtBis": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; D. Besondere Lebenssituation > 74 Dauer des Aufenthalts bis; Geplantes Ende des stationären Aufenthalts. Validierung: Format TT.MM.JJJJ, nicht vor Beginn.",
+        "type": "/Tx",
+        "page": 5
+    },
+    "rbtnPersonKVPV": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; E. Kranken- und Pflegeversicherung > 75 Gesetzl. familien-/pflichtversichert > Ja/Nein; Antragsteller war/ist gesetzlich familien/ pflichtversichert. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "txtfKVName": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; E. Kranken- und Pflegeversicherung > 76 Name der Krankenkasse; Tragen Sie die aktuelle Krankenkasse ein. Validierung: Freitext, Plausibilitätsprüfung anhand bekannter Kassen.",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtfKVNr": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Ausfüllfeld; E. Kranken- und Pflegeversicherung > 77 Krankenversichertennummer; Nummer bei der Krankenkasse. Validierung: Formatprüfung, in der Regel 1 Buchstabe, gefolgt von 8 Ziffern und 1 Prüfziffer (z. B. A123456789).",
+        "type": "/Tx",
+        "page": 5
+    },
+    "rtbnKVWechsel": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; E. Kranken- und Pflegeversicherung > 78 Wechsel zur anderen Krankenkasse > Ja/Nein; Sie möchten zu Beginn der Bürgergeldleistungen die Krankenkasse wechseln. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonVersichert": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "79 - Sind Sie privat versichert, freiwillig gesetzlich versichert oder nicht versichert?",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonWohnsituation": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; F. Wohnsituation > 80 Wohnen Sie allein? > Ja/Nein; Antragsteller wohnt allein. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonWohnenEhegatte": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; F. Wohnsituation > 81 Mit wem wohnen Sie zusammen? > Ehegattin/Ehegatte etc.; Auswahl, wenn Zusammenleben mit Ehegatte/in, Lebenspartner/in oder Partner/in in eheähnlicher Gemeinschaft. Validierung: mehrere Auswahl(en) möglich.",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonWohnenKind": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; F. Wohnsituation > 81 Mit wem wohnen Sie zusammen? > Kind(er) 15–24; Auswahl, ob Sie mit unverheirateten Kindern 15–24 Jahre zusammenwohnen. Validierung: mehrere Auswahl(en) möglich.",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonWohnenKindU15": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; F. Wohnsituation > 81 Mit wem wohnen Sie zusammen? > Kind(er) unter 15; Auswahl, ob Sie mit Kind(ern) < 15 Jahren zusammenwohnen. Validierung: mehrere Auswahl(en) möglich.",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonWohnenEltern": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; F. Wohnsituation > 81 Mit wem wohnen Sie zusammen? > Eltern/Elternteil; Auswahl, ob Sie mit Eltern/Elternteil zusammenwohnen. Validierung: mehrere Auswahl(en) möglich.",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonWohnenVerwandte": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; F. Wohnsituation > 81 Mit wem wohnen Sie zusammen? > sonstige Verwandte/Verschwägerte; Angabe sonstiger Verwandter/Verschwägerter im Haushalt. Validierung: mehrere Auswahl(en) möglich.",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonWohnenSonstige": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/selektiert",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; F. Wohnsituation > 81 Mit wem wohnen Sie zusammen? > sonstige Personen; Zusammenleben mit sonstigen Personen (z.B. WG). Validierung: mehrere Auswahl(en) möglich.",
+        "type": "/Btn",
+        "page": 6
+    },
+    "rbtnPersonBedarfUnterkunft": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; F. Wohnsituation > 82 Bedarf für Unterkunft und Heizung > Ja/Nein; Es entstehen Bedarfe für Unterkunft und Heizung. Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 6
+    },
+    "rbtnPersonWarmwasser": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Checkbox; F. Wohnsituation > 83 Warmwasser dezentral erzeugt? > Ja/Nein; Das Warmwasser wird dezentral erzeugt (z.B. Boiler). Validierung: Nur eine Auswahl zulässig.",
+        "type": "/Btn",
+        "page": 6
+    },
+    "dateUnterschriftPerson": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "Datum; H. Hinweise und Unterschrift > 84 Datum; Datum der Unterschrift zur Bestätigung der Richtigkeit der Angaben. Validierung: TT.MM.JJJJ, nicht in der Vergangenheit liegend.",
+        "type": "/Tx",
+        "page": 7
+    },
+    "dateUnterschriftBetreuer": {
+        "hidden_fields": {
+            "FF": 8388608
+        },
+        "/TU": "86 - Datum (TT.MM.JJJJ) - Unterschrift Betreuerin/Betreuer/Vormund",
+        "type": "/Tx",
+        "page": 7
+    }
+}

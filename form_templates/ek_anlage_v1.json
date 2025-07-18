@@ -1,0 +1,327 @@
+{
+    "txtfPersonVorname": {
+        "/TU": "1 - Vorname der antragstellenden Person",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonNachname": {
+        "/TU": "2 - Nachname der antragstellenden Person",
+        "type": "/Tx",
+        "page": 0
+    },
+    "datePersonGebDatum": {
+        "/TU": "3 - Geburtsdatum der antragstellenden Person - (TT.MM.JJJJ)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfBGNr": {
+        "/TU": "4 - Nummer der Bedarfsgemeinschaft (falls vorhanden)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfBGVorname": {
+        "/TU": "5 - Vorname der Person, für die diese Anlage ausgefüllt wird",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfBGNachname": {
+        "/TU": "6 - Nachname der Person, für die diese Anlage ausgefüllt wird",
+        "type": "/Tx",
+        "page": 0
+    },
+    "dateBGGebDatum": {
+        "/TU": "7 - Geburtsdatum der Person, für die diese Anlage ausgefüllt wird - (TT.MM.JJJJ)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "rbtnEinkommen": {
+        "/TU": "8 - Hat die Person Einkommen aus Erwerbstätigkeit? Anzugeben sind alle Einkünfte aus haupt- und nebenberuflichen Tätigkeiten, Ausbildungsverhältnissen, Minijob und Ferienjob.",
+        "type": "/Btn",
+        "page": 0
+    },
+    "txtfAGName": {
+        "/TU": "9 - Name der Arbeitgeberin/des Arbeitgebers",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfAGStr": {
+        "/TU": "10 - Straße der Arbeitgeberin/des Arbeitgebers",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfAGHausNr": {
+        "/TU": "11 - Hausnummer der Arbeitgeberin/des Arbeitgebers",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfAGPlz": {
+        "/TU": "12 - Postleitzahl der Arbeitgeberin/des Arbeitgebers",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfAGOrt": {
+        "/TU": "13 - Ort der Arbeitgeberin/des Arbeitgebers",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfAG2Name": {
+        "/TU": "14 - Name weitere Arbeitgeberin/weiterer Arbeitgeber",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfAG2Str": {
+        "/TU": "15 - Straße weitere Arbeitgeberin/weiterer Arbeitgeber",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfAG2HausNr": {
+        "/TU": "16 - Hausnummer weitere Arbeitgeberin/weiterer Arbeitgeber",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfAG2Plz": {
+        "/TU": "17 - Postleitzahl weitere Arbeitgeberin/weiterer Arbeitgeber",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfAG2Ort": {
+        "/TU": "18 - Ort weitere Arbeitgeberin/weiterer Arbeitgeber",
+        "type": "/Tx",
+        "page": 1
+    },
+    "rbtnEinkommenZahlung": {
+        "/TU": "19 - Geben Sie an, wann die Zahlung des Arbeitseinkommens erfolgt.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "rbtnEinkommenFreiberuflich": {
+        "/TU": "20 - Hat die Person Einkommen aufgrund der Ausübung einer selbständigen oder freiberuflichen Tätigkeit, auch in der Land- und Forstwirtschaft?",
+        "type": "/Btn",
+        "page": 1
+    },
+    "rbtnAufwandEhrenamtlich": {
+        "/TU": "21 - Erhält die Person (steuerfreie) Aufwandsentschädigungen oder Aufwandspauschalen aus einer gemeinnützigen oder ehrenamtlichen Tätigkeit?",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeWohngeld": {
+        "/TU": "22 - Option1 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Wohngeld",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeArbeitslosengeld": {
+        "/TU": "22 - Option2 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Arbeitslosengeld (Agentur für Arbeit)",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeKrankengeld": {
+        "/TU": "22 - Option3 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Krankengeld",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeÜbergangsgeld": {
+        "/TU": "22 - Option4 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Übergangsgeld",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeKurzarbeitergeld": {
+        "/TU": "22 - Option5 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Kurzarbeitergeld",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeInsolvenzgeld": {
+        "/TU": "22 - Option6 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Insolvenzgeld",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeElterngeld": {
+        "/TU": "22 - Option7 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Elterngeld",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeKindergeld": {
+        "/TU": "22 - Option8 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Kindergeld",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeKinderzuschlag": {
+        "/TU": "22 - Option9 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Kinderzuschlag",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeUnterhalt": {
+        "/TU": "22 - Option10 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Unterhalt",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeUnterhaltsvorschuss": {
+        "/TU": "22 - Option11 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Unterhaltsvorschuss",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeBAfoeG": {
+        "/TU": "22 - Option12 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - BAföG (Leistung nach dem Bundesausbildungsförderungsgesetz)",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeBAB": {
+        "/TU": "22 - Option13 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Berufsausbildungsbeihilfe (BAB)",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeAusbildungsgeld": {
+        "/TU": "22 - Option14 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Ausbildungsgeld",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeRenten": {
+        "/TU": "22 - Option15 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Renten (zum Beispiel aus der gesetzlichen Sozialversicherung wie Altersrente, Erwerbsminderungsrente, Knappschaftsausgleichsleistungen, Unfall-/Verletztenrente, Hinterbliebenenrente und Grundrente), Betriebsrenten, Pensionen, ausländische Renten, Arbeitsmarktrenten",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeVermietung": {
+        "/TU": "22 - Option16 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Einnahmen aus Vermietung, Untervermietung oder Verpachtung (auch aus Land- und Forstwirtschaft)",
+        "type": "/Btn",
+        "page": 1
+    },
+    "chbxEinnahmeSozialhilfe": {
+        "/TU": "22 - Option17 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Sozialhilfe",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxEinnahmeSachbezuege": {
+        "/TU": "22 - Option18 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - Sachbezüge (zum Beispiel kostenfreie Verpflegung)",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxEinnahmeSonstige": {
+        "/TU": "22 - Option19 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - sonstige und/oder unregelmäßige Einnahmen (zum Beispiel Pflegegeld, Trinkgelder, Einnahmen aus dem Bundesfreiwilligendienst, Steuerrückerstattungen, Zinsen, sonstige Kapitalerträge, Schenkungen, Einnahmen aus Glücksspiel, Guthaben aus Betriebskostenabrechnungen, Leibrente, Ansprüche gegenüber Dritten)",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxEinnahmeAndere": {
+        "/TU": "22 - Option20 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - weitere (nicht aufgeführte) Einnahmen",
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfEinnahmeAndere": {
+        "/TU": "22 - Tragen Sie hier weitere (nicht aufgeführte) Einnahmen ein. Bürgergeld brauchen Sie hier nicht einzutragen.",
+        "type": "/Tx",
+        "page": 2
+    },
+    "chbxEinnahmeKeine": {
+        "/TU": "22 - Option21 von 21 - Kreuzen Sie alle Einnahmen an, die auf die Person zutreffen. - keine der Einnahmen",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnAusgabeFahrt": {
+        "/TU": "23 - Entstehen Ausgaben für die Fahrten zwischen Wohnung und Arbeitsstätte?",
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfArbeitsstaetteStr": {
+        "/TU": "24 - Straße der Arbeitsstätte",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfArbeitsstaetteHausNr": {
+        "/TU": "25 - Hausnummer der Arbeitsstätte",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfArbeitsstaettePlz": {
+        "/TU": "26 - Postleitzahl der Arbeitsstätte",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfArbeitsstaetteOrt": {
+        "/TU": "27 - Ort der Arbeitsstätte",
+        "type": "/Tx",
+        "page": 2
+    },
+    "numfArbeitsstaetteStrecke": {
+        "/TU": "28 - Bitte geben Sie die kürzeste Strecke zwischen Wohnung und Arbeitsstätte in Kilometern an.",
+        "type": "/Tx",
+        "page": 2
+    },
+    "numfArbeitsstaetteFahrtWoche": {
+        "/TU": "29 - An wie vielen Tagen je Woche wird die Strecke gefahren?",
+        "type": "/Tx",
+        "page": 2
+    },
+    "chbxArbeitsstaetteFahrtKFZ": {
+        "/TU": "30 - Option1 von 3 - Wie wird die Strecke zurückgelegt? - mit einem Kraftfahrzeug",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxArbeitsstaetteFahrtOeffis": {
+        "/TU": "30 - Option2 von 3 - Wie wird die Strecke zurückgelegt? - mit öffentlichen Verkehrsmitteln (bitte fügen Sie Nachweise bei, zum Beispiel einen Fahrschein)",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxArbeitsstaetteFahrtSonstiges": {
+        "/TU": "30 - Option3 von 3 - Wie wird die Strecke zurückgelegt? - mit sonstigen Fahrzeugen, zum Beispiel Fahrrad, E-Roller",
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfArbeitsstaetteFahrtSonstiges": {
+        "/TU": "30 - Geben Sie sonstige Fahrzeuge an, zum Beispiel Fahrrad, E-Roller.",
+        "type": "/Tx",
+        "page": 2
+    },
+    "rbtnFahrkostenZuschuss": {
+        "/TU": "31 - Werden Zuschüsse zu den Fahrkosten gezahlt?",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnAusgabe": {
+        "/TU": "32 - Gibt es weitere Ausgaben aus einem Arbeitsverhältnis, die nicht vom Arbeitgeber erstattet werden, zum Beispiel Arbeitsmittel, doppelte Haushaltsführung, Mehraufwendungen für Verpflegung?",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxVersicherungKfz": {
+        "/TU": "33 - Option1 von 4 - Werden Beiträge zu folgenden Versicherungen gezahlt? - Kraftfahrzeug-Haftpflichtversicherung (ohne Teilkasko, Vollkasko, Schutzbrief)",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxVersicherungGesetzlich": {
+        "/TU": "33 - Option2 von 4 - Werden Beiträge zu folgenden Versicherungen gezahlt? - weitere gesetzlich vorgeschriebene Versicherungen, zum Beispiel Haftpflichtversicherung für bestimmte Berufsgruppen wie Rechtsanwälte oder Hebammen",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxVersicherungAltersvorsorge": {
+        "/TU": "33 - Option3 von 4 - Werden Beiträge zu folgenden Versicherungen gezahlt? - Beiträge zur geförderten Altersvorsorge nach Paragraf 82 Einkommensteuergesetz, zum Beispiel Beiträge zur Riester-Rente",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxVersicherungPrivat": {
+        "/TU": "33 - Option4 von 4 - Werden Beiträge zu folgenden Versicherungen gezahlt? - private Versicherung von Kindern unter 18 Jahren",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnKind": {
+        "/TU": "34 - Hat die unter Abschnitt B angegebene Person mindestens ein Kind unter 18 Jahren, welches nicht bei der Person wohnt?",
+        "type": "/Btn",
+        "page": 3
+    },
+    "rbtnUnterhaltszahlung": {
+        "/TU": "35 - Zahlt die Person Unterhalt?",
+        "type": "/Btn",
+        "page": 3
+    },
+    "rbtnAusbildungsfoerderung": {
+        "/TU": "36 - Wird bei der Einnahme aus Ausbildungsförderung für ein Kind (Berufsausbildungsbeihilfe, Ausbildungsgeld, BAföG) Elterneinkommen berücksichtigt?",
+        "type": "/Btn",
+        "page": 3
+    },
+    "dateUnterschriftPerson": {
+        "/TU": "37 - Datum (TT.MM.JJJJ) - Unterschrift antragstellende Person",
+        "type": "/Tx",
+        "page": 3
+    },
+    "dateUnterschriftBetreuer": {
+        "/TU": "39 - Datum (TT.MM.JJJJ) - Unterschrift Betreuerin/Betreuer/Vormund",
+        "type": "/Tx",
+        "page": 3
+    }
+}

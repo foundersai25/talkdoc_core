@@ -1,0 +1,587 @@
+{
+    "PersFam[0]": {
+        "/TU": "Ausfüllfeld: Familienname",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersVorn[0]": {
+        "/TU": "Ausfüllfeld: Vorname",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersGebName[0]": {
+        "/TU": "Ausfüllfeld: Geburtsname (sofern abweichend)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersGebDat[0]": {
+        "/TU": "Ausfüllfeld: Geburtsdatum",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersGebOrt[0]": {
+        "/TU": "Ausfüllfeld: Geburtsort",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersGebLand[0]": {
+        "/TU": "Ausfüllfeld: Geburtsland",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersGeschlecht[0]": {
+        "/TU": "Ausfüllfeld: Geschlecht",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersStaatsang[0]": {
+        "/TU": "Ausfüllfeld: Staatsangehörigkeit",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersEinreisedatum[0]": {
+        "/TU": "Ausfüllfeld: Einreisedatum, sofern sie keine deutsche Staatsangehörigkeit haben.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersRVnummer[0]": {
+        "/TU": "Ausfüllfeld: Rentenversicherungsnummer",
+        "type": "/Tx",
+        "page": 0
+    },
+    "RVnummerbeantragt[0]": {
+        "/TU": "Ankreuzfeld: Rentenversicherungsnummer ist noch nicht vorhanden und wurde aber OFFIZIELL beantragt.",
+        "type": "/Btn",
+        "page": 0
+    },
+    "PersStraHausNr[0]": {
+        "/TU": "Ausfüllfeld: Straße, Hausnummer",
+        "type": "/Tx",
+        "page": 0
+    },
+    "Persggfwohn[0]": {
+        "/TU": "Ausfüllfeld: gegebenenfalls wohnhaft bei einer anderen Person?",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersPLZ[0]": {
+        "/TU": "Ausfüllfeld: Postleitzahl? Validiere und übernimm die Postleitzahl exakt wie eingegeben – inklusive aller international zulässigen Zeichen (Bindestrich, Leerzeichen, Buchstaben).",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersWohn[0]": {
+        "/TU": "Ausfüllfeld: Wohnort",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersTel[0]": {
+        "/TU": "Ausfüllfeld: Telefonnummer",
+        "type": "/Tx",
+        "page": 0
+    },
+    "PersEmail[0]": {
+        "/TU": "Ausfüllfeld: E-Mail-Adresse",
+        "type": "/Tx",
+        "page": 0
+    },
+    "absofort_Zeitpunkt_Monat[0]": {
+        "/TU": "Ankreuzfeld: ab sofort",
+        "type": "/Btn",
+        "page": 0
+    },
+    "absofort_Zeitpunkt_Monat[1]": {
+        "/TU": "Ankreuzfeld: ab einem späteren Zeitpunkt",
+        "type": "/Btn",
+        "page": 0
+    },
+    "Zeitpunkt[0]": {
+        "/TU": "Ausfüllfeld: ab einem späteren Zeitpunkt",
+        "type": "/Tx",
+        "page": 0
+    },
+    "absofort_Zeitpunkt_Monat[2]": {
+        "/TU": "Ankreuzfeld: für folgenden Monat",
+        "type": "/Btn",
+        "page": 0
+    },
+    "Monat[0]": {
+        "/TU": "Ausfüllfeld: für folgenden Monat",
+        "type": "/Tx",
+        "page": 0
+    },
+    "familienstand[0]": {
+        "/TU": "Ankreuzfeld: Familienstand: ledig?",
+        "type": "/Btn",
+        "page": 0
+    },
+    "familienstand[1]": {
+        "/TU": "Ankreuzfeld: Familienstand: verheiratet?",
+        "type": "/Btn",
+        "page": 0
+    },
+    "familienstand[2]": {
+        "/TU": "Ankreuzfeld: Familienstand: verwitwet?",
+        "type": "/Btn",
+        "page": 0
+    },
+    "familienstand[3]": {
+        "/TU": "Ankreuzfeld: Familienstand: eingetragene Lebenspartnerschaft?",
+        "type": "/Btn",
+        "page": 0
+    },
+    "familienstand[4]": {
+        "/TU": "Ankreuzfeld: Familienstand: dauernd getrennt lebend seit?",
+        "type": "/Btn",
+        "page": 0
+    },
+    "dauerndgetrlebseit[0]": {
+        "/TU": "Ausfüllfeld: Familienstand: dauernd getrennt lebend seit?",
+        "type": "/Tx",
+        "page": 0
+    },
+    "familienstand[5]": {
+        "/TU": "Ankreuzfeld: Familienstand: geschieden seit?",
+        "type": "/Btn",
+        "page": 0
+    },
+    "dauerndgetrlebseit[1]": {
+        "/TU": "Ausfüllfeld: Familienstand: geschieden seit?",
+        "type": "/Tx",
+        "page": 0
+    },
+    "familienstand[6]": {
+        "/TU": "Ankreuzfeld: Familienstand: aufgehobene Lebenspartnerschaft seit?",
+        "type": "/Btn",
+        "page": 0
+    },
+    "dauerndgetrlebseit[2]": {
+        "/TU": "Ausfüllfeld: Familienstand: aufgehobene Lebenspartnerschaft seit?",
+        "type": "/Tx",
+        "page": 0
+    },
+    "HauptantragALG2[0].Seite2[0].content2[0].Checkbox_3\\.2[0].Ich_wohne_allein[0].ich_wohne_allein[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne allein.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "HauptantragALG2[0].Seite2[0].content2[0].Checkbox_3\\.2[0].Ich_wohne_nicht_allein[0].ich_wohne_zusammen_mit[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne zusammen mit.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "Ehegatte[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne zusammen mit: Meiner Ehegattin/meinem Ehegatten",
+        "type": "/Btn",
+        "page": 1
+    },
+    "eingtragene_Lebenspartner[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne zusammen mit: Meiner eingetragenen Lebenspartnerin/meinem eingetragenen Lebenspartner",
+        "type": "/Btn",
+        "page": 1
+    },
+    "eheaehnliche_Gemeinschaft[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne zusammen mit: Meiner Partnerin/meinem Partner in einer Verantwortungs- und Einstehensgemeinschaft",
+        "type": "/Btn",
+        "page": 1
+    },
+    "Kinder_zwischen_15-24[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne zusammen mit: Unverheirateten Kind(ern) zwischen 15 Jahren und 24 Jahren",
+        "type": "/Btn",
+        "page": 1
+    },
+    "Kinder_zwischen_15-24a[0]": {
+        "/TU": "Ausfüllfeld (Anzahl): Ich wohne zusammen mit: Unverheirateten Kind(ern) zwischen 15 Jahren und 24 Jahren",
+        "type": "/Tx",
+        "page": 1
+    },
+    "Kinder_unter_15[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne zusammen mit: Unverheirateten Kind(ern) unter 15 Jahren",
+        "type": "/Btn",
+        "page": 1
+    },
+    "Kinder_unter_15a[0]": {
+        "/TU": "Ausfüllfeld (Anzahl): Ich wohne zusammen mit: Unverheirateten Kind(ern) unter 15 Jahren",
+        "type": "/Tx",
+        "page": 1
+    },
+    "meinen_Elternteil[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne zusammen mit: Meinen Eltern oder einem Elternteil",
+        "type": "/Btn",
+        "page": 1
+    },
+    "sonstige_Verwandten[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne zusammen mit: Sonstigen Verwandten oder Verschwägerten (zum Beispiel Großeltern, Geschwister über 25 Jahre, verheiratete Tanten oder Onkel",
+        "type": "/Btn",
+        "page": 1
+    },
+    "sonstigen_Verwandtena[0]": {
+        "/TU": "Ausfüllfeld (Anzahl): Ich wohne zusammen mit: Sonstigen Verwandten oder Verschwägerten (zum Beispiel Großeltern, Geschwister über 25 Jahre, verheiratete Tanten oder Onkel",
+        "type": "/Tx",
+        "page": 1
+    },
+    "sontigen_Personen[0]": {
+        "/TU": "Ankreuzfeld: Ich wohne zusammen mit: Sonstigen Personen (zum Beispiel andere Personen in einer Wohngemeinschaft)",
+        "type": "/Btn",
+        "page": 1
+    },
+    "sonstigen_Personena[0]": {
+        "/TU": "Ausfüllfeld (Anzahl): Ich wohne zusammen mit: Sonstigen Personen (zum Beispiel andere Personen in einer Wohngemeinschaft)",
+        "type": "/Tx",
+        "page": 1
+    },
+    "Option3-3a[0]": {
+        "/TU": "Ankreuzfeld: Mir entstehen Kosten der Unterkunft und Heizung: Option3-3a",
+        "type": "/Btn",
+        "page": 1
+    },
+    "Option1-4a[0]": {
+        "/TU": "Ankreuzfeld: Ich habe innerhalb der letzten drei Jahre bereits Leistungen bei einem anderen Jobcenter beantragt oder bezogen: Option1-4a",
+        "type": "/Btn",
+        "page": 1
+    },
+    "NameAndereJobcenter[0]": {
+        "/TU": "Ausfüllfeld: Ich habe innerhalb der letzten drei Jahre bereits Leistungen bei einem anderen Jobcenter beantragt oder bezogen: Name des anderen Jobcenters",
+        "type": "/Tx",
+        "page": 1
+    },
+    "Option1-4b[0]": {
+        "/TU": "Ankreuzfeld: Ich fühle mich gesundheitlich in der Lage, regelmäßig drei Stunden täglich eine Tätigkeit auszüben: Option1-4b",
+        "type": "/Btn",
+        "page": 1
+    },
+    "Option1-4c[0]": {
+        "/TU": "Ankreuzfeld: Ich bin Berechtigte/r nach dem Asylbewerberleistungsgesetz: Option1-4c.",
+        "type": "/Btn",
+        "page": 1
+    },
+    "Option1-4e[0]": {
+        "/TU": "Ankreuzfeld: Ich bin Schüler/in, Stundent/in oder Auszubildende/r: Option1-4e",
+        "type": "/Btn",
+        "page": 2
+    },
+    "DauerSchulausbildung[0]": {
+        "/TU": "Ausfüllfeld: Ich bin Schüler/in, Stundent/in oder Auszubildende/r: Dauer der Schulausbildung von - bis",
+        "type": "/Tx",
+        "page": 2
+    },
+    "DauerStudium[0]": {
+        "/TU": "Ausfüllfeld: Ich bin Schüler/in, Stundent/in oder Auszubildende/r: Dauer des Studiums von - bis",
+        "type": "/Tx",
+        "page": 2
+    },
+    "DauerAusbildung[0]": {
+        "/TU": "Ausfüllfeld: Ich bin Schüler/in, Stundent/in oder Auszubildende/r: Dauer der Ausbildung von - bis",
+        "type": "/Tx",
+        "page": 2
+    },
+    "Wohnheim[0]": {
+        "/TU": "Ankreuzfeld: Ich bin Schüler/in, Stundent/in oder Auszubildende/r: Während der Schule, des Studiums, oder der Ausbildung bin ich untergebracht in einer Unterkunft MIT Kostenerstattung für Unterkunft und Verpflegung",
+        "type": "/Btn",
+        "page": 2
+    },
+    "Option1-4i[0]": {
+        "/TU": "Ankreuzfeld: Ich befinde mich derzeit oder demnächst in einer stationären Einrichtug: Option1-4i",
+        "type": "/Btn",
+        "page": 2
+    },
+    "Unterbringung[0]": {
+        "/TU": "Ausfüllfeld: Ich befinde mich derzeit oder demnächst in einer stationären Einrichtug: Dauer der Unterbringung von - bis?",
+        "type": "/Tx",
+        "page": 2
+    },
+    "Art-der-stat-Einrichtung[0]": {
+        "/TU": "Ausfüllfeld: Ich befinde mich derzeit oder demnächst in einer stationären Einrichtug: Art der stationären Einrichtung",
+        "type": "/Tx",
+        "page": 2
+    },
+    "alleinerziehend[0]": {
+        "/TU": "Ankreuzfeld: Ich bin alleinerziehend.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "schwanger[0]": {
+        "/TU": "Ankreuzfeld: Ich bin schwanger.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "dezentraleWarmwassererzeugung[0]": {
+        "/TU": "Ankreuzfeld: Ich habe einen Mehrbedarf für die dezentrale Warmwassererzeugung (zum Beispiel Durchlauferhitzer/Boiler).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "kostenaufwaendErnaehr[0]": {
+        "/TU": "Ankreuzfeld: Ich benötige aus medizinischen Gründen eine kostenaufwändige Ernährung.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "Behinderung[0]": {
+        "/TU": "Ankreuzfeld: Ich habe eine Behinderung und erhalte Leistungen zur Teilhabe (§ 49 SGB IX), sonstige Hilfen zur Erlangung eines Arbeitsplatzes und/oder Eingliederungshilfen (§ 112 SGB IX).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "nichterwerbsfaehMerkzG[0]": {
+        "/TU": "Ankreuzfeld: Ich bin nicht erwerbsfähig und Inhaberin/Inhaber eines Ausweises nach § 152 Absatz 5 SGB IX mit dem Merkzeichen G oder aG.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "unabweisbbesondBedarf[0]": {
+        "/TU": "Ankreuzfeld: Ich habe einen unabweisbaren besonderen Bedarf, den ich nicht durch Einsparungen oder anderweitig abdecken kann.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "kostenSchulbuecher[0]": {
+        "/TU": "Ankreuzfeld: Ich bin Schülerin/Schüler und es fallen Kosten für Schulbücher/Arbeitshefte an.",
+        "type": "/Btn",
+        "page": 2
+    },
+    "beschaeftigt[0]": {
+        "/TU": "Ankreuzfeld: In den letzten 5 Jahren war ich beschäftigt.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "von-bis-Z1[0]": {
+        "/TU": "Ausfüllfeld_1: Ich habe in den letzten 5 Jahren Entgeltersatzleistungen erhalten (zum Beispiel Krankengeld, Arbeitslosengeld, Übergangsgeld, Elterngeld): Von - bis?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "AG-Z1[0]": {
+        "/TU": "Ausfüllfeld_1: In den letzten 5 Jahren war ich beschäftigt: Arbeitgeber während der Beschäftigung?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "sozialversicherungspflichtig_Minijob_a[0]": {
+        "/TU": "Ankreuzfeld: In den letzten 5 Jahren war ich beschäftigt_1: Von - bis: Arbeitgeber während der Beschäftigung: sozialversicherungspflichtige Beschäftigung?",
+        "type": "/Btn",
+        "page": 3
+    },
+    "sozialversicherungspflichtig_Minijob_a[1]": {
+        "/TU": "Ankreuzfeld: In den letzten 5 Jahren war ich beschäftigt_1: Von - bis: Arbeitgeber während der Beschäftigung: Minijob Beschäftigung?",
+        "type": "/Btn",
+        "page": 3
+    },
+    "von-bis-Z2[0]": {
+        "/TU": "Ausfüllfeld_2: Ich habe in den letzten 5 Jahren Entgeltersatzleistungen erhalten (zum Beispiel Krankengeld, Arbeitslosengeld, Übergangsgeld, Elterngeld): Von - bis?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "AG-Z2[0]": {
+        "/TU": "Ausfüllfeld_2: In den letzten 5 Jahren war ich beschäftigt: Arbeitgeber während der Beschäftigung?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "sozialversicherungspflichtig_Minijob_b[0]": {
+        "/TU": "Ankreuzfeld: In den letzten 5 Jahren war ich beschäftigt_2: Von - bis: Arbeitgeber während der Beschäftigung: sozialversicherungspflichtige Beschäftigung?",
+        "type": "/Btn",
+        "page": 3
+    },
+    "sozialversicherungspflichtig_Minijob_b[1]": {
+        "/TU": "Ankreuzfeld: In den letzten 5 Jahren war ich beschäftigt_2: Von - bis: Arbeitgeber während der Beschäftigung: Minijob Beschäftigung?",
+        "type": "/Btn",
+        "page": 3
+    },
+    "selbstaendig[0]": {
+        "/TU": "Ankreuzfeld: In den letzten 5 Jahren war ich selbständig tätig.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "selbstaend-von-bis[0]": {
+        "/TU": "Ausfüllfeld: In den letzten 5 Jahren war ich selbständig tätig (Selbstständiger): Selbstständigkeit von - bis?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "ArtderTaetigkeit[0]": {
+        "/TU": "Ausfüllfeld: In den letzten 5 Jahren war ich selbständig tätig: Art der selbstständigen Tätigkeit?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "Wehr-Ersatzdienstgeleistet[0]": {
+        "/TU": "Ankreuzfeld: Ich habe in den letzten 5 Jahren einen Wehrdienst oder freiwilligen Dienst geleistet (zum Beispiel Freiwilliges Soziales Jahr oder Bundesfreiwilligendienst).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "Angehoerigegepflegt[0]": {
+        "/TU": "Ankreuzfeld: Ich habe in den letzten 5 Jahren Angehörige gepflegt (Pflege nach dem Elften Buch Sozialgesetzbuch).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "Entgeltersatzleistungerhalten[0]": {
+        "/TU": "Ankreuzfeld: Ich habe in den letzten 5 Jahren Entgeltersatzleistungen erhalten (zum Beispiel Krankengeld, Arbeitslosengeld, Übergangsgeld, Elterngeld).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "Leistung-Z1[0]": {
+        "/TU": "Ausfüllfeld_1: Ich habe in den letzten 5 Jahren Entgeltersatzleistungen erhalten (zum Beispiel Krankengeld, Arbeitslosengeld, Übergangsgeld, Elterngeld): Konkrete Leistung?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "Leistung-Z2[0]": {
+        "/TU": "Ausfüllfeld_2: Ich habe in den letzten 5 Jahren Entgeltersatzleistungen erhalten (zum Beispiel Krankengeld, Arbeitslosengeld, Übergangsgeld, Elterngeld): Konkrete Leistung?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "trifft_keiner[0]": {
+        "/TU": "Ankreuzfeld: Kein vorheriger Punkt trifft innerhalb der letzten 5 Jahre auf mich zu! Ich habe meinen Lebensunterhalt wie folgt bestritten.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "Lebensunterhalt[0]": {
+        "/TU": "Ausfüllfeld: Kein vorheriger Punkt trifft innerhalb der letzten 5 Jahre auf mich zu. Ich habe meinen Lebensunterhalt wie folgt bestritten: Einkommensquelle (z. B. finanzielle Unterstützung durch Verwandte/Bekannte, Ersparnisse, \\rErbschaft)?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "andere_Leistungen[0]": {
+        "/TU": "Ankreuzfeld: Ich habe schon andere Leistungen beantragt oder beabsichtige, einen Antrag zu erstellen.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "Leistungsart[0]": {
+        "/TU": "Ausfüllfeld: Ich habe schon andere Leistungen beantragt oder beabsichtige, einen Antrag zu erstellen: Leistungsart?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "Antragsdatum[0]": {
+        "/TU": "Ausfüllfeld: Ich habe schon andere Leistungen beantragt oder beabsichtige, einen Antrag zu erstellen: Antragsdatum?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "Sozialleistungstraeger_Familienkasse[0]": {
+        "/TU": "Ausfüllfeld: Ich habe schon andere Leistungen beantragt oder beabsichtige, einen Antrag zu erstellen: Sozialleistungsträger/Familienkasse?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "AnspruecheArbeitgeber[0]": {
+        "/TU": "Ankreuzfeld: Ich erhebe Anprüche gegen einen (ehemaligen) Arbeitgeber auf noch ausstehende Lohn- oder Gehaltszahlungen oder für Zeiten nach dem Ausscheiden.",
+        "type": "/Btn",
+        "page": 3
+    },
+    "Arbeitgeber[0]": {
+        "/TU": "Ausfüllfeld: Ich erhebe Anprüche gegen einen (ehemaligen) Arbeitgeber auf noch ausstehende Lohn- oder Gehaltszahlungen oder für Zeiten nach dem Ausscheiden: Arbeitgeber?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "Anschrift[0]": {
+        "/TU": "Ausfüllfeld: Ich erhebe Anprüche gegen einen (ehemaligen) Arbeitgeber auf noch ausstehende Lohn- oder Gehaltszahlungen oder für Zeiten nach dem Ausscheiden: Anschrift des Arbeitgebers?",
+        "type": "/Tx",
+        "page": 3
+    },
+    "Grund[0]": {
+        "/TU": "Grund",
+        "type": "/Tx",
+        "page": 3
+    },
+    "Getrennt[0]": {
+        "/TU": "Ankreuzfeld: Ich lebe getrennt von meiner Ehegattin/meinem Ehegatten oder meiner eingetragenen Lebenspartnerin/meinem eingetragenen Lebenspartner.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "Geschieden[0]": {
+        "/TU": "Ankreuzfeld: Ich bin geschieden oder meine eingetragene Lebenspartnerschaft wurde aufgehoben.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "Schwanger_nicht_eheliches_Kind[0]": {
+        "/TU": "Ankreuzfeld: Ich bin schwanger.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "unter18_ausbildung[0]": {
+        "/TU": "Ankreuzfeld: Ich bin unter 18 Jahre alt (1) oder zwischen 18 und 24 Jahre alt und mache eine Schul- oder Berufsausbildung oder will eine solche in Kürze beginnen und mindestens eine Elternteil lebt außerhalb der Bedarfsgemeinschaft (2).",
+        "type": "/Btn",
+        "page": 4
+    },
+    "gesundheitlichenSchaden[0]": {
+        "/TU": "Ankreuzfeld: Ich habe einen gesundheitlichen Schaden durch einen Dritten erlitten und muss deshalb Leistungen beim Jobcenter beantragen (zum Beispiel Arbeits-, Verkehrs-, Spiel-, oder Sportunfall).",
+        "type": "/Btn",
+        "page": 4
+    },
+    "anspruchGegenueberDritten[0]": {
+        "/TU": "Ankreuzfeld: Ich habe einen Anspruch gegenüber Dritten (zum Beispiel aus vertraglichen Zahlungsansprüchen oder Schadenersatzforderungen).",
+        "type": "/Btn",
+        "page": 4
+    },
+    "Textfeld1[0]": {
+        "/TU": "Ausfüllfeld: Ich habe einen Anspruch gegenüber Dritten (zum Beispiel aus vertraglichen Zahlungsansprüchen oder Schadenersatzforderungen): Bezeichnung des Anspruchs?",
+        "type": "/Tx",
+        "page": 4
+    },
+    "Option7[0]": {
+        "/TU": "Ankreuzfeld: Für mich wurde eine Verpflichtungserklärung ggü. der Ausländerbehörde oder der Auslandsvertretung abgegeben: Option7.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "Krankenversich[0]": {
+        "/TU": "Ankreuzfeld: Ich bin oder war zuletzt in der gesetzlichen Kranken- und Pflegeversicherung pflicht- oder familienversichert.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "bisherigeanderekrankenkasse[0]": {
+        "/TU": "Ankreuzfeld: Ich bin oder war zuletzt in der gesetzlichen Kranken- und Pflegeversicherung pflicht- oder familienversichert: Mit Beginn des Anspruchs auf Bürgergeld möchte ich versichert werden BEI: einer ANDEREN Krankenkasse?",
+        "type": "/Btn",
+        "page": 4
+    },
+    "NameKranken[0]": {
+        "/TU": "Ausfüllfeld: Ich bin oder war zuletzt in der gesetzlichen Kranken- und Pflegeversicherung pflicht- oder familienversichert: Mit Beginn des Anspruchs auf Bürgergeld möchte ich versichert werden BEI: der BISHERIGEN Krankenkasse! Name der Krankenkasse?",
+        "type": "/Tx",
+        "page": 4
+    },
+    "Krankenversichertennr[0]": {
+        "/TU": "Ausfüllfeld: Ich bin oder war zuletzt in der gesetzlichen Kranken- und Pflegeversicherung pflicht- oder familienversichert: Mit Beginn des Anspruchs auf Bürgergeld möchte ich versichert werden BEI der BISHERIGEN Krankenkasse: Krankenversichertennummer (falls bekannt)?",
+        "type": "/Tx",
+        "page": 4
+    },
+    "Namekrankenkasse_andere[0]": {
+        "/TU": "Ankreuzfeld: Ich bin oder war zuletzt in der gesetzlichen Kranken- und Pflegeversicherung pflicht- oder familienversichert: Mit Beginn des Anspruchs auf Bürgergeld möchte ich versichert werden BEI: einer ANDEREN Krankenkasse! Name der Krankenkasse?",
+        "type": "/Tx",
+        "page": 4
+    },
+    "Krankenversichertennr_andere[0]": {
+        "/TU": "Ankreuzfeld: Ich bin oder war zuletzt in der gesetzlichen Kranken- und Pflegeversicherung pflicht- oder familienversichert: Mit Beginn des Anspruchs auf Bürgergeld möchte ich versichert werden BEI einer ANDEREN Krankenkasse: Krankenversichertennummer (falls bekannt)?",
+        "type": "/Tx",
+        "page": 4
+    },
+    "privfreiwgesetzlkrankversichnichtkrankversich[0]": {
+        "/TU": "Ankreuzfeld: Kranken- und Pflegeversicherung: Ich bin aktuell NICHT privat oder freiwillig gesetzlich versichert!",
+        "type": "/Btn",
+        "page": 4
+    },
+    "PersNamKont[0]": {
+        "/TU": "Ausfüllfeld: Meine Bankverbindung: Wer ist Kontoinhaberin/Kontoinhaber?",
+        "type": "/Tx",
+        "page": 5
+    },
+    "PersIBAN[0]": {
+        "/TU": "Ausfüllfeld: Meine Bankverbindung: Wie lautet die IBAN?",
+        "type": "/Tx",
+        "page": 5
+    },
+    "Online-Angebot[0]": {
+        "/TU": "Ankreuzfeld: Ich möchte das Online-Angebot auf www.jobcenter.digital nutzen und mir ein passwortgeschütztes Benutzerkonto zur Erledigung wichtiger Anliegen einrichten lassen.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "Merkblatt_erhalten[0]": {
+        "/TU": "Ankreuzfeld: Merkblatt SGB II und die Ausfüllhinweise erhalten und kenne deren Inhalt. Künftige Änderungen werde ich unverzüglich mitteilen.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "Betreuer-in-bestellt[0]": {
+        "/TU": "Ankreuzfeld: Es wurde eine Betreuerin/ein Betreuer vom Betreuungsgericht/Amtsgericht bestellt.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "Ort-Datum-Betreuer-in[0]": {
+        "/TU": "Ausfüllfeld: Für Betreuer/in - Ort/Datum?",
+        "type": "/Tx",
+        "page": 5
+    },
+    "Ort-Datum-Antragsteller-in-1[0]": {
+        "/TU": "Ausfüllfeld: Versicherung der Richtigkeit der Angaben des Antragsstellers - Ort/Datum?",
+        "type": "/Tx",
+        "page": 5
+    },
+    "Ort-Datum-gesetzl-Vertr_minderjAntragsteller-1[0]": {
+        "/TU": "Ausfüllfeld: Versicherung der Richtigkeit der Angaben des Antragsstellers DURCH Vertreter/in - Ort/Datum?",
+        "type": "/Tx",
+        "page": 5
+    }
+}
