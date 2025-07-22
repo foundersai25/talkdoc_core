@@ -1,3 +1,7 @@
 [theme]
 
 font = "sans serif"
+
+[secrets]
+
+files = [ "~/.streamlit/secrets.toml", "~/etc/secrets/secrets.toml",]
