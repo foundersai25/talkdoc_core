@@ -4,4 +4,4 @@ font = "sans serif"
 
 [secrets]
 
-files = [ "~/.streamlit/secrets.toml", "~/etc/secrets/secrets.toml",]
+files = [ ".streamlit/secrets.toml", "secrets.toml", "~/etc/secrets/secrets.toml"]
