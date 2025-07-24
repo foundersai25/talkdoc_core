@@ -238,7 +238,6 @@ if st.session_state["authentication_status"]:
             response = get_json_from_chat_history_agent(
                 gpt, st.session_state.messages, st.session_state.form_dict
             )
-            st.toast("PDF is being filled, please wait...")
 
             filled_pdf = fillPDF(temp_pdf_path, st.session_state.form_dict, response)
 
