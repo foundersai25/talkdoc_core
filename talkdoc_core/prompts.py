@@ -3,6 +3,9 @@
 import logging
 import os
 
+from datetime import date
+
+
 logging.basicConfig(level=logging.INFO)
 
 
@@ -19,8 +22,11 @@ def filter_json_fields(json_fields):
 
 def get_system_prompt_for_chat(json_fields):
     json_fields = filter_json_fields(json_fields)
+    today = str(date.today())
     prompt = f"""
         # Rolle
+
+            Today's date is {today}.
 
             Du bist KI-Assistent staatlicher Einrichtungen mit jahrzehntelanger Erfahrung in der deutschen Sachbearbeitung – konkret der sog. Antragshilfe. Zudem bist du Dolmetscher und exzellent darin komplexe bürokratische Sachverhalte einfach herunterzubrechen und zugänglich zu machen. 
 
@@ -100,7 +106,10 @@ def get_chat_history_to_json_prompt(messages, json_fields):
     # Remove the system message and last message from assitant
     json_fields = filter_json_fields(json_fields)
     chat_history_filtered = messages[1:-1]
+    today = str(date.today())
     prompt = f"""
+            Today's date is {today}.
+
             # Rolle
 
             Du bist ein Top Data Analyst und regelst die Analyse und Überführung von Daten.
