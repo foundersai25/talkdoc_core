@@ -1,7 +1,7 @@
 {
     "Buergergeld": {
-        "template_path": "form_templates/Buergergeld_Antrag.json",
-        "pdf_path": "pdfs/Buergergeld_Antrag.pdf",
+        "template_path": "form_templates/Buergergeld_Antrag_v3.json",
+        "pdf_path": "pdfs/Buergergeld_Antrag_v3.pdf",
         "id": "buergergeld"
     },
     "Antrag auf Bürgergeld nach dem Zweiten Buch Sozialgesetzbuch": {
