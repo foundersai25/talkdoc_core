@@ -20,3 +20,12 @@ A Streamlit-based chat application.
     streamlit run Chat.py
     ```
 
+4. **To scan a document image in the interactive mode, use the following command:**
+    ```bash
+    python talkdoc_core/scanner.py --image images/sample6.jpg -i
+    ```
+
+5. **To scan all images in a directory automatically, use the following command:**
+    ```bash
+    python talkdoc_core/scanner.py --images images
+    ```
