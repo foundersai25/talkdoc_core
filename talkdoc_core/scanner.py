@@ -7,18 +7,20 @@
 
 # Scanned images will be output to directory named 'output'
 
-from posixpath import basename
-from talkdoc_core.scan_transforms import PolygonInteractor, ScanTransform
-from scipy.spatial import distance as dist
-from matplotlib.patches import Polygon
-import numpy as np
-import matplotlib.pyplot as plt
-import itertools
-import cv2
-from pylsd.lsd import lsd
 import argparse
+import itertools
 import os
+
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+import streamlit as st
+from matplotlib.patches import Polygon
 from PIL import Image
+from pylsd.lsd import lsd
+from scipy.spatial import distance as dist
+from talkdoc_core.scan_transforms import PolygonInteractor, ScanTransform
+
 
 class DocScanner:
     """Document scanner for images."""
@@ -142,7 +144,7 @@ class DocScanner:
             ], dtype="float32")
         return max(candidates, key=cv2.contourArea)
 
-    def interactive_get_contour(self, contour, image):
+    def interactive_get_contour_mat(self, contour, image):
         """Let user adjust the detected contour interactively."""
         poly = Polygon(contour, animated=True, fill=False, color="yellow", linewidth=5)
         fig, ax = plt.subplots()
@@ -153,6 +155,36 @@ class DocScanner:
         plt.show()
         new_points = np.array(poly.xy[:4], dtype="float32")
         return new_points
+
+    def interactive_get_contour(self, contour, image):
+        """Let user adjust the detected contour interactively using Streamlit."""
+    
+        # Display the image
+        st.image(image, caption='Adjust the boundaries using the sliders.', use_container_width=True)
+    
+        
+        # Initialize sliders for each point
+        x1 = st.slider('Top-left X', 0, image.shape[1], int(contour[0][0]))
+        y1 = st.slider('Top-left Y', 0, image.shape[0], int(contour[0][1]))
+        x2 = st.slider('Top-right X', 0, image.shape[1], int(contour[1][0]))
+        y2 = st.slider('Top-right Y', 0, image.shape[0], int(contour[1][1]))
+        x3 = st.slider('Bottom-right X', 0, image.shape[1], int(contour[2][0]))
+        y3 = st.slider('Bottom-right Y', 0, image.shape[0], int(contour[2][1]))
+        x4 = st.slider('Bottom-left X', 0, image.shape[1], int(contour[3][0]))
+        y4 = st.slider('Bottom-left Y', 0, image.shape[0], int(contour[3][1]))
+
+        # Update contour based on slider values
+        new_contour = np.array([[x1, y1], [x2, y2], [x3, y3], [x4, y4]], dtype="float32")
+
+        # Draw the updated points on the image with increased size and red color
+        image_with_points = image.copy()
+        for (x, y) in new_contour:
+            cv2.circle(image_with_points, (int(x), int(y)), 10, (255, 0, 0), -1)
+
+        # Display the image with the updated points
+        st.image(image_with_points, caption='Updated Points', use_container_width=True)
+        
+        return new_contour
 
     def scan(self, image_path):
         """Scan a single image and save the result."""
@@ -170,11 +202,6 @@ class DocScanner:
         if self.interactive:
             contour = self.interactive_get_contour(contour, rescaled)
         warped = ScanTransform.four_point_transform(orig, contour * ratio)
-        gray = cv2.cvtColor(warped, cv2.COLOR_BGR2GRAY)
-        sharpen = cv2.addWeighted(gray, 1.5, cv2.GaussianBlur(gray, (0, 0), 3), -0.5, 0)
-        thresh = cv2.adaptiveThreshold(
-            sharpen, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 21, 15
-        )
         basename = os.path.basename(image_path)
         out_image_path = os.path.join(OUTPUT_DIR, basename)
         out_pdf_path = os.path.splitext(out_image_path)[0] + ".pdf"
@@ -187,6 +214,7 @@ class DocScanner:
         pil_image.save(out_pdf_path, "PDF", resolution=100.0)
 
         print(f"Processed {basename} and saved as {out_pdf_path}")
+        return warped
 
 def main():
     parser = argparse.ArgumentParser()

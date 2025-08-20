@@ -1,20 +1,18 @@
-import logging
-import streamlit as st
-
-from talkdoc_core.gptservice import GPTService
-from talkdoc_core.pdf_ops import fillPDF
-from talkdoc_core.agents import get_json_from_chat_history_agent
-
-import tempfile
-from dotenv import load_dotenv
-import uuid
 import json
+import logging
 import os
 import shutil
-from pathlib import Path
-from authentication import auth
+import tempfile
+import uuid
 
-from advanced_controls import advanced_controls
+import matplotlib.pyplot as plt
+import streamlit as st
+from authentication import auth
+from dotenv import load_dotenv
+from talkdoc_core.agents import get_json_from_chat_history_agent
+from talkdoc_core.gptservice import GPTService
+from talkdoc_core.pdf_ops import fillPDF
+from talkdoc_core.scanner import DocScanner
 
 # Settings and configurations
 st.set_page_config(
@@ -166,6 +164,39 @@ if st.session_state["authentication_status"]:
             index=None,
             placeholder="Select the form to fill",
         )
+
+        st.subheader("Image Scanner")
+        uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+        if uploaded_file is not None:
+            # Read the image
+            image = plt.imread(uploaded_file)
+                
+            # Save the uploaded image to a temporary file
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmp:
+                temp_image_path = tmp.name
+            plt.imsave(temp_image_path, image)
+
+            if st.button("Want to adjust border ?"):
+                st.session_state.interactive = True
+
+            if st.session_state.interactive:
+                scanner = DocScanner(st.session_state.interactive)
+                processed_image = scanner.scan(temp_image_path)
+                
+                # Add a confirmation button to finalize adjustments
+                if st.button("Confirm Adjustments"):
+                    st.image(processed_image, caption='Interactive Mode: Adjusted border', use_container_width=True)
+                    st.session_state.interactive = False
+            
+            else:
+                scanner = DocScanner(st.session_state.interactive)
+                st.image(image, caption='Uploaded Image.', use_container_width=True)
+                # Process the image using the scanner
+                processed_image = scanner.scan(temp_image_path)
+                if processed_image is None:
+                    st.error("Failed to process the image.")
+                else:
+                    st.image(processed_image, caption='Processed Image.', use_container_width=True)
 
         logging.info(f"Selected form: {selected_form}")
 
