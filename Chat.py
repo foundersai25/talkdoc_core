@@ -7,13 +7,18 @@ import uuid
 
 import matplotlib.pyplot as plt
 import streamlit as st
+import streamlit.components.v1 as components
 from authentication import auth
 from dotenv import load_dotenv
+
 from talkdoc_core.agents import get_json_from_chat_history_agent
 from talkdoc_core.gptservice import GPTService
 from talkdoc_core.pdf_ops import fillPDF
+from talkdoc_core.doc_sign import docusign_embedded_signing_workflow
 from talkdoc_core.scanner import DocScanner
 
+# query_params = st.query_params
+# signed = query_params.get("signed", [None])[0]
 # Settings and configurations
 st.set_page_config(
     page_title="TalkDoc", page_icon="🔥", initial_sidebar_state="expanded"
@@ -223,7 +228,18 @@ if st.session_state["authentication_status"]:
 
             # rag_flag = st.toggle("Knowledge Assistant")
             rag_flag = os.getenv("RAG_FLAG")
-            fill_pdf_button = st.button("Fill PDF")
+            fill_sign_pdf_button = st.button("Fill & Sign PDF")
+
+    # if signed == "1":
+    #     st.success("✅ Successfully signed!")
+    #     with open(temp_pdf_path, "rb") as file:
+    #         pdf_bytes = file.read()
+    #     st.download_button(
+    #         data=pdf_bytes,
+    #         label="Download PDF",
+    #         file_name=f"filled_{form_id}.pdf",
+    #         mime="application/octet-stream",
+    #     )
 
     if st.session_state.pdf and valid_api_key:
         st.header(selected_form)
@@ -265,14 +281,28 @@ if st.session_state["authentication_status"]:
                     {"role": "assistant", "content": response}
                 )
 
-        if fill_pdf_button:
+        if fill_sign_pdf_button:
             response = get_json_from_chat_history_agent(
                 gpt, st.session_state.messages, st.session_state.form_dict
             )
 
             filled_pdf = fillPDF(temp_pdf_path, st.session_state.form_dict, response)
-
             if filled_pdf:
+                st.success("PDF filled successfully!")
+                signer_name = "YOUR NAME HERE"  # Replace with actual signer name
+                signer_email = "YOUR EMAIL HERE"  # Replace with actual signer email
+                pdf_path = temp_pdf_path
+                view_url = docusign_embedded_signing_workflow(
+                    pdf_path=pdf_path,
+                    signer_email=signer_email,
+                    signer_name=signer_name
+                )
+                if view_url:
+                    st.success("Please sign your document below:")
+                    components.iframe(view_url, height=800, width=700)
+                else:
+                    st.error("Failed to generate DocuSign signing URL.")
+                st.markdown("### Download your filled PDF:")
                 with open(temp_pdf_path, "rb") as file:
                     st.download_button(
                         data=file,
