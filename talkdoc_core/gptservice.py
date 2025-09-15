@@ -91,7 +91,7 @@ class Agno_Service:
             model=OpenAIChat(id="gpt-4o", api_key=self.api_key),
             tools=tools,
             markdown=True,
-            debug_mode=False
+            debug_mode=True  # Debug-Modus aktivieren um Tool-Calls zu sehen
         )
     
     def chat(
@@ -102,52 +102,33 @@ class Agno_Service:
         json_mode: bool = False,
     ):
         try:
-            # Prüfe ob spezielle Agno-Features benötigt werden
-            # (z.B. wenn Adressvalidierung in der letzten Nachricht erwähnt wird)
-            needs_agent_features = False
-            if messages and len(messages) > 0:
-                last_message_content = messages[-1].get('content', '').lower()
-                # Aktiviere Agent nur wenn Adressvalidierung oder andere Tools benötigt werden
-                address_keywords = ['adresse', 'address', 'straße', 'postleitzahl', 'plz', 'ort', 'stadt']
-                needs_agent_features = any(keyword in last_message_content for keyword in address_keywords)
+            # Verwende Agno Agent direkt - lass ihn Tools automatisch verwenden
+            logging.info("Verwende Agno Agent direkt")
             
-            if needs_agent_features:
-                # Nutze Agno Agent für spezielle Funktionalitäten
-                logging.info("Verwende Agno Agent für erweiterte Funktionalitäten")
-                
-                # Baue vollständigen Kontext für den Agent auf
-                context_parts = []
-                
-                # System-Prompt hinzufügen
-                system_messages = [msg for msg in messages if msg.get('role') == 'system']
-                if system_messages:
-                    context_parts.append(f"System-Anweisungen: {system_messages[-1].get('content', '')}")
-                
-                # Chat-Verlauf hinzufügen
-                conversation_history = []
-                for msg in messages[:-1]:
-                    if msg.get('role') in ['user', 'assistant']:
-                        role_label = "Benutzer" if msg.get('role') == 'user' else "Assistent"
-                        conversation_history.append(f"{role_label}: {msg.get('content', '')}")
-                
-                if conversation_history:
-                    context_parts.append("Bisheriger Gesprächsverlauf:\n" + "\n".join(conversation_history))
-                
-                # Aktuelle Nachricht
-                current_message = messages[-1].get('content', '')
-                context_parts.append(f"Aktuelle Anfrage: {current_message}")
-                
-                full_prompt = "\n\n".join(context_parts)
-                response_content = self.agent.run(full_prompt)
-                
-                if stream:
-                    return self._create_streaming_response(response_content.content)
-                else:
-                    return response_content.content
-            else:
-                # Verwende Standard OpenAI Chat (identisch zu GPTService)
-                logging.info("Verwende Standard OpenAI Chat (identisch zu GPTService)")
+            # Hole die letzte User-Nachricht für Agno
+            user_message = ""
+            if messages:
+                # Finde die letzte User-Nachricht
+                for msg in reversed(messages):
+                    if msg.get('role') == 'user':
+                        user_message = msg.get('content', '')
+                        break
+            
+            if not user_message:
+                logging.warning("Keine User-Nachricht gefunden, verwende Fallback")
                 return self._fallback_chat(messages, model, stream, json_mode)
+            
+            logging.info(f"Verarbeite User-Nachricht mit Agno: {user_message}")
+            
+            # Verwende Agno's eingebaute Response-Methode
+            if stream:
+                # Für Streaming müssen wir die Response simulieren
+                response_content = self.agent.run(user_message)
+                return self._create_streaming_response(response_content.content)
+            else:
+                response_content = self.agent.run(user_message)
+                logging.info(f"Agno Response: {response_content.content}")
+                return response_content.content
 
         except Exception as e:
             logging.error(f"Agno Service error: {e}")

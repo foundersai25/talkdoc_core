@@ -10,7 +10,11 @@ logging.basicConfig(level=logging.INFO)
 
 
 # Standalone Tool-Funktion für Agno (außerhalb der Klasse)
-@tool
+@tool(
+    name="validate_address",
+    description="Validiert eine Adresse oder einen Ort mit der Google Maps Geocoding API. Nutze dieses Tool wenn der Nutzer nach Orten, Adressen oder Städten fragt oder wenn du prüfen sollst, ob ein Ort existiert.",
+    show_result=True
+)
 def validate_address(address_string: str) -> str:
     """
     Validiert eine Adresse oder einen Ort und gibt die korrekte, vollständige Adresse zurück.
