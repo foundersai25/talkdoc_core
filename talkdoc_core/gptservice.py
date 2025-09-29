@@ -6,92 +6,48 @@ import os
 
 from agno.agent import Agent
 from agno.models.openai import OpenAIChat
-
+from agno.models.azure import AzureOpenAI
 logging.basicConfig(level=logging.INFO)
-
-
-class GPTService:
-    def __init__(self, api_key: str):
-        self.api_key = api_key
-        self.client = OpenAI(api_key=api_key)
-
-    def chat(
-        self,
-        messages,
-        model: str = "gpt-4.1",
-        stream: bool = True,
-        json_mode: bool = False,
-    ):
-        try:
-            params = {
-                "model": model,
-                "messages": messages,
-                "stream": stream,
-            }
-
-            if json_mode:
-                params["response_format"] = {"type": "json_object"}
-
-            response = self.client.chat.completions.create(**params)
-
-            if stream:
-                return response
-
-            return response.choices[0].message.content
-
-        except openai.error.OpenAIError as e:
-            logging.error(f"OpenAI API error: {e}")
-            raise
-
-    def add_system_prompt_for_chat(self, json_fields):
-        return [{"role": "system", "content": get_system_prompt_for_chat(json_fields)}]
-
-    def add_user_prompt(self, messages, user_input):
-        return messages + [{"role": "user", "content": user_input}]
-
-    def add_assistant_response(self, messages, response):
-        return messages + [{"role": "assistant", "content": response}]
-
-    def check_openai_api_key(self):
-        try:
-            self.client.models.list()
-            return True
-        except openai.AuthenticationError:
-            logging.error("Invalid OpenAI API key")
-            return False
 
 
 class Agno_Service:  
     def __init__(self, api_key: str = None):
 
-        self.api_key = api_key or os.getenv("OPENAI_API_KEY")
+        self.api_key = os.getenv("AZURE_API_KEY")
+        self.base_url=os.getenv("AZURE_BASE_URL")
+        self.api_version=os.getenv("API_VERSION")
         
-        # Validierung des API Keys
+        # API key validation
         if not self.api_key:
-            raise ValueError("OPENAI_API_KEY environment variable is not set and no api_key provided")
+            raise ValueError("AZURE_API_KEY environment variable is not set and no api_key provided")
         
-        # Standard OpenAI Client für Fallback
-        self.client = OpenAI(api_key=self.api_key)
+        # Standard OpenAI Client for fallback
+        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         
-        # Google Maps Tool hinzufügen
+        # Add Google Maps tool
         tools = []
         
         try:
-            from core.talkdoc_core.agents import validate_address
-            
-            # Standalone Tool-Funktion direkt hinzufügen
+            from core.talkdoc_core.agents import validate_address, validate_regex
+            # Add standalone tool function directly
             tools.append(validate_address)
-            
-            logging.info("Google Maps Adressvalidierung erfolgreich hinzugefügt")
+            logging.info("Google Maps address validation successfully added")
+
         except Exception as e:
-            logging.warning(f"Google Maps Adressvalidierung konnte nicht hinzugefügt werden: {e}")
-            logging.warning("Agent läuft ohne Adressvalidierung")
-        
+            logging.warning(f"Google Maps address validation could not be added: {e}")
+            logging.warning("Agent running without address validation")
+        try:
+            tools.append(validate_regex)
+            logging.info("Regex validation successfully added")
+        except Exception as e:
+            logging.warning(f"Regex validation could not be added: {e}")
+            logging.warning("Agent running without regex validation")
         self.agent = Agent(
-            model=OpenAIChat(id="gpt-4o", api_key=self.api_key),
+            model=AzureOpenAI(id="gpt-4o", api_key=self.api_key, base_url=self.base_url,  api_version=self.api_version),
+            # model=OpenAIChat(id="gpt-4o", api_key=self.api_key),
             tools=tools,
             markdown=True,
-            debug_mode=True  # Debug-Modus aktivieren um Tool-Calls zu sehen
+            debug_mode=True  # Enable debug mode to see tool calls
         )
     
     def chat(
@@ -102,45 +58,77 @@ class Agno_Service:
         json_mode: bool = False,
     ):
         try:
-            # Verwende Agno Agent direkt - lass ihn Tools automatisch verwenden
-            logging.info("Verwende Agno Agent direkt")
+            # Use Agno Agent directly - let it handle tools automatically
+            logging.info("Using Agno Agent directly")
             
-            # Hole die letzte User-Nachricht für Agno
-            user_message = ""
-            if messages:
-                # Finde die letzte User-Nachricht
-                for msg in reversed(messages):
-                    if msg.get('role') == 'user':
-                        user_message = msg.get('content', '')
-                        break
+            # Convert messages to a format that Agno can understand
+            # Agno expects a single conversation context, not individual messages
+            conversation_context = self._build_conversation_context(messages)
             
-            if not user_message:
-                logging.warning("Keine User-Nachricht gefunden, verwende Fallback")
-                return self._fallback_chat(messages, model, stream, json_mode)
+            if not conversation_context:
+                logging.warning("No conversation context found, using fallback")
+                # return self._fallback_chat(messages, model, stream, json_mode)
             
-            logging.info(f"Verarbeite User-Nachricht mit Agno: {user_message}")
+            logging.info(f"Processing conversation with Agno: {conversation_context[:200]}...")
             
-            # Verwende Agno's eingebaute Response-Methode
+            # Use Agno's built-in response method with full context
             if stream:
-                # Für Streaming müssen wir die Response simulieren
-                response_content = self.agent.run(user_message)
+                # For streaming, we need to simulate the response
+                response_content = self.agent.run(conversation_context)
                 return self._create_streaming_response(response_content.content)
             else:
-                response_content = self.agent.run(user_message)
-                logging.info(f"Agno Response: {response_content.content}")
+                response_content = self.agent.run(conversation_context)
+                logging.info(f"Agno response: {response_content.content}")
                 return response_content.content
 
         except Exception as e:
             logging.error(f"Agno Service error: {e}")
-            # Fallback zu normalem Chat
+            # Fallback to normal chat
             return self._fallback_chat(messages, model, stream, json_mode)
     
     
+    def _build_conversation_context(self, messages):
+        """
+        Baut den vollständigen Chat-Kontext für Agno auf.
+        Konvertiert die Nachrichten-Liste in einen zusammenhängenden Text.
+        """
+        if not messages:
+            logging.warning("No messages provided to build conversation context")
+            return ""
+        
+        logging.info(f"Building conversation context from {len(messages)} messages")
+        
+        conversation_parts = []
+        
+        for i, message in enumerate(messages):
+            role = message.get('role', '')
+            content = message.get('content', '')
+            
+            logging.debug(f"Message {i+1}: {role} - {content[:100]}...")
+            
+            if role == 'system':
+                conversation_parts.append(f"System: {content}")
+            elif role == 'user':
+                conversation_parts.append(f"User: {content}")
+            elif role == 'assistant':
+                conversation_parts.append(f"Assistant: {content}")
+            else:
+                logging.warning(f"Unknown role '{role}' in message {i+1}")
+        
+        # Füge die aktuelle Anfrage hinzu
+        full_context = "\n\n".join(conversation_parts)
+        
+        logging.info(f"Built conversation context with {len(conversation_parts)} parts")
+        logging.debug(f"Full context preview: {full_context[:500]}...")
+        
+        # Für Agno: Gib den Kontext als eine zusammenhängende Unterhaltung zurück
+        return full_context
+    
     def _create_streaming_response(self, content: str):
         """
-        Erstellt eine Streaming-ähnliche Response für Kompatibilität.
+        Creates a streaming-like response for compatibility.
         """
-        # Simuliere OpenAI Streaming Response Format
+        # Simulate OpenAI Streaming Response Format
         class StreamingResponse:
             def __init__(self, content):
                 self.content = content
@@ -154,7 +142,7 @@ class Agno_Service:
     
     def _fallback_chat(self, messages, model, stream, json_mode):
         """
-        Fallback zu normalem OpenAI Chat ohne Agno.
+        Fallback to normal OpenAI Chat without Agno.
         """
         try:
             params = {
@@ -178,28 +166,28 @@ class Agno_Service:
             raise
     
     
-    # Interface-Kompatibilität mit GPTService
+    # Interface compatibility with GPTService
     def add_system_prompt_for_chat(self, json_fields):
         """
-        Kompatibilität mit GPTService - fügt System-Prompt hinzu.
+        Compatibility with GPTService - adds system prompt.
         """
         return [{"role": "system", "content": get_system_prompt_for_chat(json_fields)}]
 
     def add_user_prompt(self, messages, user_input):
         """
-        Kompatibilität mit GPTService - fügt User-Prompt hinzu.
+        Compatibility with GPTService - adds user prompt.
         """
         return messages + [{"role": "user", "content": user_input}]
 
     def add_assistant_response(self, messages, response):
         """
-        Kompatibilität mit GPTService - fügt Assistant-Response hinzu.
+        Compatibility with GPTService - adds assistant response.
         """
         return messages + [{"role": "assistant", "content": response}]
 
     def check_openai_api_key(self):
         """
-        Kompatibilität mit GPTService - prüft OpenAI API Key.
+        Compatibility with GPTService - checks OpenAI API key.
         """
         try:
             self.client.models.list()

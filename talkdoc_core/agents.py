@@ -3,114 +3,101 @@ from core.talkdoc_core.prompts import get_chat_history_to_json_prompt
 import json
 import logging
 import os
+import re
 import requests
 from agno.tools import tool
 
 logging.basicConfig(level=logging.INFO)
 
 
-# Standalone Tool-Funktion für Agno (außerhalb der Klasse)
+# Standalone Tool function for Agno (outside the class)
 @tool(
     name="validate_address",
-    description="Validiert eine Adresse oder einen Ort mit der Google Maps Geocoding API. Nutze dieses Tool wenn der Nutzer nach Orten, Adressen oder Städten fragt oder wenn du prüfen sollst, ob ein Ort existiert.",
-    show_result=True
+    description="Validates an address using Google Maps API and returns the raw response.",
+    show_result=False
 )
 def validate_address(address_string: str) -> str:
-    """
-    Validiert eine Adresse oder einen Ort und gibt die korrekte, vollständige Adresse zurück.
-    Fokus auf Straßen und Städte, nicht auf Geschäfte oder POIs.
-    
-    Args:
-        address_string (str): Die zu validierende Adresse oder der Ort (z.B. "Berliner Str. 123, Hamburg" oder "München")
-        
-    Returns:
-        str: Validierungsergebnis mit korrekter Adresse oder Fehlermeldung
-    """
-    logging.info(f"🗺️ Adressvalidierung gestartet für: '{address_string}'")
-    
-    google_maps_api_key = os.getenv("GOOGLE_MAPS_API_KEY")
-    
-    if not google_maps_api_key:
-        logging.error("❌ Google Maps API Key nicht verfügbar")
-        return "❌ Google Maps API Key nicht verfügbar. Adressvalidierung nicht möglich."
+    """Makes Google Maps API call and returns the response."""
+    api_key = os.getenv("GOOGLE_MAPS_API_KEY")
+    if not api_key:
+        return json.dumps({"error": "API Key not available"})
     
     try:
-        # Google Geocoding API für Adressvalidierung
         url = "https://maps.googleapis.com/maps/api/geocode/json"
         params = {
             'address': address_string,
-            'key': google_maps_api_key,
+            'key': api_key,
             'language': 'de',
-            'region': 'de'  # Bevorzuge deutsche Ergebnisse
+            'region': 'de'
         }
         
-        logging.info(f"📡 Google Maps API Aufruf für: {address_string}")
         response = requests.get(url, params=params)
-        data = response.json()
-        logging.info(f"📊 Google Maps API Status: {data.get('status', 'Unknown')}")
+        return json.dumps(response.json(), ensure_ascii=False, indent=2)
         
-        if data['status'] == 'OK' and data['results']:
-            result = data['results'][0]
-            
-            # Extrahiere relevante Adressteile
-            address_components = result.get('address_components', [])
-            formatted_address = result.get('formatted_address', '')
-            
-            # Prüfe ob es sich um eine gültige Straße/Stadt handelt
-            has_street = any(
-                'route' in component.get('types', []) 
-                for component in address_components
-            )
-            has_locality = any(
-                'locality' in component.get('types', []) or 
-                'administrative_area_level_1' in component.get('types', []) or
-                'administrative_area_level_2' in component.get('types', [])
-                for component in address_components
-            )
-            
-            # Extrahiere Stadt und Land
-            city = ""
-            country = ""
-            postal_code = ""
-            
-            for component in address_components:
-                types = component.get('types', [])
-                if 'locality' in types:
-                    city = component.get('long_name', '')
-                elif 'country' in types:
-                    country = component.get('long_name', '')
-                elif 'postal_code' in types:
-                    postal_code = component.get('long_name', '')
-            
-            # Formatiere die Antwort
-            if has_street or has_locality:
-                result_text = f"✅ **Adresse gefunden und validiert:**\n"
-                result_text += f"📍 {formatted_address}\n"
-                
-                if city:
-                    result_text += f"🏙️ Stadt: {city}\n"
-                if postal_code:
-                    result_text += f"📮 PLZ: {postal_code}\n"
-                if country and country != "Deutschland":
-                    result_text += f"🌍 Land: {country}\n"
-                
-                return result_text
-            else:
-                return f"⚠️ '{address_string}' wurde gefunden, scheint aber kein Straßen-/Stadtname zu sein."
-                
-        elif data['status'] == 'ZERO_RESULTS':
-            return f"❌ Adresse nicht gefunden: '{address_string}' existiert nicht oder ist unvollständig."
-        else:
-            return f"❌ Fehler bei der Adressvalidierung: {data.get('status', 'Unbekannter Fehler')}"
-            
     except Exception as e:
-        logging.error(f"Google Geocoding API Fehler: {e}")
-        return f"❌ Fehler bei der Adressvalidierung: {str(e)}"
+        return json.dumps({"error": str(e)})
 
 
-# Hilfsfunktion für API Key Validierung
+@tool(
+    name="validate_regex",
+    description="Validates a string against a regex pattern and returns detailed match information.",
+    show_result=False
+)
+def validate_regex(input_string: str, regex_pattern: str) -> str:
+    """Validates a string against a regex pattern and returns match details."""
+    try:
+        # Compile the regex pattern
+        compiled_pattern = re.compile(regex_pattern)
+        
+        # Perform both match and search operations
+        match_result = compiled_pattern.match(input_string)
+        search_result = compiled_pattern.search(input_string)
+        
+        # Find all matches
+        all_matches = compiled_pattern.findall(input_string)
+        
+        # Find all match objects with positions
+        all_match_objects = list(compiled_pattern.finditer(input_string))
+        
+        # Build compact result dictionary
+        result = {
+            "match_found": match_result is not None,
+            "search_found": search_result is not None,
+            "match_count": len(all_match_objects),
+            "first_match": match_result.group() if match_result else None,
+            "all_matches": all_matches[:5] if len(all_matches) > 5 else all_matches  # Limit to first 5 matches
+        }
+        
+        return json.dumps(result, ensure_ascii=False, indent=2)
+        
+    except re.error as e:
+        # Handle invalid regex patterns
+        error_result = {
+            "match_found": False,
+            "search_found": False,
+            "match_count": 0,
+            "first_match": None,
+            "all_matches": [],
+            "error": f"Invalid regex: {str(e)}"
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
+        
+    except Exception as e:
+        # Handle other unexpected errors
+        error_result = {
+            "match_found": False,
+            "search_found": False,
+            "match_count": 0,
+            "first_match": None,
+            "all_matches": [],
+            "error": f"Error: {str(e)}"
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
+
+
+# Helper function for API key validation
 def check_google_maps_api_key(api_key: str = None) -> bool:
-    """Prüft, ob der Google Maps API Key gültig ist."""
+    """Checks if the Google Maps API key is valid."""
     test_key = api_key or os.getenv("GOOGLE_MAPS_API_KEY")
     if not test_key:
         return False
