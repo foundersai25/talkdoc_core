@@ -36,9 +36,13 @@ def extract_fields_from_form(pdf_path):
     reader = PdfReader(pdf_path)
     json_name = os.path.basename(pdf_path).split(".")[0] + ".json"
 
+    print(f"Extracting form fields from {pdf_path} to {json_name}")
+
     alt_form = reader.get_fields()
     form_dict_alt = {}
     for key, value in alt_form.items():
+        if key=="chbxStatusPersonBesonderGrundWeitJa":
+                continue
         field_id = value.get("/T")
         if field_id:
             form_dict_alt[field_id] = {}
@@ -54,6 +58,7 @@ def extract_fields_from_form(pdf_path):
                 ]
                 form_dict_alt[field_id]["hidden_fields"]["on_state"] = on_state
                 form_dict_alt[field_id]["hidden_fields"]["off_state"] = value.get("/V")
+            print(key)
             form_dict_alt[field_id]["page"] = reader.get_pages_showing_field(value)[
                 0
             ].page_number
@@ -73,32 +78,36 @@ def fillPDF(pdf_path, source_json, response):
 
         # TODO : Implement retry mechanism
         for k, v in response.items():
-            if k not in source_json.keys():
-                raise ValueError(f"Field {k} not found in the original PDF")
 
-            page_num = source_json[k]["page"]
-            if source_json[k].get("type") == "/Tx":
-                value = v
+            if v:
+                print(f"Filling field {k} with value {v}")
 
-            elif source_json[k].get("type") == "/Btn":
-                if v.strip().lower() == "ja" or v.strip().lower() == "yes":
-                    # 49152 is radio button in this form
-                    if source_json[k]["hidden_fields"].get("FF") != 49152:
-                        value = source_json[k]["hidden_fields"].get("on_state")
-                    else:
-                        value = "/0"
+                if k not in source_json.keys():
+                    raise ValueError(f"Field {k} not found in the original PDF")
 
-                elif v.strip().lower() == "nein" or v.strip().lower() == "no":
-                    if source_json[k]["hidden_fields"].get("FF") != 49152:
-                        value = source_json[k]["hidden_fields"].get("off_state")
-                    else:
-                        value = "/1"
+                page_num = source_json[k]["page"]
+                if source_json[k].get("type") == "/Tx":
+                    value = v
 
-            writer.update_page_form_field_values(
-                writer.pages[page_num],
-                {k: value},
-                auto_regenerate=False,
-            )
+                elif source_json[k].get("type") == "/Btn":
+                    if v.strip().lower() == "ja" or v.strip().lower() == "yes":
+                        # 49152 is radio button in teh form
+                        if source_json[k]["hidden_fields"].get("FF") != 49152:
+                            value = source_json[k]["hidden_fields"].get("on_state")
+                        else:
+                            value = "/0"
+
+                    elif v.strip().lower() == "nein" or v.strip().lower() == "no":
+                        if source_json[k]["hidden_fields"].get("FF") != 49152:
+                            value = source_json[k]["hidden_fields"].get("off_state")
+                        else:
+                            value = "/1"
+
+                writer.update_page_form_field_values(
+                    writer.pages[page_num],
+                    {k: value},
+                    auto_regenerate=False,
+                )
 
         with open(pdf_path, "wb") as output_stream:
             writer.write(output_stream)

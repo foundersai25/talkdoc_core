@@ -1,28 +1,22 @@
-[tool.poetry]
-name = "talkdoc_core"
+[project]
+name = "talkdoc-core"
 version = "0.1.0"
 description = ""
-authors = ["dkr <deepukreddy123@gmail.com>"]
+authors = [{ name = "dkr", email = "deepukreddy123@gmail.com" }]
+requires-python = ">=3.10, <3.13"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = ">=3.10, <3.13"
-pypdf = "^4.2.0"
-openai = "^1.23.6"
-python-dotenv = "^1.0.1"
-streamlit = "^1.33.0"
-streamlit-chat = "^0.1.1"
-ipykernel = "^6.29.4"
-streamlit-pdf-viewer = "^0.0.11"
-streamlit-mic-recorder = "^0.0.8"
-pypdftk = "^0.5"
-rich = "^13.9.4"
-pymupdf = "^1.25.1"
-streamlit-authenticator = "^0.4.1"
-agno = "^1.1.2"
-duckduckgo-search = "^7.3.2"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+dependencies = [
+    "openai>=1.23.6,<2",
+    "python-dotenv>=1.0.1,<2",
+    "streamlit>=1.33.0,<2",
+    "streamlit-chat>=0.1.1,<0.2",
+    "ipykernel>=6.29.4,<7",
+    "streamlit-pdf-viewer>=0.0.11,<0.0.12",
+    "streamlit-mic-recorder>=0.0.8,<0.0.9",
+    "rich>=13.9.4,<14",
+    "pymupdf>=1.25.1,<2",
+    "streamlit-authenticator>=0.4.1,<0.5",
+    "agno>=1.1.2,<2",
+    "duckduckgo-search>=7.3.2,<8",
+    "pypdf>=6.1.3",
+]

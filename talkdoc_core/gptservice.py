@@ -35,8 +35,8 @@ class GPTService:
 
             return response.choices[0].message.content
 
-        except openai.error.OpenAIError as e:
-            logging.error(f"OpenAI API error: {e}")
+        except Exception as e:
+            logging.error(f"error: {e}")
             raise
 
     def add_system_prompt_for_chat(self, json_fields):
