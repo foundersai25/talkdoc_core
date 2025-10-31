@@ -1,7 +1,7 @@
 {
-    "Antrag auf EinbürgerungV3": {
-        "template_path": "form_templates/Antrag_auf_EinbürgerungV3.json",
-        "pdf_path": "pdfs/Antrag_auf_EinbürgerungV3.pdf",
+    "Antrag auf Einbürgerung": {
+        "template_path": "form_templates/Antrag_auf_Einbürgerung_v3.json",
+        "pdf_path": "pdfs/Antrag_auf_Einbürgerung_v3.pdf",
         "id": "Antrag_auf_Einbürgerung"
     },
     "Buergergeld": {

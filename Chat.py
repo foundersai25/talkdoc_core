@@ -14,7 +14,6 @@ import shutil
 from pathlib import Path
 from authentication import auth
 
-from advanced_controls import advanced_controls
 
 # Settings and configurations
 st.set_page_config(
@@ -149,10 +148,6 @@ if st.session_state["authentication_status"]:
 
     with st.sidebar:
         st.title("TalkDOC 🔥")
-
-        # settings = st.button("⚙️", key="settings")
-        # if settings:
-        #     advanced_controls()
 
         valid_api_key = False
 

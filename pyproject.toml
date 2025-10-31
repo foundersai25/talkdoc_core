@@ -18,5 +18,5 @@ dependencies = [
     "streamlit-authenticator>=0.4.1,<0.5",
     "agno>=1.1.2,<2",
     "duckduckgo-search>=7.3.2,<8",
-    "pypdf>=6.1.3",
+    "pypdf>=6.1.3"
 ]

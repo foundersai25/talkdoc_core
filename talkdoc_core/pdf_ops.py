@@ -58,7 +58,7 @@ def extract_fields_from_form(pdf_path):
                 ]
                 form_dict_alt[field_id]["hidden_fields"]["on_state"] = on_state
                 form_dict_alt[field_id]["hidden_fields"]["off_state"] = value.get("/V")
-            print(key)
+            # print(key)
             form_dict_alt[field_id]["page"] = reader.get_pages_showing_field(value)[
                 0
             ].page_number
