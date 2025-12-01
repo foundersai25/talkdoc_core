@@ -160,9 +160,9 @@ class Agno_Service:
                 return response
 
             return response.choices[0].message.content
-            
+
         except Exception as e:
-            logging.error(f"Fallback chat error: {e}")
+            logging.error(f"error: {e}")
             raise
     
     

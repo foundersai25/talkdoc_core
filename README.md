@@ -1,13 +1,12 @@
 # Project Name
-
-A Streamlit-based chat application.
+talkdoc_core
 
 ## Installation
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/foundersai25/talkdoc_core
+    cd talkdoc_core
     ```
 
 2. **Install talkdoc_core **

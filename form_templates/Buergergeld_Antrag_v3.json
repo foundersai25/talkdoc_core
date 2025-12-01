@@ -3,7 +3,7 @@
         "hidden_fields": {
             "FF": 8388608
         },
-        "/TU": "Ausfüllfeld; A. Persönliche Daten > 1 Vorname; Vorname laut Personalausweis/Reisepass der antragstellenden Person. Validierung: Nur Buchstaben, Doppelnamen mit Bindestrich erlaubt.",
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 1 Vorname; Vorname laut Personalausweis/Reisepass der antragstellenden Person. Validierung: Nur Buchstaben und Bindestrich erlaubt, muss das europäische lateinische Alphabet nutzen. Gib einen Hinweis, dass es in deutscher Sprache ausgefüllt werden muss.",
         "type": "/Tx",
         "page": 0
     },
@@ -11,7 +11,7 @@
         "hidden_fields": {
             "FF": 8388608
         },
-        "/TU": "Ausfüllfeld; A. Persönliche Daten > 2 Nachname; Nachname/Familienname laut offizieller Ausweisdokumente. Validierung: Nur Buchstaben, Doppelnamen mit Bindestrich erlaubt.",
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 2 Nachname; Nachname/Familienname laut offizieller Ausweisdokumente. Validierung: Nur Buchstaben und Bindestrich erlaubt, muss das europäische lateinische Alphabet nutzen. Gib einen Hinweis, dass es in deutscher Sprache ausgefüllt werden muss.",
         "type": "/Tx",
         "page": 0
     },
@@ -27,7 +27,7 @@
         "hidden_fields": {
             "FF": 8388608
         },
-        "/TU": "Ausfüllfeld; A. Persönliche Daten > 4 Geburtsname/früherer Name; Der Geburtsname oder ein ggf. früher geführter Name, falls abweichend vom aktuellen Nachnamen. Validierung: Freitext, nur Buchstaben/Binde-/Leerzeichen.",
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 4 Geburtsname/früherer Name; Der Geburtsname oder ein ggf. früher geführter Name, falls abweichend vom aktuellen Nachnamen. Validierung: Nur Buchstaben und Bindestrich erlaubt, muss das europäische lateinische Alphabet nutzen. Gib einen Hinweis, dass es in deutscher Sprache ausgefüllt werden muss. Setze den Wert auf \"\", wenn keine Abweichung zum Referenzwert vorliegt.",
         "type": "/Tx",
         "page": 0
     },
@@ -199,7 +199,7 @@
         "hidden_fields": {
             "FF": 8388608
         },
-        "/TU": "Ausfüllfeld; A. Persönliche Daten > 19 Sozial-/Rentenversicherungsnummer; Angabe der eigenen Renten-/Sozialversicherungsnummer, falls vorhanden. Validierung: 12-stellig, meist Format: Buchstaben, Zahlen, Buchstabe – RegEx: ^\\w{12}$ (noch festzulegen).",
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 19 Sozial-/Rentenversicherungsnummer; Angabe der eigenen Renten-/Sozialversicherungsnummer, falls vorhanden. Validierung: 12-stellig, meist Format: Die ersten beiden Ziffern bezeichnen den Rentenversicherungsträger, der die Versicherungsnummer erstmalig vergeben hat. Dann folgt das Geburtsdatum und der Anfangsbuchstabe des Geburtsnamens. Die beiden nächsten Ziffern sind Seriennummern und geben das Geschlecht an: 00 - 49 für männliche Versicherte, 50 - 99 für weibliche Versicherte. Die letzte Ziffer ist die Prüfziffer, die maschinell aus den vorherigen Angaben errechnet wird.",
         "type": "/Tx",
         "page": 1
     },
@@ -401,7 +401,7 @@
         "hidden_fields": {
             "FF": 49152
         },
-        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 34 AsylbLG-Berechtigte/r > Ja/Nein; Antragsteller ist berechtigt Leistungen nach dem Asylbewerberleistungsgesetz zu beziehen. Validierung: Nur eine Auswahl.",
+        "/TU": "Checkbox; C. Angaben zur Lebenssituation > 34 AsylbLG-Berechtigte/r > Ja/Nein; Antragsteller ist berechtigt Leistungen nach dem Asylbewerberleistungsgesetz zu beziehen. Validierung: Macht bei in Deutschland geborenen keinen Sinn.",
         "type": "/Btn",
         "page": 2
     },
@@ -409,7 +409,7 @@
         "hidden_fields": {
             "FF": 8388608
         },
-        "/TU": "Datum; C. Angaben zur Lebenssituation > 35 Asylbewerberleistungen bis; Ggf. Zeitraum, in dem Asylbewerberleistungen empfangen werden bis zum Datum. Validierung: TT.MM.JJJJ, DARF in der Zukunft.",
+        "/TU": "Datum; C. Angaben zur Lebenssituation > 35 Asylbewerberleistungen bis; Ggf. Zeitraum, in dem Asylbewerberleistungen empfangen werden bis zum Datum. Validierung: TT.MM.JJJJ, DARF in der Zukunft. Macht bei in Deutschland geborenen keinen Sinn.",
         "type": "/Tx",
         "page": 2
     },
@@ -649,7 +649,7 @@
         "hidden_fields": {
             "FF": 8392704
         },
-        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 60 Lebensunterhalt in den letzten 5 Jahren ohne die obigen Angaben; Beschreibung, wie der Lebensunterhalt in den letzten fünf Jahren bestritten wurde, sofern keine der oben genannten Situationen zutrifft (z. B. Unterstützung von Verwandten, Ersparnisse, Erbschaft). Validierung: Keine Angaben zu den vorherigen Feldern.",
+        "/TU": "Ausfüllfeld; C. Angaben zur Lebenssituation > 60 Lebensunterhalt in den letzten 5 Jahren ohne die obigen Angaben; Beschreibung, wie der Lebensunterhalt in den letzten fünf Jahren bestritten wurde, sofern keine der oben genannten Situationen zutrifft (z. B. Unterstützung von Verwandten, Ersparnisse, Erbschaft). Validierung: Setze den Wert auf \"\", wenn eine der vorherigen Angaben 46-59 bereits zugetroffen hat.",
         "type": "/Tx",
         "page": 4
     },

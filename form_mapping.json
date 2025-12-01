@@ -1,4 +1,14 @@
 {
+    "Antrag auf Einbürgerung": {
+        "template_path": "form_templates/Antrag_auf_Einbürgerung_v3.json",
+        "pdf_path": "pdfs/Antrag_auf_Einbürgerung_v3.pdf",
+        "id": "Antrag_auf_Einbürgerung"
+    },
+    "Buergergeld": {
+        "template_path": "form_templates/Buergergeld_Antrag_v3.json",
+        "pdf_path": "pdfs/Buergergeld_Antrag_v3.pdf",
+        "id": "buergergeld"
+    },
     "Antrag auf Bürgergeld nach dem Zweiten Buch Sozialgesetzbuch": {
         "template_path": "form_templates/afa_v3.json",
         "pdf_path": "pdfs/afa_v2.pdf",
@@ -13,10 +23,5 @@
         "template_path": "form_templates/anlage_vm.json",
         "pdf_path": "pdfs/anlage_vm.pdf",
         "id": "anlagevm"
-    },
-    "Buergergeld": {
-        "template_path": "form_templates/Buergergeld_Antrag.json",
-        "pdf_path": "pdfs/Buergergeld_Antrag.pdf",
-        "id": "buergergeld"
     }
 }

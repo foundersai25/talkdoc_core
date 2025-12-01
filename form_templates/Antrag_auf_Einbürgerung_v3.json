@@ -1,0 +1,4062 @@
+{
+    "txtfPersonNachname": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 2 Nachname; Nachname/Familienname laut offizieller Ausweisdokumente. Validierung: Nur Buchstaben, Doppelnamen mit Bindestrich erlaubt.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonGebName": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 4 Geburtsname/früherer Name; Der Geburtsname oder ein ggf. früher geführter Name, falls abweichend vom aktuellen Nachnamen. Validierung: Freitext, nur Buchstaben/Binde-/Leerzeichen.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonVorname": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 1 Vorname; Vorname laut Personalausweis/Reisepass der antragstellenden Person. Validierung: Nur Buchstaben, Doppelnamen mit Bindestrich erlaubt.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "datePersonGebDatum": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Datum; A. Persönliche Daten > 3 Geburtsdatum (TT.MM.JJJJ); Geburtsdatum der antragstellenden Person. Validierung: Format TT.MM.JJJJ, Plausibilitätscheck (nicht in der Zukunft, plausibles Alter).",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonGebOrtLand": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 6 Geburtsland; Land der Geburt laut Ausweis. Validierung: Existenz des Landes überprüfen.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtflPersonAnschZiffer": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": null,
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonTel": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; A. Persönliche Daten > 14 Telefon; Telefonnummer für Rückfragen (freiwillige Angabe). Validierung: 7–15 Zeichen, Ziffern, +, /, -, Leerzeichen erlaubt.",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonMail": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; E-Mail-Adresse für Rückfragen; Validierung: Standard E-Mail-Format (beispiel@domain.tld)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfPersonDeBe": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; E-Mail-Adresse für Rückfragen; Validierung: Standard E-Mail-Format (beispiel@domain.tld)",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfAusweisNum": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; Nummer des aktuellen Ausweisdokuments; Validierung: Nur Buchstaben und Zahlen, keine Sonderzeichen",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfAusweisBeh": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; Behörde, die den Ausweis ausgestellt hat; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfAusweisAusDate": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Datum; Datum der Ausstellung des Ausweisdokuments; Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfAusweisGulDate": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Datum; Ablaufdatum des Ausweisdokuments; Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfEhePartnerName": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; Familienname des Ehegatten/Lebenspartners; Validierung: Nur Buchstaben und Bindestriche, lateinische Buchstaben",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerVorName": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; Alle Vornamen laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, lateinische Buchstaben",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerGebDate": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.1 > Geburtsdatum\tDatum; Geburtsdatum des Ehegatten/Lebenspartners; Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerNameGebOrtLand": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.1 > Geburtsort, Land\tAusfüllfeld; Geburtsort und Land des Ehegatten/Lebenspartners; Validierung: Freitext, Ort und Land erforderlich",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerAnsch": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.1 > Derzeitige Anschrift\tAusfüllfeld; Aktuelle Meldeadresse des Ehegatten/Lebenspartners; Validierung: Vollständige deutsche Postadresse",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerStaat": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.1 > Staatsangehörigkeit(en)\tAusfüllfeld; Alle Staatsangehörigkeiten des Ehegatten/Lebenspartners; Validierung: Freitext, ggf. mehrere Einträge",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerNachweiss": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.1 > Nachweis\tAusfüllfeld; Art des Nachweises zur Staatsangehörigkeit (z. B. Pass, Einbürgerungsurkunde); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerName2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 1. Ehe / Lebenspartnerschaft > Familienname, ggf. Geburtsname\tAusfüllfeld; Familienname des ersten Ehepartners/Lebenspartners; Validierung: Nur Buchstaben und Bindestriche",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerVorName2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 1. Ehe / Lebenspartnerschaft > Vorname(n), ggf. Vatersname\tAusfüllfeld; Alle Vornamen des ersten Ehepartners/Lebenspartners; Validierung: Nur Buchstaben und Bindestriche",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerStaat2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 1. Ehe / Lebenspartnerschaft > Staatsangehörigkeit(en)\tAusfüllfeld; Staatsangehörigkeit(en) des ersten Ehepartners/Lebenspartners; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerSchliessung2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 1. Ehe / Lebenspartnerschaft > Datum der Eheschließung\tDatum; Datum der Eheschließung; Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerAuflo2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 1. Ehe / Lebenspartnerschaft > Datum der Auflösung der Ehe\tDatum; Datum der Auflösung (bei Scheidung: Datum/Rechtskraft des Urteils); Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerAufGrund2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 1. Ehe / Lebenspartnerschaft > Auflösungsgrund\tAusfüllfeld; Grund für Auflösung (z. B. Scheidung, Tod); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerKinder2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 1. Ehe / Lebenspartnerschaft > Anzahl Kinder\tAusfüllfeld; Anzahl gemeinsamer Kinder; Validierung: Nur Zahlen",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfKindName": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.1 Kind > Familienname, ggf. Geburtsname\tAusfüllfeld; Familienname des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.1–3.6.1).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindVorName": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.2 Kind > Vorname(n), ggf. Vatersname\tAusfüllfeld; Alle Vornamen des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.2–3.6.2).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindGeburtDate": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.3 Kind > Geburtsdatum\tDatum; Geburtsdatum des Kindes; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.3–3.6.3).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindGeburtLand": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.7 Kind > Geburtsort, Land\tAusfüllfeld; Geburtsort und Land des Kindes; Validierung: Freitext, Ort und Land erforderlich. Feld existiert für bis zu 6 Kinder (3.1.7–3.6.7).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindAnsch": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.8 Kind > Derzeitige Anschrift (falls abweichend)\tAusfüllfeld; Abweichende Meldeadresse des Kindes; Validierung: Vollständige deutsche Postadresse. Feld existiert für bis zu 6 Kinder (3.1.8–3.6.8).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindStaat": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.9 Kind > Staatsangehörigkeit(en)\tAusfüllfeld; Alle Staatsangehörigkeiten des Kindes; Validierung: Freitext, mehrere möglich. Feld existiert für bis zu 6 Kinder (3.1.9–3.6.9).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindArtAusweis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.18 Kind > Gültig bis (Ausweis)\tDatum; Ablaufdatum des Ausweises; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.18–3.6.18).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfElternDat": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": null,
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternOrtLand": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": null,
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternNameM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.1 Familienname, ggf. Geburtsname\tTextfeld; Familienname laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternVorNameM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.2 Vorname(n)\tTextfeld; Alle Vornamen laut Ausweisdokument; Validierung: Nur Buchstaben, Leer- und Bindestriche erlaubt",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternGeburtstagM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.3 Geburtsdatum\tDatum; Geburtsdatum im Format DD.MM.YYYY; Validierung: plausibles Datum, nicht in der Zukunft",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternGebOrtM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.4 Geburtsort\tTextfeld; Geburtsort laut Ausweisdokument; Validierung: Nur Buchstaben und Leerzeichen",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternStaatAntM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.5 Staatsangehörigkeit\tTextfeld  ; Validierung: Pflichtfeld Aktuelle Staatsangehöriokgeit in Europäischer Norm",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternFruStaatAntM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.5 Staatsangehörigkeit\tTextfeld  ; Validierung: Pflichtfeld Frühere Staatsangehöriokgeit in Europäischer Norm, bedeutet zum beislipiel abgelegte Staatsangehörigkeit",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternVolksZutM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "44.6 Volkszugszugehörigkeit > Zu welcehm Volk gehlrt tman, pflichtfeld, antwort kann auc hkeines sein  ",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternWohnortLandM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "44..7 Wohnort Lan > aus welcehn alnd wohnort kommt das elternteil",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternHerkunftsstaatM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "44.8 Letzter Wohnort im Herkunftstaat, woher das eltern teil komm / stammt, genauer wohnort aus dem herkunftstaat",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternVerstorbenAmM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Textfeld; B. Angaben zu den Eltern > 3 Verstorben; Verstorben am; Datumsfeld zur Eingabe des Sterbedatums (Format: TT.MM.JJJJ). Nur auszufüllen, wenn bei „Ist die Person verstorben?“ die Option „Ja“ gewählt wurde.",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfStatusPersonStaatsAng": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.1.1 Derzeitige Staatsangehörigkeit(en)\tAusfüllfeld; Alle aktuellen Staatsangehörigkeiten der Antragstellerin / des Antragstellers; Validierung: Freitext, mehrere Einträge erlaubt",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfStatusPersonStaatsErworbenDu": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.1.2 Erworben durch\tAusfüllfeld; Angabe, wie die derzeitige Staatsangehörigkeit erworben wurde (z. B. Abstammung, Geburtsort, Einbürgerung, Heirat); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfStatusPersonStaatsVolksZu": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.1.3 Volkszugehörigkeit\tAusfüllfeld; Angabe zur Volkszugehörigkeit der Antragstellerin / des Antragstellers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfStatusPersonStaatsFruhStaat": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.1.6 Frühere Staatsangehörigkeit(en)\tAusfüllfeld; Alle früheren Staatsangehörigkeiten; Validierung: Freitext, mehrere Einträge erlaubt",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfStatusPersonStaatsErwerbs": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.1.7 Erwerbs- / Verlustgrund\tAusfüllfeld; Angabe, wie die frühere Staatsangehörigkeit erworben wurde; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfStatusPersonStaatsVerlust": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.1.7 Erwerbs- / Verlustgrund\tAusfüllfeld; Angabe, wie die frühere Staatsangehörigkeit verloren / verlust wurde; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfStatusPersonStaatsVerlutNach": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.1.8 Nachweis des Verlustes\tAusfüllfeld; Art des Nachweises für den Verlust (z. B. Entlassungsurkunde, Bescheinigung des Heimatstaates); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfStatusPersonBesonderNachWeis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.2.2 Nachweis besonderer Status\tAusfüllfeld; Art des Nachweises (z. B. Vertriebenenausweis, Reiseausweis, Anerkennungsbescheid); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfStatusPersonBesonderGrundAsyl": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.2.4 Gründe für Asylgewährung\tAusfüllfeld; Angabe der Gründe, die zur Asylgewährung geführt haben; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtflPersonWehrZeitVon": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "6.3.1 Zeitraum (Wehrdienst im Heimatstaat) von\tAusfüllfeld; Beginn-Datum des Wehrdienstes im Heimatstaat; Validierung: Format DD.MM.YYYY; nur erforderlich, wenn „ja“ bei 6.3",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonWehrZeitBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "6.3.1 Zeitraum (Wehrdienst im Heimatstaat) bis\tAusfüllfeld; End-Datum des Wehrdienstes im Heimatstaat; Validierung: Format DD.MM.YYYY; nur erforderlich, wenn „ja“ bei 6.3",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonWehrEinzugZeitVon": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "6.4.1 Zeitraum (anderer Militärdienst) von\tAusfüllfeld; Beginn-Datum des anderen Militärdienstes; Validierung: Format DD.MM.YYYY; nur erforderlich, wenn „ja“ bei 6.4",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonWehrEinzugZeitBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "6.4.1 Zeitraum (anderer Militärdienst) bis\tAusfüllfeld; End-Datum des anderen Militärdienstes; Validierung: Format DD.MM.YYYY; nur erforderlich, wenn „ja“ bei 6.4",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonWehrEinzugIn": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Textfeeld Einzug zu einem aanderen militärdienst, nur bei ja beantworten , in welcehm land aus füllen / staat ",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufStatusAufEntGultigBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.1.1 Aufenthaltserlaubnis, gültig bis\tDatum; Ablaufdatum der Aufenthaltserlaubnis; Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufStatusBlauGultigBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.1.2 Blaue Karte – EU, gültig bis\tDatum; Ablaufdatum der Blauen Karte – EU; Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuVon": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Bis\tDatum; Ende des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuOrtLand": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Ort, Land\tTextfeld; Ort und Land des Auslandsaufenthaltes; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonSchulBildungZeitVon": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.1 Zeitraum Von\tAusfüllfeld; Zeitraum des Schulbesuchs (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY In das Texttfeld Nur Von eintragen ",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungZeitBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungSchulart": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungOrt": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.3 Ort\tAusfüllfeld; Ort der jeweiligen Schule; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungAbschluss": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.4 Erworbener Abschluss\tAusfüllfeld; Schulabschluss, der jeweils erworben wurde (z. B. Abitur, Mittlere Reife); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonStraftatenUngeteiligteStrafVerutWeAng": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "10.2.1 Weitere Angaben zu laufenden Ermittlungsverfahren\tAusfüllfeld; Bei Auswahl „ja“ bei 10.2: Angaben zu Datum, Tatbestand, Behörde/Gericht, ggf. Ausgang; Validierung: Freitext, Pflichtfeld bei Auswahl „ja“",
+        "type": "/Tx",
+        "page": 7
+    },
+    "txtflPersonStraftatenLaufErmitWeAng": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "10.2.1 Weitere Angaben zu laufenden Ermittlungsverfahren\tAusfüllfeld; Bei Auswahl „ja“ bei 10.2: Angaben zu Datum, Tatbestand, Behörde/Gericht, ggf. Ausgang; Validierung: Freitext, Pflichtfeld bei Auswahl „ja“",
+        "type": "/Tx",
+        "page": 7
+    },
+    "txttflSicherungLebenWirtscahftHaupt": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftWeitEinkom": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftUnterhlatauchKind": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftEigentum": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBarVer": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftAltGes": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistSBGFruhJaBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistSBGHeuteJaBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistSBGHeuteJaBisEuro": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftEinkommenHausGemName": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftEinkommenHausGemEuro": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.5 Einkommen Betrag (1. Person)\tZahlenfeld (Euro); Validierung: numerisch",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftVerpflichtWarmmieteEuro": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.3.1 Aktuelle Warmmiete / monatliche Belastung inkl. Nebenkosten\tZahlenfeld (Euro); Validierung: numerisch",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftSchuldenEuro": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftSchuldenEintragVerzJaEuro": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.3.4 Eintrag im Schuldnerverzeichnis > Betrag\tZahlenfeld (Euro); Validierung: numerisch",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftSchuldenSteuerRückJaEuro": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.3.7 Steuerrückstände > Betrag\tZahlenfeld (Euro); Validierung: numerisch",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftSchuldenUntVerpNameAnschr": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.3.8 Unterhaltsverpflichtung > Name und Anschrift\tTextfeld; Eingabe der Person(en), die nicht im Haushalt leben",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftSchuldenUntVerpLaufenJaEuro": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.3.11 Laufende Unterhaltszahlungen > Betrag\tZahlenfeld (Euro); Validierung: numerisch",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftSchuldenUntVerpRuckStandJaEuro": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.3.14 Unterhaltsrückstand > Betrag\tZahlenfeld (Euro); Validierung: numerisch",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txtflPersonSonstigesVorBeantJaWurdAbgel": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "14.1.2 Antrag wurde aus folgenden Gründen abgelehnt\tCheckbox + Ausfüllfeld; Auswahl ob zutreffend + Angabe der Ablehnungsgründe; Validierung: Freitext, Pflichtfeld falls Checkbox aktiviert.",
+        "type": "/Tx",
+        "page": 9
+    },
+    "txtflPersonSonstigesVorBeantJaZurGenom": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "14.1.3 Antrag wurde aus folgenden Gründen zurückgenommen\tCheckbox + Ausfüllfeld; Auswahl ob zutreffend + Angabe der Rücknahmegründe; Validierung: Freitext, Pflichtfeld falls Checkbox aktiviert.",
+        "type": "/Tx",
+        "page": 9
+    },
+    "txtflPersonSonstigesVorBeantJaSonstig": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": null,
+        "type": "/Tx",
+        "page": 9
+    },
+    "txtfErklUnterDatum": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "15.3 Unterschrift – Datum\tDatum; Eingabe des Datums der Antragstellung bei Auswahl „ja“; Validierung: Pflichtfeld bei Auswahl „ja“, Format DD.MM.YYYY.",
+        "type": "/Tx",
+        "page": 11
+    },
+    "txtflMitEinBurgKindUnterDatum": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "15.2 Unterschrift – Datum\tDatum; Eingabe des Datums der Antragstellung bei Auswahl „ja“; Validierung: Pflichtfeld bei Auswahl „ja“, Format DD.MM.YYYY.",
+        "type": "/Tx",
+        "page": 10
+    },
+    "txtflDatenUnterDatum": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "15.1 Unterschrift – Datum\tDatum; Eingabe des Datums der Antragstellung bei Auswahl „ja“; Validierung: Pflichtfeld bei Auswahl „ja“, Format DD.MM.YYYY.",
+        "type": "/Tx",
+        "page": 10
+    },
+    "Check Box_195": {
+        "hidden_fields": {
+            "FF": 4,
+            "on_state": "/Yes",
+            "off_state": "/Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 11
+    },
+    "txtfEheDate": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Datum; Datum der Eheschließung oder Begründung der Lebenspartnerschaft; Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfEheOrtLand": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; Ort und Land der Eheschließung/Lebenspartnerschaft; Validierung: Freitext, Ort und Land erforderlich",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfFamiliestandSeit": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Ausfüllfeld; Datum seit dem die Trennung besteht; Validierung: Format DD.MM.YYYY (nur, wenn „getrennt lebend“ ausgewählt) datum muss ein datum nach dem Geburtsdatum sein sein ",
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtfEhePartnerEinNein": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > Frühere / Weitere Ehen / Lebenspartnerschaften vorhanden > ja\tRadio-Button; Auswahl „ja“, ob weitere Ehen/Lebenspartnerschaften existieren; Validierung: Eine Auswahl",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfKindMitein": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.16 Kind > Nein, weil Textfeld hier ein Grund kurz warum das Kind nicht miteingeebürgert wird. in buchstaben und kurz text",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfStatusPersonStaatsArtNachweis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "5.1.4 Nachweis Staatsangehörigkeit\tAusfüllfeld; Art des Nachweises zur Staatsangehörigkeit (z. B. Pass, Staatsangehörigkeitsurkunde, Einbürgerungsurkunde); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfEhePartnerName3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 2. Ehe / Lebenspartnerschaft > Familienname, ggf. Geburtsname\tAusfüllfeld; Familienname des zweiten Ehepartners/Lebenspartners; Validierung: Nur Buchstaben und Bindestriche",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerVorName3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 2. Ehe / Lebenspartnerschaft > Vorname(n), ggf. Vatersname\tAusfüllfeld; Alle Vornamen des zweiten Ehepartners/Lebenspartners; Validierung: Nur Buchstaben und Bindestriche",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerStaat3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 2. Ehe / Lebenspartnerschaft > Staatsangehörigkeit(en)\tAusfüllfeld; Staatsangehörigkeit(en) des zweiten Ehepartners/Lebenspartners; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerSchliessung3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 2. Ehe / Lebenspartnerschaft > Datum der Eheschließung\tDatum; Datum der Eheschließung; Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerAuflo3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 2. Ehe / Lebenspartnerschaft > Datum der Auflösung der Ehe\tDatum; Datum der Auflösung (bei Scheidung: Datum/Rechtskraft des Urteils); Validierung: Format DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerAufGrund3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "2.2 > 2. Ehe / Lebenspartnerschaft > Auflösungsgrund\tAusfüllfeld; Grund für Auflösung (z. B. Scheidung, Tod); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 1
+    },
+    "txtfEhePartnerKinder3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": null,
+        "type": "/Tx",
+        "page": 1
+    },
+    "chbxKindMaennlich": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.4 Kind > Geschlecht m\tCheckbox; Auswahl Geschlecht „m“; genau eine Auswahl verpflichtend aus m, w, d. Feld existiert für bis zu 6 Kinder (3.1.4–3.6.4).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindWeiblich": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.5 Kind > Geschlecht w\tCheckbox; Auswahl Geschlecht „w“. Feld existiert für bis zu 6 Kinder (3.1.5–3.6.5).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindDiverse": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.6 Kind > Geschlecht d\tCheckbox; Auswahl Geschlecht „d“. Feld existiert für bis zu 6 Kinder (3.1.6–3.6.6).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindJetzigerEhe": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.10 Kind > Kindschaftsverhältnis – aus jetziger Ehe\tCheckbox; Auswahl Kindschaft aus jetziger Ehe. Genau eine der vier Optionen wählbar. Feld existiert für bis zu 6 Kinder (3.1.10–3.6.10).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindFuherEhe": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.11 Kind > Kindschaftsverhältnis – aus früherer Ehe\tCheckbox; Auswahl Kindschaft aus früherer Ehe. Feld existiert für bis zu 6 Kinder (3.1.11–3.6.11).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindNichtEhe": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.12 Kind > Kindschaftsverhältnis – nichtehelich\tCheckbox; Auswahl Kindschaft nichtehelich. Feld existiert für bis zu 6 Kinder (3.1.12–3.6.12).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindAdoptiert": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.13 Kind > Kindschaftsverhältnis – adoptiert\tCheckbox; Auswahl Kindschaft adoptiert. Feld existiert für bis zu 6 Kinder (3.1.13–3.6.13).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindArtAuswReisepass": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.16 Kind > Art des Ausweises – Reisepass\tCheckbox; Auswahl „Reisepass“; Validierung: genau eine Auswahl aus Reisepass oder Personalausweis. Feld existiert für bis zu 6 Kinder (3.1.16–3.6.16).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindArtAuswPersonalausweis": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.17 Kind > Art des Ausweises – Personalausweis\tCheckbox; Auswahl „Personalausweis“. Feld existiert für bis zu 6 Kinder (3.1.17–3.6.17).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfElternNameF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.1 Familienname, ggf. Geburtsname\tTextfeld; Familienname laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternVorNameF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.2 Vorname(n)\tTextfeld; Alle Vornamen laut Ausweisdokument; Validierung: Nur Buchstaben, Leer- und Bindestriche erlaubt",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternGeburtstagF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.3 Geburtsdatum\tDatum; Geburtsdatum im Format DD.MM.YYYY; Validierung: plausibles Datum, nicht in der Zukunft",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternGebOrtF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.4 Geburtsort\tTextfeld; Geburtsort laut Ausweisdokument; Validierung: Nur Buchstaben und Leerzeichen",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternStaatAntF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.5 Staatsangehörigkeit\tTextfeld  ; Validierung: Pflichtfeld Aktuelle Staatsangehöriokgeit in Europäischer Norm",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternFruStaatAntF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "4.5 Staatsangehörigkeit\tTextfeld  ; Validierung: Pflichtfeld Frühere Staatsangehöriokgeit in Europäischer Norm, bedeutet zum beislipiel abgelegte Staatsangehörigkeit",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternVolksZutF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "44.6 Volkszugszugehörigkeit > Zu welcehm Volk gehlrt tman, pflichtfeld, antwort kann auc hkeines sein  ",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternWohnortLandF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "44..7 Wohnort Lan > aus welcehn alnd wohnort kommt das elternteil",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternHerkunftsstaatF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "44.8 Letzter Wohnort im Herkunftstaat, woher das eltern teil komm / stammt, genauer wohnort aus dem herkunftstaat",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternAhnameKindtF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Textfeld; B. Angaben zu den Eltern > 2 Adoption; Annahme als Kind erfolgt durch;\nIn dieses Feld ist der Name der Person oder der Personen einzutragen, die das Kind rechtlich adoptiert haben. Dies können Einzelpersonen, Ehepaare oder eingetragene Lebenspartner sein. Die Adoption muss durch einen rechtskräftigen Beschluss oder eine anerkannte ausländische Entscheidung erfolgt sei",
+        "type": "/Tx",
+        "page": 4
+    },
+    "txtfElternVerstorbenAmF": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Textfeld; B. Angaben zu den Eltern > 3 Verstorben; Verstorben am; Datumsfeld zur Eingabe des Sterbedatums (Format: TT.MM.JJJJ). Nur auszufüllen, wenn bei „Ist die Person verstorben?“ die Option „Ja“ gewählt wurde.",
+        "type": "/Tx",
+        "page": 4
+    },
+    "chbxStatusPersonBesonderAusFLucht": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "5.2.1 Besonderer Status – ausländischer Flüchtling\tCheckbox; Mehrfachauswahl möglich; Validierung: mindestens ein Häkchen, falls zutreffend",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxStatusPersonBesonderAsyl": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "5.2.1 Besonderer Status – Asylberechtigte/r\tCheckbox; Mehrfachauswahl möglich; Validierung: mindestens ein Häkchen, falls zutreffend",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxStatusPersonBesonderVert": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "5.2.1 Besonderer Status – Vertriebene/r\tCheckbox; Mehrfachauswahl möglich; Validierung: mindestens ein Häkchen, falls zutreffend",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxStatusPersonBesonderHeimatLos": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "5.2.1 Besonderer Status – heimatloser Ausländer\tCheckbox; Mehrfachauswahl möglich; Validierung: mindestens ein Häkchen, falls zutreffend",
+        "type": "/Btn",
+        "page": 4
+    },
+    "chbxPersonAufStatusErlaub": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; C. Aufenthaltsstatus > 7.1.2 Aufenthaltserlaubnis gültig bis; Auswahl, ob eine Aufenthaltserlaubnis mit Ablaufdatum vorliegt. Zusätzliches Datumsfeld: Gültig bis (TT.MM.JJJJ). Validierung: Nur eine Auswahl möglich.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "chbxPersonAufStatusBlaue": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; C. Aufenthaltsstatus > 7.1.4 Blaue Karte EU; Auswahl, ob eine Blaue Karte EU vorliegt; Validierung: Nur eine Auswahl möglich.",
+        "type": "/Btn",
+        "page": 5
+    },
+    "chbxPersonAufStatusNiederErlaub": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "7.1.3 Niederlassungserlaubnis\tCheckbox; Auswahl, ob eine Niederlassungserlaubnis vorliegt; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 5
+    },
+    "chbxPersonAufStatusDauerAUf": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "7.1.4 Erlaubnis zum Daueraufenthalt – EU\tCheckbox; Auswahl, ob eine Erlaubnis zum Daueraufenthalt – EU vorliegt; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 5
+    },
+    "chbxPersonAufStatusFreizug": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "7.1.5 Freizügigkeitsberechtigt (EU-Bürger_in)\tCheckbox; Auswahl, ob Freizügigkeitsberechtigung als EU-Bürger_in vorliegt; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuVon_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuBis_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Bis\tDatum; Ende des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuOrtLand_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Ort, Land\tTextfeld; Ort und Land des Auslandsaufenthaltes; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuVon_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuBis_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Bis\tDatum; Ende des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuOrtLand_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Ort, Land\tTextfeld; Ort und Land des Auslandsaufenthaltes; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuVon_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuBis_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Bis\tDatum; Ende des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuOrtLand_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Ort, Land\tTextfeld; Ort und Land des Auslandsaufenthaltes; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuVon_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuBis_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Bis\tDatum; Ende des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuOrtLand_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Ort, Land\tTextfeld; Ort und Land des Auslandsaufenthaltes; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuVon_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuBis_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Bis\tDatum; Ende des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuOrtLand_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Ort, Land\tTextfeld; Ort und Land des Auslandsaufenthaltes; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuVon_6": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuBis_6": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Bis\tDatum; Ende des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuOrtLand_6": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Ort, Land\tTextfeld; Ort und Land des Auslandsaufenthaltes; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuVon_7": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuBis_7": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Bis\tDatum; Ende des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenAusDeuOrtLand_7": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Ort, Land\tTextfeld; Ort und Land des Auslandsaufenthaltes; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuVon": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Bis\tDatum; Ende des Aufenthaltes in Deutschland; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuOrtBund": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Ort, Bundesland inkl. Anschrift\tTextfeld; Ort, Bundesland und Anschrift; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuVon_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuBis_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Bis\tDatum; Ende des Aufenthaltes in Deutschland; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuOrtBund_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Ort, Bundesland inkl. Anschrift\tTextfeld; Ort, Bundesland und Anschrift; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuVon_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuBis_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Bis\tDatum; Ende des Aufenthaltes in Deutschland; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuOrtBund_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Ort, Bundesland inkl. Anschrift\tTextfeld; Ort, Bundesland und Anschrift; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuVon_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuBis_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Bis\tDatum; Ende des Aufenthaltes in Deutschland; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuOrtBund_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Ort, Bundesland inkl. Anschrift\tTextfeld; Ort, Bundesland und Anschrift; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuVon_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuBis_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Bis\tDatum; Ende des Aufenthaltes in Deutschland; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuOrtBund_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Ort, Bundesland inkl. Anschrift\tTextfeld; Ort, Bundesland und Anschrift; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuVon_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuBis_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Bis\tDatum; Ende des Aufenthaltes in Deutschland; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuOrtBund_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Ort, Bundesland inkl. Anschrift\tTextfeld; Ort, Bundesland und Anschrift; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuVon_6": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuBis_6": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Bis\tDatum; Ende des Aufenthaltes in Deutschland; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuOrtBund_6": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Ort, Bundesland inkl. Anschrift\tTextfeld; Ort, Bundesland und Anschrift; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuVon_7": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.1 Aufenthalte außerhalb Deutschlands (inkl. Herkunftsstaat) > Von\tDatum; Beginn des Auslandsaufenthaltes; Validierung: Format DD.MM.YYYY, Mehrfacheingabe möglich",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuBis_7": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Bis\tDatum; Ende des Aufenthaltes in Deutschland; Validierung: Format DD.MM.YYYY, darf nicht vor „Von“ liegen",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonAufentZeittenInDeuOrtBund_7": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "7.2.2 Aufenthalte in Deutschland (außerhalb Freiburg inkl. Anschrift) > Ort, Bundesland inkl. Anschrift\tTextfeld; Ort, Bundesland und Anschrift; Validierung: Pflichtfeld, Mehrfacheinträge erlaubt",
+        "type": "/Tx",
+        "page": 5
+    },
+    "txtflPersonSchulBildungZeitVon_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.1 Zeitraum Von\tAusfüllfeld; Zeitraum des Schulbesuchs (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY In das Texttfeld Nur Von eintragen ",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungZeitBis_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungSchulart_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungOrt_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.3 Ort\tAusfüllfeld; Ort der jeweiligen Schule; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungAbschluss_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.4 Erworbener Abschluss\tAusfüllfeld; Schulabschluss, der jeweils erworben wurde (z. B. Abitur, Mittlere Reife); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungZeitVon_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.1 Zeitraum Von\tAusfüllfeld; Zeitraum des Schulbesuchs (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY In das Texttfeld Nur Von eintragen ",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungZeitBis_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungSchulart_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungOrt_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.3 Ort\tAusfüllfeld; Ort der jeweiligen Schule; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungAbschluss_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.4 Erworbener Abschluss\tAusfüllfeld; Schulabschluss, der jeweils erworben wurde (z. B. Abitur, Mittlere Reife); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungZeitVon_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.1 Zeitraum Von\tAusfüllfeld; Zeitraum des Schulbesuchs (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY In das Texttfeld Nur Von eintragen ",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungZeitBis_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungSchulart_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungOrt_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.3 Ort\tAusfüllfeld; Ort der jeweiligen Schule; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungAbschluss_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.4 Erworbener Abschluss\tAusfüllfeld; Schulabschluss, der jeweils erworben wurde (z. B. Abitur, Mittlere Reife); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungZeitVon_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.1 Zeitraum Von\tAusfüllfeld; Zeitraum des Schulbesuchs (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY In das Texttfeld Nur Von eintragen ",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungZeitBis_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungSchulart_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.2 Schulart\tAusfüllfeld; Art der besuchten Schule (z. B. Grundschule, Gymnasium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungOrt_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.3 Ort\tAusfüllfeld; Ort der jeweiligen Schule; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonSchulBildungAbschluss_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.1.4 Erworbener Abschluss\tAusfüllfeld; Schulabschluss, der jeweils erworben wurde (z. B. Abitur, Mittlere Reife); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungZeitVon": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.1 Zeitraum\tAusfüllfeld; Zeitraum der Berufsausbildung/des Studiums (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungZeitBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.1 Zeitraum\tAusfüllfeld; Zeitraum der Berufsausbildung/des Studiums (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungArt": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.2 Art\tAusfüllfeld; Art der Ausbildung/des Studiums (z. B. Lehre, Bachelorstudium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungOrt": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.3 Ort\tAusfüllfeld; Ort der Berufsausbildung/des Studiums; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungAbschluss": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.4 Erworbener Abschluss\tAusfüllfeld; Abschluss der Ausbildung/des Studiums (z. B. Gesellenprüfung, Bachelor); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungZeitVon_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.1 Zeitraum\tAusfüllfeld; Zeitraum der Berufsausbildung/des Studiums (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungZeitBis_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.1 Zeitraum\tAusfüllfeld; Zeitraum der Berufsausbildung/des Studiums (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungArt_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.2 Art\tAusfüllfeld; Art der Ausbildung/des Studiums (z. B. Lehre, Bachelorstudium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungOrt_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.3 Ort\tAusfüllfeld; Ort der Berufsausbildung/des Studiums; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungAbschluss_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.4 Erworbener Abschluss\tAusfüllfeld; Abschluss der Ausbildung/des Studiums (z. B. Gesellenprüfung, Bachelor); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungZeitVon_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.1 Zeitraum\tAusfüllfeld; Zeitraum der Berufsausbildung/des Studiums (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungZeitBis_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.1 Zeitraum\tAusfüllfeld; Zeitraum der Berufsausbildung/des Studiums (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungArt_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.2 Art\tAusfüllfeld; Art der Ausbildung/des Studiums (z. B. Lehre, Bachelorstudium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungOrt_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.3 Ort\tAusfüllfeld; Ort der Berufsausbildung/des Studiums; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungAbschluss_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.4 Erworbener Abschluss\tAusfüllfeld; Abschluss der Ausbildung/des Studiums (z. B. Gesellenprüfung, Bachelor); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungZeitBis_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.1 Zeitraum\tAusfüllfeld; Zeitraum der Berufsausbildung/des Studiums (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungArt_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.2 Art\tAusfüllfeld; Art der Ausbildung/des Studiums (z. B. Lehre, Bachelorstudium); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungOrt_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.3 Ort\tAusfüllfeld; Ort der Berufsausbildung/des Studiums; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungAbschluss_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.4 Erworbener Abschluss\tAusfüllfeld; Abschluss der Ausbildung/des Studiums (z. B. Gesellenprüfung, Bachelor); Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitArt": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.2 Art / Arbeitgeber\tAusfüllfeld; Art der Tätigkeit und Name des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitOrt": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.3 Ort\tAusfüllfeld; Ort der Tätigkeit/des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonBerufBildungZeitVon_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.2.1 Zeitraum\tAusfüllfeld; Zeitraum der Berufsausbildung/des Studiums (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitArt_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.2 Art / Arbeitgeber\tAusfüllfeld; Art der Tätigkeit und Name des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitOrt_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.3 Ort\tAusfüllfeld; Ort der Tätigkeit/des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitVon_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitBis_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitArt_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.2 Art / Arbeitgeber\tAusfüllfeld; Art der Tätigkeit und Name des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitOrt_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.3 Ort\tAusfüllfeld; Ort der Tätigkeit/des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitVon_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitBis_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitArt_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.2 Art / Arbeitgeber\tAusfüllfeld; Art der Tätigkeit und Name des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitOrt_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.3 Ort\tAusfüllfeld; Ort der Tätigkeit/des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitVon_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitBis_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitArt_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.2 Art / Arbeitgeber\tAusfüllfeld; Art der Tätigkeit und Name des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitOrt_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.3 Ort\tAusfüllfeld; Ort der Tätigkeit/des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitVon_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitBis_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitArt_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.2 Art / Arbeitgeber\tAusfüllfeld; Art der Tätigkeit und Name des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitOrt_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.3 Ort\tAusfüllfeld; Ort der Tätigkeit/des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitVon_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitBis_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitArt_6": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.2 Art / Arbeitgeber\tAusfüllfeld; Art der Tätigkeit und Name des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitOrt_6": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.3 Ort\tAusfüllfeld; Ort der Tätigkeit/des Arbeitgebers; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 6
+    },
+    "chbxPersonInteDeutschKentB1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "9.2 Deutschkenntnisse – Deutschzertifikat B1 oder gleich-/höherwertiges Sprachzertifikat\tCheckbox; Auswahl, ob ein Zertifikat vorliegt (z. B. DSH, TestDaF); Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonInteDeutschKentSchulAb": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "9.2 Deutschkenntnisse – Schul-/Ausbildungsabschluss in Deutschland\tCheckbox; Auswahl, ob ein Schul- oder Ausbildungsabschluss in Deutschland vorliegt; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonInteDeutschKentSchulBes": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "9.2 Deutschkenntnisse – Schulbesuch in Deutschland (mindestens 4 Schuljahre)\tCheckbox; Auswahl, ob mindestens 4 Jahre Schulbesuch mit erfolgreicher Versetzung vorliegen; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonInteDeutschKentAbStudium": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "9.2 Deutschkenntnisse – Abgeschlossenes deutschsprachiges Studium in Deutschland\tCheckbox; Auswahl, ob ein Studium in deutscher Sprache in Deutschland abgeschlossen wurde; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonInteDeutschKentRechtsEinTest": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "9.3 Kenntnisse der Rechts- und Gesellschaftsordnung – Einbürgerungstest\tCheckbox; Auswahl, ob der Einbürgerungstest bestanden wurde; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonInteDeutschKentRechtsTestLeben": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "9.3 Kenntnisse der Rechts- und Gesellschaftsordnung – Test „Leben in Deutschland“\tCheckbox; Auswahl, ob der Test „Leben in Deutschland“ absolviert wurde; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonInteDeutschKentRechtsHaupt": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "9.3 Kenntnisse der Rechts- und Gesellschaftsordnung – Hauptschulabschluss bzw. gleich-/höherwertiger Abschluss\tCheckbox; Auswahl, ob ein Hauptschulabschluss oder höherwertiger Abschluss einer deutschen Schule vorliegt; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonInteDeutschKentRechtsAusbiludng": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "9.3 Kenntnisse der Rechts- und Gesellschaftsordnung – Ausbildungsabschluss in Deutschland (nach dem Berufsausbildungsgesetz)\tCheckbox; Auswahl, ob ein Ausbildungsabschluss nach dem Berufsausbildungsgesetz vorliegt; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "chbxPersonInteDeutschKentRechtsAbGeStudiumRecht": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "9.3 Kenntnisse der Rechts- und Gesellschaftsordnung – Abgeschlossenes Studium der Rechts-, Verwaltungs- oder Politikwissenschaften in Deutschland\tCheckbox; Auswahl, ob ein solches Studium in Deutschland abgeschlossen wurde; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitVon": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonArbeitZeitBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "8.3.1 Zeitraum\tAusfüllfeld; Zeitraum des jeweiligen Arbeits-/Beschäftigungsverhältnisses oder der selbständigen Tätigkeit (von/bis); Validierung: Zwei Datumsangaben im Format DD.MM.YYYY – DD.MM.YYYY",
+        "type": "/Tx",
+        "page": 6
+    },
+    "txtflPersonStraftatenUngeteiligteStrafVerutWeAng_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "10.2.1 Weitere Angaben zu laufenden Ermittlungsverfahren\tAusfüllfeld; Bei Auswahl „ja“ bei 10.2: Angaben zu Datum, Tatbestand, Behörde/Gericht, ggf. Ausgang; Validierung: Freitext, Pflichtfeld bei Auswahl „ja“",
+        "type": "/Tx",
+        "page": 7
+    },
+    "txtflPersonStraftatenUngeteiligteStrafVerutWeAng_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "10.2.1 Weitere Angaben zu laufenden Ermittlungsverfahren\tAusfüllfeld; Bei Auswahl „ja“ bei 10.2: Angaben zu Datum, Tatbestand, Behörde/Gericht, ggf. Ausgang; Validierung: Freitext, Pflichtfeld bei Auswahl „ja“",
+        "type": "/Tx",
+        "page": 7
+    },
+    "txtflPersonStraftatenUngeteiligteStrafVerutWeAng_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "10.2.1 Weitere Angaben zu laufenden Ermittlungsverfahren\tAusfüllfeld; Bei Auswahl „ja“ bei 10.2: Angaben zu Datum, Tatbestand, Behörde/Gericht, ggf. Ausgang; Validierung: Freitext, Pflichtfeld bei Auswahl „ja“",
+        "type": "/Tx",
+        "page": 7
+    },
+    "txtflPersonStraftatenUngeteiligteStrafVerutWeAng_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "10.2.1 Weitere Angaben zu laufenden Ermittlungsverfahren\tAusfüllfeld; Bei Auswahl „ja“ bei 10.2: Angaben zu Datum, Tatbestand, Behörde/Gericht, ggf. Ausgang; Validierung: Freitext, Pflichtfeld bei Auswahl „ja“",
+        "type": "/Tx",
+        "page": 7
+    },
+    "txtflPersonStraftatenLaufErmitWeAng_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "10.2.1 Weitere Angaben zu laufenden Ermittlungsverfahren\tAusfüllfeld; Bei Auswahl „ja“ bei 10.2: Angaben zu Datum, Tatbestand, Behörde/Gericht, ggf. Ausgang; Validierung: Freitext, Pflichtfeld bei Auswahl „ja“",
+        "type": "/Tx",
+        "page": 7
+    },
+    "txtflPersonStraftatenLaufErmitWeAng_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "10.2.1 Weitere Angaben zu laufenden Ermittlungsverfahren\tAusfüllfeld; Bei Auswahl „ja“ bei 10.2: Angaben zu Datum, Tatbestand, Behörde/Gericht, ggf. Ausgang; Validierung: Freitext, Pflichtfeld bei Auswahl „ja“",
+        "type": "/Tx",
+        "page": 7
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBisEuro": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBis_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBisEuro_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBis_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBisEuro_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBis_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBisEuro_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBis_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBisEuro_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBis_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftBezLeistWeitereLeistBisEuro_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftHauptMonat": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftHauptJahr": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftWeitEinkomMonat": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftWeitEinkomJahr": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftkeinErwerbsSchul": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftkeinErwerbsStudent": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftkeinErwerbsErUnf": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxPersonStraftatenLaufErmitJa_8": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftUnterhaltauchKindMonat": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftUnterhaltauchKindJahr": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemArbeit": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemSelb": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemLeist": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemMonat": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.6 Einkommenszeitraum (1. Person) > Monat\tCheckbox; monatliche Einnahme",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemJahr": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.7 Einkommenszeitraum (1. Person) > Jahr\tCheckbox; jährliche Einnahme",
+        "type": "/Btn",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftKeinErwerbSpez": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftEinkommenHausGemName_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.8 Name (2. Person)\tTextfeld; Name des Angehörigen oder Lebensgefährten",
+        "type": "/Tx",
+        "page": 8
+    },
+    "txttflSicherungLebenWirtscahftEinkommenHausGemEuro_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "11.2.12 Einkommen Betrag (2. Person)\tZahlenfeld (Euro); Validierung: numerisch",
+        "type": "/Tx",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemArbeit_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.9 Einkommenstyp (2. Person) > Arbeitsverhältnis\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemSelb_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.10 Einkommenstyp (2. Person) > Selbstständigkeit\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemLeist_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.11 Einkommenstyp (2. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemMonat_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.13 Einkommenszeitraum (2. Person) > Monat\tCheckbox; monatliche Einnahme",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftEinkommenHausGemJahr_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.14 Einkommenszeitraum (2. Person) > Jahr\tCheckbox; jährliche Einnahme",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxPersonVermeidungAufgStaatAnNeinEu": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "12.1.1 Begründung für „nein“ – da EU-Bürger\tCheckbox; Auswahl, ob Herkunftsstaat Mehrstaatigkeit erlaubt (EU-Bürger); Pflichtfeld, wenn bei 12.1 „nein“ gewählt; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 9
+    },
+    "chbxPersonVermeidungAufgStaatAnNeinAsyl": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "12.1.2 Begründung für „nein“ – da asylberechtigt\tCheckbox; Zustimmung, dass der Asylstatus überprüft wird; Pflichtfeld, wenn bei 12.1 „nein“ und Grund „asylberechtigt“; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 9
+    },
+    "chbxPersonVermeidungAufgStaatAnNeinGrund": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "12.1.3 Begründung für „nein“ – aus sonstigen Gründen\tCheckbox; Angabe weiterer Gründe, warum die Aufgabe der bisherigen Staatsangehörigkeit nicht möglich ist; Pflichtfeld, wenn bei 12.1 „nein“ und kein anderer Grund angekreuzt; Validierung: Freitext",
+        "type": "/Btn",
+        "page": 9
+    },
+    "txttflPersonVermeidungAufgStaatAnNeinGrund": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "12.1.3 Begründung für „nein“ – aus sonstigen Gründen\tAusfüllfeld (Freitext); Angabe weiterer Gründe, warum die Aufgabe der bisherigen Staatsangehörigkeit nicht möglich ist; Pflichtfeld, wenn bei 12.1 „nein“ und kein anderer Grund angekreuzt; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 9
+    },
+    "chbxKindVermeidungAufgStaatAnNeinEu": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "12.2.1 Begründung für „nein“ (Kinder) – da EU-Bürger\tCheckbox; Auswahl, ob Herkunftsstaat Mehrstaatigkeit erlaubt (EU-Bürger); Pflichtfeld, wenn bei 12.2 „nein“ gewählt; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 9
+    },
+    "chbxKindVermeidungAufgStaatAnNeinAsyl": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "12.2.2 Begründung für „nein“ (Kinder) – da asylberechtigt\tCheckbox; Zustimmung, dass der Asylstatus des Kindes überprüft wird; Pflichtfeld, wenn bei 12.2 „nein“ und Grund „asylberechtigt“; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 9
+    },
+    "chbxKindVermeidungAufgStaatAnNeinGrund": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "12.2.3 Begründung für „nein“ (Kinder) – aus sonstigen Gründen\tCheckbox; Angabe weiterer Gründe, warum die Aufgabe der bisherigen Staatsangehörigkeit des Kindes nicht möglich ist; Pflichtfeld, wenn bei 12.2 „nein“ und kein anderer Grund angekreuzt; Validierung: Freitext",
+        "type": "/Tx",
+        "page": 9
+    },
+    "txttflPersonBegrundEinburAntrag": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "13 Begürund des Einbürgerungsantrages\tAusfüllfeld (Freitext); ",
+        "type": "/Tx",
+        "page": 9
+    },
+    "chbxPersonSonstigesVorBeantJaWurdAbgel": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "14.1.2 Antrag wurde aus folgenden Gründen abgelehnt\tCheckbox + Ausfüllfeld; Auswahl ob zutreffend + Angabe der Ablehnungsgründe; Validierung: Freitext, Pflichtfeld falls Checkbox aktiviert.",
+        "type": "/Btn",
+        "page": 9
+    },
+    "chbxPersonSonstigesVorBeantJaZurGenom": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "14.1.3 Antrag wurde aus folgenden Gründen zurückgenommen\tCheckbox + Ausfüllfeld; Auswahl ob zutreffend + Angabe der Rücknahmegründe; Validierung: Freitext, Pflichtfeld falls Checkbox aktiviert.",
+        "type": "/Btn",
+        "page": 9
+    },
+    "chbxPersonSonstigesVorBeantJaSonstig": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "14.1.4 Sonstiges\tCheckbox + Ausfüllfeld; Weitere relevante Angaben, die im Zusammenhang mit früheren Anträgen stehen oder sonstige Hinweise; Validierung: Freitext, Pflichtfeld falls Checkbox aktiviert.",
+        "type": "/Btn",
+        "page": 9
+    },
+    "chbxlMitEinBurgKind": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "15.1 Unterschrift – Miteinbügerung des Kindes 1 Checkbox wenn für Kind 1 Mitteinbürgerung beantragt wrden sooll, geht nur wenn Kind 1 davore ausgefühlt wurde",
+        "type": "/Btn",
+        "page": 10
+    },
+    "chbxlMitEinBurgKind_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "15.1 Unterschrift – Miteinbügerung des Kindes 1 Checkbox wenn für Kind 1 Mitteinbürgerung beantragt wrden sooll, geht nur wenn Kind 2 davore ausgefühlt wurde",
+        "type": "/Btn",
+        "page": 10
+    },
+    "chbxlMitEinBurgKind_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "15.1 Unterschrift – Miteinbügerung des Kindes 1 Checkbox wenn für Kind 1 Mitteinbürgerung beantragt wrden sooll, geht nur wenn Kind 3 davore ausgefühlt wurde",
+        "type": "/Btn",
+        "page": 10
+    },
+    "chbxlMitEinBurgKind_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "15.1 Unterschrift – Miteinbügerung des Kindes 1 Checkbox wenn für Kind 1 Mitteinbürgerung beantragt wrden sooll, geht nur wenn Kind 4 davore ausgefühlt wurde",
+        "type": "/Btn",
+        "page": 10
+    },
+    "chbxlMitEinBurgKind_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "15.1 Unterschrift – Miteinbügerung des Kindes 1 Checkbox wenn für Kind 1 Mitteinbürgerung beantragt wrden sooll, geht nur wenn Kind 5 davore ausgefühlt wurde",
+        "type": "/Btn",
+        "page": 10
+    },
+    "chbxlMitEinBurgKind_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "15.1 Unterschrift – Miteinbügerung des Kindes 1 Checkbox wenn für Kind 1 Mitteinbürgerung beantragt wrden sooll, geht nur wenn Kind 6 davore ausgefühlt wurde",
+        "type": "/Btn",
+        "page": 10
+    },
+    "chbxPersonMaennlich": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "/Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 8 Geschlecht > männlich; Auswahlfeld für männliches Geschlecht. Validierung: Nur eine Auswahl darf getroffen werden (Radio-Button-Verhalten).",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonWeiblich": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 8 Geschlecht > weiblich; Auswahlfeld für weibliches Geschlecht. Validierung: Nur eine Auswahl darf getroffen werden (Radio-Button-Verhalten).",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonDivers": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 8 Geschlecht > divers; Auswahlfeld für das Geschlecht divers. Validierung: Nur eine Auswahl darf getroffen werden (Radio-Button-Verhalten).",
+        "type": "/Btn",
+        "page": 0
+    },
+    "txtflPersonAnschZiffer_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": null,
+        "type": "/Tx",
+        "page": 0
+    },
+    "txtflPersonAnschZiffer_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": null,
+        "type": "/Tx",
+        "page": 0
+    },
+    "chbxPersonFamStandLedig": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > ledig; Familienstand ledig auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonFamStandVerheiratet": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; Auswahl des Familienstands „verheiratet“; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonFamStandVerwitwet": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; Auswahl des Familienstands „verwitwet“; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonFamStandEingetrLeben": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; Auswahl des Familienstands „eingetragene Lebenspartnerschaft“; Validierung: Nur eine Auswahl möglich",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonFamStandGetrennt": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > dauernd getrennt lebend; Familienstand „dauernd getrennt lebend“ auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonFamStandGeschieden": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; A. Persönliche Daten > 24 Familienstand > geschieden; Familienstand „geschieden“ auswählen. Validierung: Nur eine Auswahl.",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonArtAusPapAusReis": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; Auswahl, ob ein ausländischer Reisepass vorliegt; Validierung: Nur eine Auswahl",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonArtAusPapReisAusAuErs": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; Auswahl, ob ein Reiseausweis/Ausweisersatz vorliegt; Validierung: Nur eine Auswahl",
+        "type": "/Btn",
+        "page": 0
+    },
+    "chbxPersonArtAusPapAusPerso": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "Checkbox; Auswahl, ob ein ausländischer Personalausweis vorliegt; Validierung: Nur eine Auswahl",
+        "type": "/Btn",
+        "page": 0
+    },
+    "txtfKindTitelRechtsGrund": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.19 Kind > Aufenthaltstitel (wird von der Behörde ausgefüllt)\tNur durch die Behörde auszufüllen. Feld existiert für bis zu 6 Kinder (3.1.19–3.6.19).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindTitelRechtsGrundGultBis": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.20 Kind > Rechtsgrundlage: gültig bis\tDatum; Rechtsgrundlage für Aufenthaltstitel gültig bis; Validierung: Format DD.MM.YYYY (Behörde). Feld existiert für bis zu 6 Kinder (3.1.20–3.6.20).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "rbtnEhePartnerEin": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "2.1 > Ehegatt_in / Lebenspartner_in beantragt die Einbürgerung gleichzeitig > ja\tRadio-Button; Auswahl „ja“, ob Partner gleichzeitig Einbürgerung beantragt; Validierung: Nur eine Auswahl",
+        "type": "/Btn",
+        "page": 1
+    },
+    "rbtnEhePartnerFruWeiter": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "2.2 > Frühere / Weitere Ehen / Lebenspartnerschaften vorhanden > nein\tRadio-Button; Auswahl „nein“; Validierung: Eine Auswahl",
+        "type": "/Btn",
+        "page": 1
+    },
+    "txtfElternAhnameKindtM": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "Textfeld; B. Angaben zu den Eltern > 2 Adoption; Annahme als Kind erfolgt durch;\nIn dieses Feld ist der Name der Person oder der Personen einzutragen, die das Kind rechtlich adoptiert haben. Dies können Einzelpersonen, Ehepaare oder eingetragene Lebenspartner sein. Die Adoption muss durch einen rechtskräftigen Beschluss oder eine anerkannte ausländische Entscheidung erfolgt sei",
+        "type": "/Tx",
+        "page": 4
+    },
+    "rbtnKindMitEin": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "3.x.14 Kind > Miteinbürgerung „ja“\tRadio-Button; Angabe, ob Kind miteingebürgert werden soll („ja“). Nur eine Auswahl möglich. Feld existiert für bis zu 6 Kinder (3.1.14–3.6.14).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnElternLeiblichM": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Radiobutton Sind es die Leiblichen älter, ja, haben die erson des Einbüürgerungs antrages ausfüllt gezeugt und geboren",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnAdoptiveM": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Radiobutton; B. Angaben zu den Eltern > 1 Herkunft; Sind es die leiblichen Eltern? Auswahl: Ja / Adoption. Wenn „Adoption“, wurden die Eltern durch einen rechtmäßigen Adoptionsbeschluss bestimmt.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnElternTodM": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Radiobutton; B. Angaben zu den Eltern > 3 Verstorben; Ist die Person verstorben? Auswahl: Nein / Ja. Wenn „Ja“, zusätzliches Datumsfeld: Verstorben am (TT.MM.JJJJ).",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnElternLeiblichF": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Radiobutton Sind es die Leiblichen älter, ja, haben die erson des Einbüürgerungs antrages ausfüllt gezeugt und geboren",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnAdoptiveF": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Radiobutton; B. Angaben zu den Eltern > 1 Herkunft; Sind es die leiblichen Eltern? Auswahl: Ja / Adoption. Wenn „Adoption“, wurden die Eltern durch einen rechtmäßigen Adoptionsbeschluss bestimmt.",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnElternTodF": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "Radiobutton; B. Angaben zu den Eltern > 3 Verstorben; Ist die Person verstorben? Auswahl: Nein / Ja. Wenn „Ja“, zusätzliches Datumsfeld: Verstorben am (TT.MM.JJJJ).",
+        "type": "/Btn",
+        "page": 4
+    },
+    "StatusPersonStaatsNach": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "5.1.5 Nachweis Staatsangehörigkeit vorhanden – ja\tRadio-Button; Auswahlfeld „ja“; Validierung: genau eine Auswahl erforderlich",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnStatusPersonStaatsNachVe": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "5.1.9 Nachweis des Verlustes vorhanden – ja\tRadio-Button; Auswahlfeld „ja“; Validierung: genau eine Auswahl erforderlich",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnStatusPersonBesonderNach": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "5.2.3 Nachweis besonderer Status vorhanden – ja\tRadio-Button; Auswahlfeld „ja“; Validierung: genau eine Auswahl erforderlich",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnStatusPersonBesonderGrundWeit": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "5.2.5 Gründe bestehen weiterhin – ja\tRadio-Button; Auswahlfeld „ja“; Validierung: genau eine Auswahl erforderlich",
+        "type": "/Btn",
+        "page": 4
+    },
+    "rbtnPersonWehrPflicht": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "6.1 Wehrpflicht – ja\tRadio-Button; Auswahl „ja“; Validierung: Eine Auswahl zwischen „ja“ oder „nein“ erforderlich",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonWehrBef": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "6.2 Befreiung von der Wehrpflicht – ja\tRadio-Button; Auswahl „ja“; Validierung: Eine Auswahl zwischen „ja“ oder „nein“ erforderlich",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonEinzugWehrdienstHeimatstaat": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "6.3 Einzug zum Wehrdienst im Heimatstaat – ja\tRadio-Button; Auswahl „ja“; Validierung: Eine Auswahl zwischen „ja“ oder „nein“ erforderlich",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonWehrEinzugAnderer": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "6.4 Einzug zu einem anderen Militärdienst – ja, in\tRadio-Button + Ausfüllfeld; Auswahl „ja“ mit Angabe des Landes; Validierung: Eine Auswahl erforderlich; Land muss als Text angegeben werden",
+        "type": "/Btn",
+        "page": 5
+    },
+    "rbtnPersonInteLeistErfolg": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "9.1 Erfolgreicher Abschluss eines Integrationskurses nach § 43 AufenthG – ja\tRadio-Button; Auswahl „ja“; Validierung: Eine Auswahl erforderlich",
+        "type": "/Btn",
+        "page": 6
+    },
+    "rbtnPersonStraftatenUngeteiligteStrafVerut": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "10.1 Ungetilgte strafrechtliche Verurteilungen > Auswahl „ja“\tRadio-Button; 10.1 Ungetilgte strafrechtliche Verurteilungen; Auswahlmöglichkeit „ja“; Validierung: Eine Auswahl erforderlich",
+        "type": "/Btn",
+        "page": 7
+    },
+    "rbtnPersonStraftatenLaufErmit": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "10.2 Laufende Ermittlungsverfahren > Auswahl „ja“\tRadio-Button; 10.2 Laufende Ermittlungsverfahren; Auswahlmöglichkeit „ja“; Validierung: Eine Auswahl erforderlich",
+        "type": "/Btn",
+        "page": 7
+    },
+    "rbtnSicherungLebenWirtscahftEigentum": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "rbtnSicherungLebenWirtscahftBarVer": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "rbtnSicherungLebenWirtscahftAltGes": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "chbxSicherungLebenWirtscahftBezLeistWeitereLeistNein": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "rbtnSicherungLebenWirtscahftBezLeistSBGFruh": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "rbtnSicherungLebenWirtscahftBezLeistSBGHeute": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "rbtnSicherungLebenWirtscahftBezLeistWeitereLeist": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.2.4 Einkommenstyp (1. Person) > Leistungsbezug\tCheckbox; Auswahlmöglichkeit",
+        "type": "/Btn",
+        "page": 8
+    },
+    "txtflPersonSonstigesVorBeantAm": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "14.1 Die Einbürgerung in Deutschland wurde schon einmal beantragt – Datum\tDatum; Eingabe des Datums der Antragstellung bei Auswahl „ja“; Validierung: Pflichtfeld bei Auswahl „ja“, Format DD.MM.YYYY.",
+        "type": "/Tx",
+        "page": 9
+    },
+    "txtflPersonSonstigesVorBeantBei": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "14.1.1 Bei (Behörde/Ort)\tAusfüllfeld; Behörde oder Ort, bei der/dem der frühere Antrag gestellt wurde; Validierung: Freitext, Pflichtfeld bei Auswahl „ja“ zu 14.1.",
+        "type": "/Tx",
+        "page": 9
+    },
+    "rbtnSicherungLebenWirtscahftSchuldenEintragVerz": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.3.2 Eintrag im Schuldnerverzeichnis > nein\tRadio Button; Exklusiv mit „ja“",
+        "type": "/Btn",
+        "page": 8
+    },
+    "rbtnSicherungLebenWirtscahftSchuldenSteuerRück": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.3.5 Steuerrückstände (auch Familienangehörige) > nein\tRadio Button; Exklusiv mit „ja“",
+        "type": "/Btn",
+        "page": 8
+    },
+    "rbtnSicherungLebenWirtscahftSchuldenUntVerpLaufen": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.3.9 Laufende Unterhaltszahlungen > nein\tRadio Button; Exklusiv mit „ja“",
+        "type": "/Btn",
+        "page": 8
+    },
+    "rbtnSicherungLebenWirtscahftSchuldenUntVerpRuckStand": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "11.3.12 Unterhaltsrückstand > nein\tRadio Button; Exklusiv mit „ja“",
+        "type": "/Btn",
+        "page": 8
+    },
+    "rbtnPersonVermeidungAufgStaatAn": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "12.1 Aufgabe der bisherigen Staatsangehörigkeit – Bereitschaftserklärung\tRadio-Button; Auswahl „ja“ oder „nein“; Validierung: Eine Auswahl erforderlich",
+        "type": "/Btn",
+        "page": 9
+    },
+    "rbtnKindVermeidungAufgStaatAn": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "12.2 Aufgabe der bisherigen Staatsangehörigkeit der miteinzubürgernden Kinder – Bereitschaftserklärung\tRadio-Button; Auswahl „ja“ oder „nein“; Validierung: Eine Auswahl erforderlich",
+        "type": "/Btn",
+        "page": 9
+    },
+    "rbtnPersonSonstigesVorBeant": {
+        "hidden_fields": {
+            "FF": 49152
+        },
+        "/TU": "14.1 Die Einbürgerung in Deutschland wurde schon einmal beantragt – Auswahl\tRadio-Button; Auswahl „nein“ oder „ja“; Validierung: Eine Auswahl erforderlich.",
+        "type": "/Btn",
+        "page": 9
+    },
+    "txtfKindName_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.1 Kind > Familienname, ggf. Geburtsname\tAusfüllfeld; Familienname des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.1–3.6.1).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindVorName_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.2 Kind > Vorname(n), ggf. Vatersname\tAusfüllfeld; Alle Vornamen des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.2–3.6.2).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindGeburtDate_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.3 Kind > Geburtsdatum\tDatum; Geburtsdatum des Kindes; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.3–3.6.3).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindGeburtLand_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.7 Kind > Geburtsort, Land\tAusfüllfeld; Geburtsort und Land des Kindes; Validierung: Freitext, Ort und Land erforderlich. Feld existiert für bis zu 6 Kinder (3.1.7–3.6.7).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindAnsch_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.8 Kind > Derzeitige Anschrift (falls abweichend)\tAusfüllfeld; Abweichende Meldeadresse des Kindes; Validierung: Vollständige deutsche Postadresse. Feld existiert für bis zu 6 Kinder (3.1.8–3.6.8).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindStaat_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.9 Kind > Staatsangehörigkeit(en)\tAusfüllfeld; Alle Staatsangehörigkeiten des Kindes; Validierung: Freitext, mehrere möglich. Feld existiert für bis zu 6 Kinder (3.1.9–3.6.9).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindArtAusweis_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.18 Kind > Gültig bis (Ausweis)\tDatum; Ablaufdatum des Ausweises; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.18–3.6.18).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindMitein_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.16 Kind > Nein, weil Textfeld hier ein Grund kurz warum das Kind nicht miteingeebürgert wird. in buchstaben und kurz text",
+        "type": "/Tx",
+        "page": 2
+    },
+    "chbxKindMaennlich_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.4 Kind > Geschlecht m\tCheckbox; Auswahl Geschlecht „m“; genau eine Auswahl verpflichtend aus m, w, d. Feld existiert für bis zu 6 Kinder (3.1.4–3.6.4).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindWeiblich_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.5 Kind > Geschlecht w\tCheckbox; Auswahl Geschlecht „w“. Feld existiert für bis zu 6 Kinder (3.1.5–3.6.5).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindDiverse_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.6 Kind > Geschlecht d\tCheckbox; Auswahl Geschlecht „d“. Feld existiert für bis zu 6 Kinder (3.1.6–3.6.6).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindJetzigerEhe_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.10 Kind > Kindschaftsverhältnis – aus jetziger Ehe\tCheckbox; Auswahl Kindschaft aus jetziger Ehe. Genau eine der vier Optionen wählbar. Feld existiert für bis zu 6 Kinder (3.1.10–3.6.10).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindFuherEhe_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.11 Kind > Kindschaftsverhältnis – aus früherer Ehe\tCheckbox; Auswahl Kindschaft aus früherer Ehe. Feld existiert für bis zu 6 Kinder (3.1.11–3.6.11).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindNichtEhe_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.12 Kind > Kindschaftsverhältnis – nichtehelich\tCheckbox; Auswahl Kindschaft nichtehelich. Feld existiert für bis zu 6 Kinder (3.1.12–3.6.12).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindAdoptiert_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.13 Kind > Kindschaftsverhältnis – adoptiert\tCheckbox; Auswahl Kindschaft adoptiert. Feld existiert für bis zu 6 Kinder (3.1.13–3.6.13).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindArtAuswReisepass_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.16 Kind > Art des Ausweises – Reisepass\tCheckbox; Auswahl „Reisepass“; Validierung: genau eine Auswahl aus Reisepass oder Personalausweis. Feld existiert für bis zu 6 Kinder (3.1.16–3.6.16).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindArtAuswPersonalausweis_1": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.17 Kind > Art des Ausweises – Personalausweis\tCheckbox; Auswahl „Personalausweis“. Feld existiert für bis zu 6 Kinder (3.1.17–3.6.17).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfKindTitelRechtsGrund_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.19 Kind > Aufenthaltstitel (wird von der Behörde ausgefüllt)\tNur durch die Behörde auszufüllen. Feld existiert für bis zu 6 Kinder (3.1.19–3.6.19).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindTitelRechtsGrundGultBis_1": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.20 Kind > Rechtsgrundlage: gültig bis\tDatum; Rechtsgrundlage für Aufenthaltstitel gültig bis; Validierung: Format DD.MM.YYYY (Behörde). Feld existiert für bis zu 6 Kinder (3.1.20–3.6.20).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "rbtnKindMitEin_1": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnKindMitEin_2": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfKindName_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.1 Kind > Familienname, ggf. Geburtsname\tAusfüllfeld; Familienname des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.1–3.6.1).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindVorName_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.2 Kind > Vorname(n), ggf. Vatersname\tAusfüllfeld; Alle Vornamen des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.2–3.6.2).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindGeburtDate_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.3 Kind > Geburtsdatum\tDatum; Geburtsdatum des Kindes; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.3–3.6.3).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindGeburtLand_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.7 Kind > Geburtsort, Land\tAusfüllfeld; Geburtsort und Land des Kindes; Validierung: Freitext, Ort und Land erforderlich. Feld existiert für bis zu 6 Kinder (3.1.7–3.6.7).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindAnsch_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.8 Kind > Derzeitige Anschrift (falls abweichend)\tAusfüllfeld; Abweichende Meldeadresse des Kindes; Validierung: Vollständige deutsche Postadresse. Feld existiert für bis zu 6 Kinder (3.1.8–3.6.8).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindStaat_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.9 Kind > Staatsangehörigkeit(en)\tAusfüllfeld; Alle Staatsangehörigkeiten des Kindes; Validierung: Freitext, mehrere möglich. Feld existiert für bis zu 6 Kinder (3.1.9–3.6.9).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindArtAusweis_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.18 Kind > Gültig bis (Ausweis)\tDatum; Ablaufdatum des Ausweises; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.18–3.6.18).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindMitein_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.16 Kind > Nein, weil Textfeld hier ein Grund kurz warum das Kind nicht miteingeebürgert wird. in buchstaben und kurz text",
+        "type": "/Tx",
+        "page": 2
+    },
+    "chbxKindMaennlich_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.4 Kind > Geschlecht m\tCheckbox; Auswahl Geschlecht „m“; genau eine Auswahl verpflichtend aus m, w, d. Feld existiert für bis zu 6 Kinder (3.1.4–3.6.4).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindWeiblich_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.5 Kind > Geschlecht w\tCheckbox; Auswahl Geschlecht „w“. Feld existiert für bis zu 6 Kinder (3.1.5–3.6.5).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindDiverse_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.6 Kind > Geschlecht d\tCheckbox; Auswahl Geschlecht „d“. Feld existiert für bis zu 6 Kinder (3.1.6–3.6.6).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindJetzigerEhe_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.10 Kind > Kindschaftsverhältnis – aus jetziger Ehe\tCheckbox; Auswahl Kindschaft aus jetziger Ehe. Genau eine der vier Optionen wählbar. Feld existiert für bis zu 6 Kinder (3.1.10–3.6.10).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindFuherEhe_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.11 Kind > Kindschaftsverhältnis – aus früherer Ehe\tCheckbox; Auswahl Kindschaft aus früherer Ehe. Feld existiert für bis zu 6 Kinder (3.1.11–3.6.11).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindNichtEhe_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.12 Kind > Kindschaftsverhältnis – nichtehelich\tCheckbox; Auswahl Kindschaft nichtehelich. Feld existiert für bis zu 6 Kinder (3.1.12–3.6.12).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindAdoptiert_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.13 Kind > Kindschaftsverhältnis – adoptiert\tCheckbox; Auswahl Kindschaft adoptiert. Feld existiert für bis zu 6 Kinder (3.1.13–3.6.13).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindArtAuswReisepass_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.16 Kind > Art des Ausweises – Reisepass\tCheckbox; Auswahl „Reisepass“; Validierung: genau eine Auswahl aus Reisepass oder Personalausweis. Feld existiert für bis zu 6 Kinder (3.1.16–3.6.16).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "chbxKindArtAuswPersonalausweis_2": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.17 Kind > Art des Ausweises – Personalausweis\tCheckbox; Auswahl „Personalausweis“. Feld existiert für bis zu 6 Kinder (3.1.17–3.6.17).",
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfKindTitelRechtsGrund_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.19 Kind > Aufenthaltstitel (wird von der Behörde ausgefüllt)\tNur durch die Behörde auszufüllen. Feld existiert für bis zu 6 Kinder (3.1.19–3.6.19).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "txtfKindTitelRechtsGrundGultBis_2": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.20 Kind > Rechtsgrundlage: gültig bis\tDatum; Rechtsgrundlage für Aufenthaltstitel gültig bis; Validierung: Format DD.MM.YYYY (Behörde). Feld existiert für bis zu 6 Kinder (3.1.20–3.6.20).",
+        "type": "/Tx",
+        "page": 2
+    },
+    "rbtnKindMitEin_3": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 2
+    },
+    "rbtnKindMitEin_4": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 2
+    },
+    "txtfKindName_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.1 Kind > Familienname, ggf. Geburtsname\tAusfüllfeld; Familienname des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.1–3.6.1).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindVorName_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.2 Kind > Vorname(n), ggf. Vatersname\tAusfüllfeld; Alle Vornamen des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.2–3.6.2).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindGeburtDate_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.3 Kind > Geburtsdatum\tDatum; Geburtsdatum des Kindes; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.3–3.6.3).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindGeburtLand_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.7 Kind > Geburtsort, Land\tAusfüllfeld; Geburtsort und Land des Kindes; Validierung: Freitext, Ort und Land erforderlich. Feld existiert für bis zu 6 Kinder (3.1.7–3.6.7).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindAnsch_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.8 Kind > Derzeitige Anschrift (falls abweichend)\tAusfüllfeld; Abweichende Meldeadresse des Kindes; Validierung: Vollständige deutsche Postadresse. Feld existiert für bis zu 6 Kinder (3.1.8–3.6.8).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindStaat_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.9 Kind > Staatsangehörigkeit(en)\tAusfüllfeld; Alle Staatsangehörigkeiten des Kindes; Validierung: Freitext, mehrere möglich. Feld existiert für bis zu 6 Kinder (3.1.9–3.6.9).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindArtAusweis_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.18 Kind > Gültig bis (Ausweis)\tDatum; Ablaufdatum des Ausweises; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.18–3.6.18).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindMitein_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.16 Kind > Nein, weil Textfeld hier ein Grund kurz warum das Kind nicht miteingeebürgert wird. in buchstaben und kurz text",
+        "type": "/Tx",
+        "page": 3
+    },
+    "chbxKindMaennlich_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.4 Kind > Geschlecht m\tCheckbox; Auswahl Geschlecht „m“; genau eine Auswahl verpflichtend aus m, w, d. Feld existiert für bis zu 6 Kinder (3.1.4–3.6.4).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindWeiblich_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.5 Kind > Geschlecht w\tCheckbox; Auswahl Geschlecht „w“. Feld existiert für bis zu 6 Kinder (3.1.5–3.6.5).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindDiverse_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.6 Kind > Geschlecht d\tCheckbox; Auswahl Geschlecht „d“. Feld existiert für bis zu 6 Kinder (3.1.6–3.6.6).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindJetzigerEhe_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.10 Kind > Kindschaftsverhältnis – aus jetziger Ehe\tCheckbox; Auswahl Kindschaft aus jetziger Ehe. Genau eine der vier Optionen wählbar. Feld existiert für bis zu 6 Kinder (3.1.10–3.6.10).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindFuherEhe_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.11 Kind > Kindschaftsverhältnis – aus früherer Ehe\tCheckbox; Auswahl Kindschaft aus früherer Ehe. Feld existiert für bis zu 6 Kinder (3.1.11–3.6.11).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindNichtEhe_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.12 Kind > Kindschaftsverhältnis – nichtehelich\tCheckbox; Auswahl Kindschaft nichtehelich. Feld existiert für bis zu 6 Kinder (3.1.12–3.6.12).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindAdoptiert_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.13 Kind > Kindschaftsverhältnis – adoptiert\tCheckbox; Auswahl Kindschaft adoptiert. Feld existiert für bis zu 6 Kinder (3.1.13–3.6.13).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindArtAuswReisepass_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.16 Kind > Art des Ausweises – Reisepass\tCheckbox; Auswahl „Reisepass“; Validierung: genau eine Auswahl aus Reisepass oder Personalausweis. Feld existiert für bis zu 6 Kinder (3.1.16–3.6.16).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindArtAuswPersonalausweis_3": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.17 Kind > Art des Ausweises – Personalausweis\tCheckbox; Auswahl „Personalausweis“. Feld existiert für bis zu 6 Kinder (3.1.17–3.6.17).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "txtfKindTitelRechtsGrund_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.19 Kind > Aufenthaltstitel (wird von der Behörde ausgefüllt)\tNur durch die Behörde auszufüllen. Feld existiert für bis zu 6 Kinder (3.1.19–3.6.19).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindTitelRechtsGrundGultBis_3": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.20 Kind > Rechtsgrundlage: gültig bis\tDatum; Rechtsgrundlage für Aufenthaltstitel gültig bis; Validierung: Format DD.MM.YYYY (Behörde). Feld existiert für bis zu 6 Kinder (3.1.20–3.6.20).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "rbtnKindMitEin_5": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 3
+    },
+    "rbtnKindMitEin_6": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 3
+    },
+    "txtfKindName_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.1 Kind > Familienname, ggf. Geburtsname\tAusfüllfeld; Familienname des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.1–3.6.1).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindVorName_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.2 Kind > Vorname(n), ggf. Vatersname\tAusfüllfeld; Alle Vornamen des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.2–3.6.2).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindGeburtDate_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.3 Kind > Geburtsdatum\tDatum; Geburtsdatum des Kindes; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.3–3.6.3).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindGeburtLand_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.7 Kind > Geburtsort, Land\tAusfüllfeld; Geburtsort und Land des Kindes; Validierung: Freitext, Ort und Land erforderlich. Feld existiert für bis zu 6 Kinder (3.1.7–3.6.7).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindAnsch_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.8 Kind > Derzeitige Anschrift (falls abweichend)\tAusfüllfeld; Abweichende Meldeadresse des Kindes; Validierung: Vollständige deutsche Postadresse. Feld existiert für bis zu 6 Kinder (3.1.8–3.6.8).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindStaat_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.9 Kind > Staatsangehörigkeit(en)\tAusfüllfeld; Alle Staatsangehörigkeiten des Kindes; Validierung: Freitext, mehrere möglich. Feld existiert für bis zu 6 Kinder (3.1.9–3.6.9).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindArtAusweis_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.18 Kind > Gültig bis (Ausweis)\tDatum; Ablaufdatum des Ausweises; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.18–3.6.18).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindMitein_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.16 Kind > Nein, weil Textfeld hier ein Grund kurz warum das Kind nicht miteingeebürgert wird. in buchstaben und kurz text",
+        "type": "/Tx",
+        "page": 3
+    },
+    "chbxKindMaennlich_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.4 Kind > Geschlecht m\tCheckbox; Auswahl Geschlecht „m“; genau eine Auswahl verpflichtend aus m, w, d. Feld existiert für bis zu 6 Kinder (3.1.4–3.6.4).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindWeiblich_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.5 Kind > Geschlecht w\tCheckbox; Auswahl Geschlecht „w“. Feld existiert für bis zu 6 Kinder (3.1.5–3.6.5).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindDiverse_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.6 Kind > Geschlecht d\tCheckbox; Auswahl Geschlecht „d“. Feld existiert für bis zu 6 Kinder (3.1.6–3.6.6).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindJetzigerEhe_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.10 Kind > Kindschaftsverhältnis – aus jetziger Ehe\tCheckbox; Auswahl Kindschaft aus jetziger Ehe. Genau eine der vier Optionen wählbar. Feld existiert für bis zu 6 Kinder (3.1.10–3.6.10).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindFuherEhe_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.11 Kind > Kindschaftsverhältnis – aus früherer Ehe\tCheckbox; Auswahl Kindschaft aus früherer Ehe. Feld existiert für bis zu 6 Kinder (3.1.11–3.6.11).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindNichtEhe_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.12 Kind > Kindschaftsverhältnis – nichtehelich\tCheckbox; Auswahl Kindschaft nichtehelich. Feld existiert für bis zu 6 Kinder (3.1.12–3.6.12).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindAdoptiert_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.13 Kind > Kindschaftsverhältnis – adoptiert\tCheckbox; Auswahl Kindschaft adoptiert. Feld existiert für bis zu 6 Kinder (3.1.13–3.6.13).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindArtAuswReisepass_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.16 Kind > Art des Ausweises – Reisepass\tCheckbox; Auswahl „Reisepass“; Validierung: genau eine Auswahl aus Reisepass oder Personalausweis. Feld existiert für bis zu 6 Kinder (3.1.16–3.6.16).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindArtAuswPersonalausweis_4": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.17 Kind > Art des Ausweises – Personalausweis\tCheckbox; Auswahl „Personalausweis“. Feld existiert für bis zu 6 Kinder (3.1.17–3.6.17).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "txtfKindTitelRechtsGrund_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.19 Kind > Aufenthaltstitel (wird von der Behörde ausgefüllt)\tNur durch die Behörde auszufüllen. Feld existiert für bis zu 6 Kinder (3.1.19–3.6.19).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindTitelRechtsGrundGultBis_4": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.20 Kind > Rechtsgrundlage: gültig bis\tDatum; Rechtsgrundlage für Aufenthaltstitel gültig bis; Validierung: Format DD.MM.YYYY (Behörde). Feld existiert für bis zu 6 Kinder (3.1.20–3.6.20).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "rbtnKindMitEin_7": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 3
+    },
+    "rbtnKindMitEin_8": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 3
+    },
+    "txtfKindName_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.1 Kind > Familienname, ggf. Geburtsname\tAusfüllfeld; Familienname des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.1–3.6.1).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindVorName_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.2 Kind > Vorname(n), ggf. Vatersname\tAusfüllfeld; Alle Vornamen des Kindes laut Ausweisdokument; Validierung: Nur Buchstaben und Bindestriche, Eingabe in lateinischen Buchstaben. Feld existiert für bis zu 6 Kinder (3.1.2–3.6.2).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindGeburtDate_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.3 Kind > Geburtsdatum\tDatum; Geburtsdatum des Kindes; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.3–3.6.3).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindGeburtLand_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.7 Kind > Geburtsort, Land\tAusfüllfeld; Geburtsort und Land des Kindes; Validierung: Freitext, Ort und Land erforderlich. Feld existiert für bis zu 6 Kinder (3.1.7–3.6.7).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindAnsch_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.8 Kind > Derzeitige Anschrift (falls abweichend)\tAusfüllfeld; Abweichende Meldeadresse des Kindes; Validierung: Vollständige deutsche Postadresse. Feld existiert für bis zu 6 Kinder (3.1.8–3.6.8).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindStaat_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.9 Kind > Staatsangehörigkeit(en)\tAusfüllfeld; Alle Staatsangehörigkeiten des Kindes; Validierung: Freitext, mehrere möglich. Feld existiert für bis zu 6 Kinder (3.1.9–3.6.9).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindArtAusweis_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.18 Kind > Gültig bis (Ausweis)\tDatum; Ablaufdatum des Ausweises; Validierung: Format DD.MM.YYYY. Feld existiert für bis zu 6 Kinder (3.1.18–3.6.18).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindMitein_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.16 Kind > Nein, weil Textfeld hier ein Grund kurz warum das Kind nicht miteingeebürgert wird. in buchstaben und kurz text",
+        "type": "/Tx",
+        "page": 3
+    },
+    "chbxKindMaennlich_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.4 Kind > Geschlecht m\tCheckbox; Auswahl Geschlecht „m“; genau eine Auswahl verpflichtend aus m, w, d. Feld existiert für bis zu 6 Kinder (3.1.4–3.6.4).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindWeiblich_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.5 Kind > Geschlecht w\tCheckbox; Auswahl Geschlecht „w“. Feld existiert für bis zu 6 Kinder (3.1.5–3.6.5).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindDiverse_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.6 Kind > Geschlecht d\tCheckbox; Auswahl Geschlecht „d“. Feld existiert für bis zu 6 Kinder (3.1.6–3.6.6).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindJetzigerEhe_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.10 Kind > Kindschaftsverhältnis – aus jetziger Ehe\tCheckbox; Auswahl Kindschaft aus jetziger Ehe. Genau eine der vier Optionen wählbar. Feld existiert für bis zu 6 Kinder (3.1.10–3.6.10).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindFuherEhe_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.11 Kind > Kindschaftsverhältnis – aus früherer Ehe\tCheckbox; Auswahl Kindschaft aus früherer Ehe. Feld existiert für bis zu 6 Kinder (3.1.11–3.6.11).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindNichtEhe_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.12 Kind > Kindschaftsverhältnis – nichtehelich\tCheckbox; Auswahl Kindschaft nichtehelich. Feld existiert für bis zu 6 Kinder (3.1.12–3.6.12).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindAdoptiert_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.13 Kind > Kindschaftsverhältnis – adoptiert\tCheckbox; Auswahl Kindschaft adoptiert. Feld existiert für bis zu 6 Kinder (3.1.13–3.6.13).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindArtAuswReisepass_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.16 Kind > Art des Ausweises – Reisepass\tCheckbox; Auswahl „Reisepass“; Validierung: genau eine Auswahl aus Reisepass oder Personalausweis. Feld existiert für bis zu 6 Kinder (3.1.16–3.6.16).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "chbxKindArtAuswPersonalausweis_5": {
+        "hidden_fields": {
+            "FF": 0,
+            "on_state": "/Yes",
+            "off_state": "Off"
+        },
+        "/TU": "3.x.17 Kind > Art des Ausweises – Personalausweis\tCheckbox; Auswahl „Personalausweis“. Feld existiert für bis zu 6 Kinder (3.1.17–3.6.17).",
+        "type": "/Btn",
+        "page": 3
+    },
+    "txtfKindTitelRechtsGrund_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.19 Kind > Aufenthaltstitel (wird von der Behörde ausgefüllt)\tNur durch die Behörde auszufüllen. Feld existiert für bis zu 6 Kinder (3.1.19–3.6.19).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "txtfKindTitelRechtsGrundGultBis_5": {
+        "hidden_fields": {
+            "FF": 0
+        },
+        "/TU": "3.x.20 Kind > Rechtsgrundlage: gültig bis\tDatum; Rechtsgrundlage für Aufenthaltstitel gültig bis; Validierung: Format DD.MM.YYYY (Behörde). Feld existiert für bis zu 6 Kinder (3.1.20–3.6.20).",
+        "type": "/Tx",
+        "page": 3
+    },
+    "rbtnKindMitEin_9": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 3
+    },
+    "rbtnKindMitEin_10": {
+        "hidden_fields": {
+            "FF": 49152,
+            "on_state": "/2",
+            "off_state": "Off"
+        },
+        "/TU": null,
+        "type": "/Btn",
+        "page": 3
+    }
+}

@@ -14,7 +14,6 @@ import shutil
 from pathlib import Path
 from authentication import auth
 
-from advanced_controls import advanced_controls
 
 # Settings and configurations
 st.set_page_config(
@@ -23,6 +22,11 @@ st.set_page_config(
 st.markdown(
     """
     <style>
+        .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+        .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+        .viewerBadge_text__1JaDK {
+            display: none;
+        }
         .reportview-container {
             margin-top: -2em;
         }
@@ -145,10 +149,6 @@ if st.session_state["authentication_status"]:
     with st.sidebar:
         st.title("TalkDOC 🔥")
 
-        # settings = st.button("⚙️", key="settings")
-        # if settings:
-        #     advanced_controls()
-
         valid_api_key = False
 
         if st.session_state.open_ai_api_key:
@@ -233,7 +233,6 @@ if st.session_state["authentication_status"]:
             response = get_json_from_chat_history_agent(
                 gpt, st.session_state.messages, st.session_state.form_dict
             )
-            st.toast("PDF is being filled, please wait...")
 
             filled_pdf = fillPDF(temp_pdf_path, st.session_state.form_dict, response)
 
